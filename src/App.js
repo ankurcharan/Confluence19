@@ -3,6 +3,10 @@ import { Switch, BrowserRouter, Route } from 'react-router-dom';
 
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
+import Events from './components/Events/Events';
+import Gallery from './components/Gallery/Gallery';
+import Home from './components/Home/Home';
+import Sponsors from './components/Sponsors/Sponsors';
 
 class App extends Component {
 	render() {
@@ -11,8 +15,14 @@ class App extends Component {
 
 				<div>
 					<Nav />
-					<br />
-					<br />
+					<Switch>
+
+						<Route exact path='/events' component={Events} />
+						<Route exact path='/gallery' component={Gallery} />
+						<Route exact path='/sponsors' component={Sponsors} />
+						<Route path='/' component={Home} />
+
+					</Switch>
 					<Footer />
 				</div>
 

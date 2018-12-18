@@ -22,22 +22,22 @@ class Nav extends React.Component {
                     </Link>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <Link to='/'>
+                            <Link className='navbarLinkRoutes' to='/'>
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link to='/events'>
+                            <Link className='navbarLinkRoutes' to='/events'>
                                 Events
                             </Link>
                         </li>
                         <li>
-                            <Link to='/gallery'>
+                            <Link className='navbarLinkRoutes' to='/gallery'>
                                 Gallery
                             </Link>
                         </li>
                         <li>
-                            <Link to='/sponsors'>
+                            <Link className='navbarLinkRoutes' to='/sponsors'>
                                 Sponsors
                             </Link>
                         </li>
