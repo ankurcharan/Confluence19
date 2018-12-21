@@ -17,7 +17,7 @@ class Nav extends React.Component {
                             <i id="logoIcon" className="large material-icons">
                                 developer_mode
                             </i>
-                            Confluence
+                            Conflu
                         </a>
                     </Link>
                     <ul class="right hide-on-med-and-down">

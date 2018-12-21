@@ -3,6 +3,8 @@ const app = express.Router();
 
 const mediaRoutes = require('./mediaRoutes');
 
+
+
 app.use('/gallery', mediaRoutes);
 
 
