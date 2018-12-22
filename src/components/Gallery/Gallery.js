@@ -1,27 +1,35 @@
 import React from 'react';
-import $ from 'jquery';	
+import { MediaBox } from 'react-materialize';
+
 
 import './Gallery.css';
 import Jumbotron from '../Jumbotron/Jumbotron';
 
-class Image extends React.Component {
+// class Image extends React.Component {
 
-	render() {
+// 	constructor(props) {
+// 		super(props);
 
-		return (
+// 		this.onClickHandler = this.onClickHandler.bind(this);
+// 	}
 
-			<div className='col s12 m12 l6'>
-				<img 
-					className="center responsive-img materialboxed"  
-					data-caption={this.props.caption}
-					src={this.props.imageURL} 
-					alt={this.props.title}
-				/>
-			</div>
+// 	render() {
 
-		);
-	}
-}
+// 		return (
+
+// 			<div className='col s12 m12 l6'>
+// 				<img 
+// 					className="center responsive-img materialboxed"  
+// 					data-caption={this.props.caption}
+// 					src={this.props.imageURL} 
+// 					alt={this.props.title}
+// 					onClick={this.onClickHandler}
+// 				/>
+// 			</div>
+
+// 		);
+// 	}
+// }
 
 class Gallery extends React.Component {
 
@@ -51,17 +59,30 @@ class Gallery extends React.Component {
 			})
 	}
 
+	// componentDidMount() {
+
+	
+	// 	let boxes = document.querySelectorAll('.materialboxed');
+	// 	M.Materialbox.init(boxes, {});
+	
+	// }
+
     render () {
 
 		const images = this.state.images.map((image, index) => {
 
-			return <Image
+			// return <Image
+			// 			key={index}
+			// 			caption={image.caption}
+			// 			imageURL={image.imageURL}
+			// 			title={image.title}
+			// 		/>
+
+			return <MediaBox
 						key={index}
 						caption={image.caption}
-						imageURL={image.imageURL}
-						title={image.title}
+						src={image.imageURL}
 					/>
-
 		});
 
 		console.log(images);
@@ -74,7 +95,8 @@ class Gallery extends React.Component {
 				<Jumbotron 
 					title='#WeDealInMemories' 
 					text='Glimpses of Confluence' 
-					photo='https://i.ytimg.com/vi/hF_LjTUvP-U/maxresdefault.jpg' 
+					photo='https://i.ytimg.com/vi/hF_LjTUvP-U/maxresdefault.jpg'
+					
 				/>
 
 				<br />

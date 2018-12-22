@@ -3,7 +3,6 @@ const admin = require('firebase-admin');
 const express = require('express');
 const app = express.Router();
 
-
 // database reference
 const db = admin.firestore();
 
