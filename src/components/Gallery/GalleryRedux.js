@@ -1,10 +1,14 @@
 import React from 'react';
 // import { MediaBox } from 'react-materialize';
 
-import M from 'materialize-css';
-
 import './Gallery.css';
 import Jumbotron from '../Jumbotron/Jumbotron';
+
+import { connect } from 'react-redux';
+import { getImages } from '../../actions/action';
+
+
+import M from 'materialize-css';
 
 class Image extends React.Component {
 
@@ -39,34 +43,12 @@ class Image extends React.Component {
 
 class Gallery extends React.Component {
 
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			images: []
-		}
-	}
-
 	componentWillMount() {
 
-		const reqOptions = {
-			method: 'GET',
-			Accept: 'application/json'
-		}
-		fetch('https://us-central1-confluence19.cloudfunctions.net/api/gallery', reqOptions)
-			.then(data => data.json())
-			.then(data => {
-
-				if(data.success) {
-					this.setState({
-						images: data.data.images
-					})
-				}
-			})
+		this.props.getImages();
 	}
 
 	componentDidMount() {
-
 	
 		let boxes = document.querySelectorAll('.materialboxed');
 		M.Materialbox.init(boxes, {});
@@ -75,23 +57,23 @@ class Gallery extends React.Component {
 
     render () {
 
-		const images = this.state.images.map((image, index) => {
+		let x = this.props.images.gallery;
 
-			return <Image
-						key={index}
-						caption={image.caption}
-						imageURL={image.imageURL}
-						title={image.title}
-					/>
+		let images;
+		if(x !== undefined) {
 
-			// return <MediaBox
-			// 			key={index}
-			// 			caption={image.caption}
-			// 			src={image.imageURL}
-			// 		/>
-		});
+			images = x.map((image, index) => {
 
-		console.log(images);
+				return <Image
+							key={index}
+							caption={image.caption}
+							imageURL={image.imageURL}
+							title={image.title}
+						/>
+			});
+		} else {
+			images = '';
+		}
 
         return (
 
@@ -120,4 +102,13 @@ class Gallery extends React.Component {
     }
 }
 
-export default Gallery;
+
+const mapStateToProps = state => ({
+    images: state.gallery,
+});
+
+
+export default connect(
+	mapStateToProps,
+	{ getImages }
+)(Gallery);
