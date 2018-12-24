@@ -28,7 +28,7 @@ class Jumbotron extends React.Component {
                     </div>
                 </div>
                 <div class="parallax">
-                    <img src={this.props.photo} alt="cover Photo" />
+                    <img src={this.props.photo} alt="cover" />
                 </div>
             </div>
         );

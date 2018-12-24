@@ -8,6 +8,8 @@ import Gallery from './components/Gallery/Gallery';
 import Home from './components/Home/Home';
 import Sponsors from './components/Sponsors/Sponsors';
 
+import GalRed from './components/Gallery/GalleryRedux';
+
 class App extends Component {
 	render() {
 		return (
@@ -18,7 +20,7 @@ class App extends Component {
 					<Switch>
 
 						<Route exact path='/events' component={Events} />
-						<Route exact path='/gallery' component={Gallery} />
+						<Route exact path='/gallery' component={GalRed} />
 						<Route exact path='/sponsors' component={Sponsors} />
 						<Route path='/' component={Home} />
 
