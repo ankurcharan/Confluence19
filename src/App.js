@@ -16,7 +16,7 @@ class App extends Component {
 			<BrowserRouter>
 
 				<div>
-					<Nav />
+					{/* <Nav /> */}
 					<Switch>
 
 						<Route exact path='/events' component={Events} />
@@ -25,7 +25,7 @@ class App extends Component {
 						<Route path='/' component={Home} />
 
 					</Switch>
-					<Footer />
+					{/* <Footer /> */}
 				</div>
 
 			</BrowserRouter>

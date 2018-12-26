@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Events.css';
+// import './Events.css';
 
 class Events extends React.Component {
 
