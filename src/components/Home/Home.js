@@ -7,7 +7,7 @@ class Confluence extends React.Component {
     render() {
 
         return (
-            <div id="1" class="page center pink darken-2 active section scrollspy">
+            <div id="1" class="page center darken-2 active section scrollspy">
                 <p>
                     home video background
                     {/*yahan wo video wala backhround daalana hai so try that */}
@@ -79,6 +79,11 @@ class ContactUs extends React.Component {
 
 // {/** I have made background for different colors for the sake of differentiation. We will use a fixed background in the final production */}
 
+
+
+
+
+
 class Home extends React.Component {
 
     render () {
@@ -87,11 +92,19 @@ class Home extends React.Component {
 
 				
                 <div className='pages'>
-                    <Confluence />
-                    <AboutConfluence />
-                    <EventsGenre />
-                    <Photos />
-                    <ContactUs />
+
+					{/* <Parallax /> */}
+
+					<div id='content'>
+
+						<Confluence />
+						<AboutConfluence />
+						<EventsGenre />
+						<Photos />
+						<ContactUs />
+
+					</div>
+                    
                 </div>
 
         );
