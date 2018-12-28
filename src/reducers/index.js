@@ -21,9 +21,27 @@ const gallery = (state = initialState.gallery, action) => {
     }
 }
 
+const events = (state = initialState.events, action) => {
+
+    switch(action.type) {
+
+        case actionTypes.FETCH_EVENTS_BY_CATEGORY_SUCCESS:
+            let categoryEvents = action.payload.category;
+            let events = {};
+            events[categoryEvents] = action.payload.data.events;
+            return Object.assign({}, state, events);
+        case actionTypes.FETCH_EVENTS_BY_CATEGORY_FAILURE: 
+            SweetAlert('Unable to fectch events. Try Again.');
+            return state;
+        default: 
+            return state;
+    }
+}
+
 
 const rootReducer = combineReducers({
-    gallery
+    gallery,
+    events
 });
 
 export default rootReducer;

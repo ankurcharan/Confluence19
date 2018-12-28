@@ -10,22 +10,26 @@ import Sponsors from './components/Sponsors/Sponsors';
 
 import GalRed from './components/Gallery/GalleryRedux';
 
+import EventsCategory from './components/EventsCategory/EventsCategory';
+
 class App extends Component {
 	render() {
 		return (
 			<BrowserRouter>
 
 				<div>
-					<Nav />
+					{/* <Nav /> */}
 					<Switch>
 
 						<Route exact path='/events' component={Events} />
 						<Route exact path='/gallery' component={GalRed} />
 						<Route exact path='/sponsors' component={Sponsors} />
-						<Route path='/' component={Home} />
+						<Route exact path='/' component={Home} />
+
+						<Route exact path='/events/:category' component={EventsCategory} />
 
 					</Switch>
-					<Footer />
+					{/* <Footer /> */}
 				</div>
 
 			</BrowserRouter>
