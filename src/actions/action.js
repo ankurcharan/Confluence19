@@ -27,6 +27,35 @@ export function getImages() {
                 dispatch(failure(actionTypes.FETCH_GALLERY_FAILURE, data));
             }
         });
-
     }
+}
+
+const isFetchingEventsNeeded = (state, categoryName) => {
+
+    if(state.categoryName) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+export const getEventsByCategory = (categoryName) => (dispatch, getState) => {
+
+
+    const eventsState = getState().events;
+    if(isFetchingEventsNeeded(eventsState, categoryName) === false) {
+        return;
+    }
+
+    services.getEventsByCategory(categoryName)
+        .then((data) => {
+
+            if(data.success) {
+                data.category = categoryName;
+                dispatch(success(actionTypes.FETCH_EVENTS_BY_CATEGORY_SUCCESS, data));
+            } else {
+                dispatch(failure(actionTypes.FETCH_EVENTS_BY_CATEGORY_FAILURE, data));
+            }
+        })
 }

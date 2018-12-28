@@ -22,6 +22,25 @@ const galleryImages = () => {
         });
 };
 
+const getEventsByCategory = (category) => {
+
+    const reqOptions = {
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+        }
+    };
+    reqOptions.method = 'GET';
+
+    return fetch(`${url}/events?category=${category}`, reqOptions)
+        .then(response => response.json())
+        .then(response => {
+            console.log(response);
+            return response;
+        });
+}
+
 export default {
-    galleryImages
+    galleryImages,
+    getEventsByCategory
 };
