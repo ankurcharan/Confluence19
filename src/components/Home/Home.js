@@ -91,7 +91,7 @@ class Home extends React.Component {
                 <div id="2" class="page center red darken-2 active section scrollspy">
                     <AboutConfluence />
                 </div>
-                <div id="3" class="page center purple darken-2 active section scrollspy">
+                <div id="3" class="page center darken-2 active section scrollspy">
                     <EventsGenre />
                 </div>
                 <div id="4" class="page center pink darken-2 active section scrollspy">
