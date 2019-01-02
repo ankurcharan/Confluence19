@@ -1,6 +1,8 @@
 import React from 'react';
 import M from 'materialize-css';
 
+import { Link } from 'react-router-dom';
+
 import './Home.css';
 
 class Confluence extends React.Component {
@@ -11,6 +13,12 @@ class Confluence extends React.Component {
             <div>
                     home video background
                     {/*yahan wo video wala backhround daalana hai so try that */}
+
+                    <Link to='/events/music'>music</Link>
+                    <br />
+                    <Link to='/events/literature'>literature</Link>
+                    <br />
+                    <Link to='/events/photography'>photography</Link>
             </div>
         );
     }

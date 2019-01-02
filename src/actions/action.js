@@ -32,7 +32,7 @@ export function getImages() {
 
 const isFetchingEventsNeeded = (state, categoryName) => {
 
-    if(state.categoryName) {
+    if(state[categoryName]) {
         return false;
     }
     else {
