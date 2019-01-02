@@ -8,11 +8,9 @@ class Confluence extends React.Component {
     render() {
 
         return (
-            <div id="1" class="page center darken-2 active section scrollspy">
-                <p>
+            <div>
                     home video background
                     {/*yahan wo video wala backhround daalana hai so try that */}
-                </p>
             </div>
         );
     }
@@ -23,11 +21,9 @@ class AboutConfluence extends React.Component {
     render() {
 
         return (
-            <div id="2" class="page center grey darken-2 active section scrollspy">
-                <p>
-					about Confluence
+            <div>
+                	about Confluence
 					{/* yahan pe about confluence wala kaam krna hai */}
-				</p>
             </div>
         );
     }
@@ -38,13 +34,11 @@ class EventsGenre extends React.Component {
     render() {
 
         return (
-            <div id="3" class="page center teal darken-2 active section scrollspy">
-                <p>
-					events cube
+            <div>
+                	events cube
 					with tap and move integrated
 					{/**mudit integrate krke dega fir events wala cube yahan daalna hai */}
                     <a href="#1">jhghjb</a>
-				</p>
             </div>
         );
     }
@@ -55,11 +49,9 @@ class Photos extends React.Component {
     render() {
 
         return (
-            <div id="4" class="page center yellow darken-2 active section scrollspy">
-                <p>
+            <div>
 					photos here
 					{/*kuch slight fotos but redirection ka link rkhege jahan aur bhi jyada photos videos hngi */}
-				</p>
             </div>
         );
     }
@@ -69,12 +61,10 @@ class ContactUs extends React.Component {
 
     render() {
         return (
-            <div id="5" class="page center purple darken-2 active section scrollspy">
-                <p>
+            <div>
 					Query Form here
 					{/**yahan pe query wala form daalege contact us and some other links */}
                     <a href="#1">jhghjb</a>
-				</p>
             </div>
         );
     }
@@ -99,11 +89,22 @@ class Home extends React.Component {
         return (
 
             <div className='center'>
-                <Confluence />
-                <AboutConfluence />
-                <EventsGenre />
-                <Photos />
-                <ContactUs />
+
+                <div id="1" class="page center grey darken-2 active section scrollspy">
+                    <Confluence />
+                </div>
+                <div id="2" class="page center red darken-2 active section scrollspy">
+                    <AboutConfluence />
+                </div>
+                <div id="3" class="page center purple darken-2 active section scrollspy">
+                    <EventsGenre />
+                </div>
+                <div id="4" class="page center pink darken-2 active section scrollspy">
+                    <Photos />
+                </div>
+                <div id="5" class="page center yellow darken-2 active section scrollspy">
+                    <ContactUs />
+                </div>
             </div>
 
         );
