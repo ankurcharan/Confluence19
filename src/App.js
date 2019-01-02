@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, BrowserRouter, Route } from 'react-router-dom';
+import { Switch, BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
@@ -11,6 +11,23 @@ import Sponsors from './components/Sponsors/Sponsors';
 import GalRed from './components/Gallery/GalleryRedux';
 
 import EventsCategory from './components/EventsCategory/EventsCategory';
+
+class Page404 extends React.Component {
+
+	render() {
+
+		return (
+
+			<div className='center'>
+			
+				<Link to='/'>Go Home</Link>
+
+			</div>
+
+		);
+	}
+}
+
 
 class App extends Component {
 	render() {
@@ -27,6 +44,9 @@ class App extends Component {
 						<Route exact path='/' component={Home} />
 
 						<Route exact path='/events/:category' component={EventsCategory} />
+
+
+						<Route path = '/*' component={Page404} />
 
 					</Switch>
 					{/* <Footer /> */}
