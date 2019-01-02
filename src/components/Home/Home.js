@@ -2,6 +2,7 @@ import React from 'react';
 import M from 'materialize-css';
 
 import './Home.css';
+import EventsGenre from './eventsGenre.js'
 
 class Confluence extends React.Component {
 
@@ -29,20 +30,6 @@ class AboutConfluence extends React.Component {
     }
 }
 
-class EventsGenre extends React.Component {
-
-    render() {
-
-        return (
-            <div>
-                	events cube
-					with tap and move integrated
-					{/**mudit integrate krke dega fir events wala cube yahan daalna hai */}
-                    <a href="#1">jhghjb</a>
-            </div>
-        );
-    }
-}
 
 class Photos extends React.Component {
 
