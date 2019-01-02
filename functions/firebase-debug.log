@@ -1,0 +1,37 @@
+[debug] [2019-01-02T19:42:34.479Z] ----------------------------------------------------------------------
+[debug] [2019-01-02T19:42:34.480Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2019-01-02T19:42:34.481Z] CLI Version:   6.2.2
+[debug] [2019-01-02T19:42:34.481Z] Platform:      linux
+[debug] [2019-01-02T19:42:34.481Z] Node Version:  v8.12.0
+[debug] [2019-01-02T19:42:34.481Z] Time:          Thu Jan 03 2019 01:12:34 GMT+0530 (IST)
+[debug] [2019-01-02T19:42:34.481Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-01-02T19:42:34.495Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-01-02T19:42:34.495Z] > authorizing via signed-in user
+[debug] [2019-01-02T19:42:34.495Z] [iam] checking project confluence19 for permissions ["firebase.projects.get"]
+[debug] [2019-01-02T19:42:34.496Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-01-02T19:42:34.496Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-01-02T19:42:35.277Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-02T19:42:35.291Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/confluence19:testIamPermissions  
+
+[debug] [2019-01-02T19:42:38.591Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-02T19:42:38.596Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/confluence19  
+ 
+[debug] [2019-01-02T19:42:40.709Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/media/ankurcharan/EA84A99384A96335/Intel Inside/Web Dev/Projects/Confluence19/confluence19'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-01-02T19:42:41.314Z] Fetching environment
+[debug] [2019-01-02T19:42:41.316Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/950391973459:getServerAppConfig  
+ 
+[debug] [2019-01-02T19:42:41.316Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/950391973459/clients/_:getWebAppConfig  
+ 
+[debug] [2019-01-02T19:42:42.427Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-02T19:42:42.427Z] Starting @google-cloud/functions-emulator
+[debug] [2019-01-02T19:42:43.463Z] Parsing function triggers
+[debug] [2019-01-02T19:42:43.478Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] ✔  functions: api: http://localhost:5001/confluence19/us-central1/api

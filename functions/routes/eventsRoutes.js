@@ -9,6 +9,7 @@ const db = admin.firestore();
 const events = db.collection('events');
 
 const eventDescriptionRef = events.doc('eventDescription');
+const eventsRef = events.doc('events');
 
 app.route('/')
 	.post(addEvent)
@@ -46,19 +47,40 @@ app.route('/')
 
 function addEvent (req, res) {
 
-	if(req.body.category === undefined || req.body.eventName === undefined) {
+	let eventDetails = req.body;
+
+	if(eventDetails.category === undefined || eventDetails.eventName === undefined || eventDetails.startTime === undefined || eventDetails.endTime === undefined) {
 
 		return res.status(400).json({
 			success: false,
-			message: 'send appropriate parameters'
+			message: 'send appropriate parameters: eventName, category, startTime, endTime'
 		});
 	}
 
-	let category = req.body.category;
-	let eventName = req.body.eventName;
-	let eventDetails = req.body;
+	let category = req.body.category.toLowerCase();
+	let eventName = req.body.eventName.toLowerCase();
 
-	eventDescriptionRef.collection(category.toLowerCase()).doc(eventName.toLowerCase()).set(req.body)
+
+	eventsRef.collection(category).doc(eventName).set({
+		eventName: eventDetails.eventName,
+		category: eventDetails.category,
+		startTime: eventDetails.startTime,
+		endTime: eventDetails.endTime
+	}).then(() => {
+
+		return console.log(`Added ${eventName} in ${category} in events`);
+	})
+	.catch((err) => {
+
+		return res.status(500).json({
+			success: false,
+			message: 'Server Error, Please Try Again',
+			error: err
+		})
+	})
+	
+
+	eventDescriptionRef.collection(category).doc(eventName).set(eventDetails)
 		.then(() => {
 
 			return res.status(200).json({
@@ -74,6 +96,8 @@ function addEvent (req, res) {
 				error: err
 			})
 		})
+
+	
 }
 
 
