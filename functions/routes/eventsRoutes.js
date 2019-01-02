@@ -1,3 +1,4 @@
+/* eslint-disable promise/no-nesting */
 const admin = require('firebase-admin');
 
 const express = require('express');
@@ -9,10 +10,133 @@ const db = admin.firestore();
 const events = db.collection('events');
 
 const eventDescriptionRef = events.doc('eventDescription');
+const eventsRef = events.doc('events');
 
 app.route('/')
 	.post(addEvent)
 	.get(getEvents);
+
+app.route('/names')
+	.get(getEventNames);
+
+
+
+// returns event names
+// from events node
+// GET request
+
+// {
+//     "success": true,
+//     "message": "events names for all categories received",
+//     "data": {
+//         "events": [
+//             {
+//                 "category": "dance",
+//                 "events": [
+//                     {
+//                         "eventName": "Dance Event 1",
+//                         "endTime": "1545522259731",
+//                         "startTime": "1545522259731"
+//                     },
+//                     {
+//                         "eventName": "Dance Event 2",
+//                         "endTime": "1545522259731",
+//                         "startTime": "1545522259731"
+//                     }
+//                 ]
+//             },
+//             {
+//                 "category": "literature",
+//                 "events": [
+//                     {
+//                         "eventName": "Literature Event 1",
+//                         "endTime": "1545522259731",
+//                         "startTime": "1545522259731"
+//                     },
+//                     {
+//                         "eventName": "Literature Event 2",
+//                         "endTime": "1545522259731",
+//                         "startTime": "1545522259731"
+//                     }
+//                 ]
+//             }
+//         ]
+//     }
+// }
+
+function getEventNames(req, res) {
+
+
+	let data = {
+		events: []
+	};
+
+	let promises = [];
+
+	let y = eventsRef.getCollections()
+	.then((categories) => {
+
+		categories.forEach((category) => {
+			
+			let categoryName = category.id;
+
+			let categoryEvents = {};
+			categoryEvents.category = categoryName;
+			categoryEvents.events = new Array();
+
+			let x = eventsRef.collection(categoryName).get()
+				.then((events) => {
+
+					events.forEach((event) => {
+
+						let eventData = event.data();
+						delete eventData.category;
+						categoryEvents.events.push(eventData);
+					})
+
+					data.events.push(categoryEvents);
+					return true;
+				})
+				.catch((err) => {
+
+					return res.status(500).json({
+						success: false,
+						error: err,
+						message: 'Error! Please Try Again.'
+					})
+				})
+
+			promises.push(x);
+		})
+
+		return Promise.all(promises)
+		.then(() => {
+
+			return res.status(200).json({
+				success: true,
+				message: 'events names for all categories received',
+				data: data
+			})
+		})
+		.catch((err) => {
+
+			return res.status(500).json({
+				success: false,
+				error: err,
+				message: 'Error! Please Try Again.'
+			})
+		})
+	})
+	.catch((err) => {
+		
+		return res.status(500).json({
+			success: false,
+			error: err,
+			message: 'Error! Please Try Again.'
+		})
+	})
+}
+	
 
 
 
@@ -46,19 +170,40 @@ app.route('/')
 
 function addEvent (req, res) {
 
-	if(req.body.category === undefined || req.body.eventName === undefined) {
+	let eventDetails = req.body;
+
+	if(eventDetails.category === undefined || eventDetails.eventName === undefined || eventDetails.startTime === undefined || eventDetails.endTime === undefined) {
 
 		return res.status(400).json({
 			success: false,
-			message: 'send appropriate parameters'
+			message: 'send appropriate parameters: eventName, category, startTime, endTime'
 		});
 	}
 
-	let category = req.body.category;
-	let eventName = req.body.eventName;
-	let eventDetails = req.body;
+	let category = req.body.category.toLowerCase();
+	let eventName = req.body.eventName.toLowerCase();
 
-	eventDescriptionRef.collection(category.toLowerCase()).doc(eventName.toLowerCase()).set(req.body)
+
+	eventsRef.collection(category).doc(eventName).set({
+		eventName: eventDetails.eventName,
+		category: eventDetails.category,
+		startTime: eventDetails.startTime,
+		endTime: eventDetails.endTime
+	}).then(() => {
+
+		return console.log(`Added ${eventName} in ${category} in events`);
+	})
+	.catch((err) => {
+
+		return res.status(500).json({
+			success: false,
+			message: 'Server Error, Please Try Again',
+			error: err
+		})
+	})
+	
+
+	eventDescriptionRef.collection(category).doc(eventName).set(eventDetails)
 		.then(() => {
 
 			return res.status(200).json({
@@ -74,6 +219,8 @@ function addEvent (req, res) {
 				error: err
 			})
 		})
+
+	
 }
 
 
