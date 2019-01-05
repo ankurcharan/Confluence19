@@ -1,0 +1,12 @@
+.main{
+  border: 1px solid pink;
+  border-radius:8px;
+  width: 200px;
+  display: block;
+  text-align: center;
+}
+.name{
+  margin-left: 40%;
+  margin-top: 10px;
+
+}
