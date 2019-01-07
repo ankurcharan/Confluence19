@@ -76,6 +76,15 @@ class Team extends React.Component {
 
 				<br />
 				<br />
+
+
+
+
+				<img
+					className='circle people'
+					src='https://ssl.gstatic.com/images/branding/product/1x/avatar_square_blue_512dp.png'
+					alt='facebook'
+				/>
 			</>
 			
 			);
