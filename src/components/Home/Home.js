@@ -45,52 +45,52 @@ class AboutConfluence extends React.Component {
 
         return (
             <div>
-            <div className="about3">
-            <div className="about2 center">
-                <span>S</span>
-                <span>H</span>
-                <span>A</span>
-                <span>R</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-                <span>&nbsp;</span>
-                <span>L</span>
-                <span>I</span>
-                <span>G</span>
-                <span>H</span>
-                <span>T</span>
-                <span>S</span>
-            </div>
+                <div className="about3">
+                    <div className="about2 center">
+                        <span>S</span>
+                        <span>H</span>
+                        <span>A</span>
+                        <span>R</span>
+                        <span>I</span>
+                        <span>N</span>
+                        <span>G</span>
+                        <span>&nbsp;</span>
+                        <span>L</span>
+                        <span>I</span>
+                        <span>G</span>
+                        <span>H</span>
+                        <span>T</span>
+                        <span>S</span>
+                    </div>
 
-            <p className="center white-text textf">Lorem ipsum dolor sit amet, consectetur <br/>
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br/>
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br/>
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo <br/>
-            consequat. Duis aute irure dolor in reprehenderit in voluptate <br/>
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur <br/>
-            sint occaecat cupidatat non proident, sunt in culpa qui officia<br/>
-             deserunt mollit anim id est laborum</p>
-             </div>
-            <div className="container1">
-            <div class="bird-container one1">
-		<div class="bird one"></div>
-	</div>
-	
-	<div class="bird-container two2">
-		<div class="bird two"></div>
-	</div>
-	
-	<div class="bird-container three3">
-		<div class="bird three"></div>
-	</div>
-	
-	<div class="bird-container four4">
-		<div class="bird four"></div>
-	</div>
+                    <p className="center white-text textf">Lorem ipsum dolor sit amet, consectetur <br />
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br />
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br />
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo <br />
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate <br />
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur <br />
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia<br />
+                        deserunt mollit anim id est laborum</p>
+                </div>
+                <div className="container1">
+                    <div class="bird-container one1">
+                        <div class="bird one"></div>
+                    </div>
 
-            </div>
-            
+                    <div class="bird-container two2">
+                        <div class="bird two"></div>
+                    </div>
+
+                    <div class="bird-container three3">
+                        <div class="bird three"></div>
+                    </div>
+
+                    <div class="bird-container four4">
+                        <div class="bird four"></div>
+                    </div>
+
+                </div>
+
             </div>
 
 
@@ -115,7 +115,7 @@ class Parralaxinbetween extends React.Component {
             <div>
                 <div class="parallax-container">
                     <div class="parallax imgs" >
-                        <img src={street} className="responsive-img"/>
+                        <img src={street} className="responsive-img" />
                     </div>
                 </div>
 
