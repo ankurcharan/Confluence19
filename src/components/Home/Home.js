@@ -4,6 +4,8 @@ import M from 'materialize-css';
 import { Link } from 'react-router-dom';
 
 import './Home.css';
+import './About.css';
+
 import EventsGenre from './eventsGenre.js'
 
 class Confluence extends React.Component {
@@ -30,10 +32,46 @@ class AboutConfluence extends React.Component {
     render() {
 
         return (
-            <div>
-                	about Confluence
-					{/* yahan pe about confluence wala kaam krna hai */}
-            </div>
+
+            <React.Fragment>
+                    <div className='row'>
+                            <h1>About Confluence</h1>
+                        </div>
+
+							
+
+                    <div className='row'>
+
+						
+
+					<div className='valign-wrapper'>
+						<div className='col s6 m6 l6 responsive-img'>
+								<img id='alooooo'
+									src='https://images.unsplash.com/photo-1546828209-a922d7c1c3db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80' 
+								/>
+								hell
+								oooo
+								ooooo
+								oooooooooooooooo	
+						</div>
+						<div className='col s6 m6 l6'>
+
+								<p>
+									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
+									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
+
+									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
+									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
+									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
+									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
+								</p>
+								<a class="waves-effect waves-light btn">After Movie 2k18</a>
+						</div>
+
+
+					</div>
+                </div>
+            </React.Fragment>
         );
     }
 }
@@ -88,7 +126,7 @@ class Home extends React.Component {
                 <div id="1" class="page center grey darken-2 active section scrollspy">
                     <Confluence />
                 </div>
-                <div id="2" class="page center red darken-2 active section scrollspy">
+                <div id="2" class="page center black darken-2 active section scrollspy">
                     <AboutConfluence />
                 </div>
                 <div id="3" class="page center darken-2 active section scrollspy">
