@@ -7,10 +7,12 @@ import Events from './components/Events/Events';
 import Gallery from './components/Gallery/Gallery';
 import Home from './components/Home/Home';
 import Sponsors from './components/Sponsors/Sponsors';
+import Team from './components/TeamConfluence/TeamConfluence';
 
 import GalRed from './components/Gallery/GalleryRedux';
 
 import EventsCategory from './components/EventsCategory/EventsCategory';
+
 
 class Page404 extends React.Component {
 
@@ -42,6 +44,8 @@ class App extends Component {
 						<Route exact path='/gallery' component={GalRed} />
 						<Route exact path='/sponsors' component={Sponsors} />
 						<Route exact path='/' component={Home} />
+
+						<Route exact path='/team' component={Team} />
 
 						<Route exact path='/events/:category' component={EventsCategory} />
 
