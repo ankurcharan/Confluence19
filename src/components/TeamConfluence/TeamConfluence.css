@@ -8,15 +8,18 @@
 	;
 } */
 
-body {
+
+
+#team {
 	color: #555;
 	background: #222;
 	text-align: center;
-	font-family: 'Roboto Mono';
+	/* font-family: 'Roboto Mono'; */
 	padding: 1em;
+	min-height: 100vh;
 }
 
-h1 {
+/* h1 {
 	font-size: 2.2em;
 }
 
@@ -94,7 +97,7 @@ h1 {
 	.flip {
 		width: 90vw;
 	}
-}
+} */
 
 .material-icons{
 	display: inline-flex;
@@ -112,10 +115,38 @@ h1 {
 	margin: 20px;
 }
 
+.person {
+	margin-top: 20px;
+}
+
 .people {
-	width: 200px;
+	width: inherit;
+	height: auto;
+	/* margin-top: 20px; */
+}
+
+@media (max-width: 600px)
+{
+	.people {
+		width: 80vw;
+		padding: 20px;
+	}
+}
+
+@media (min-width: 992px)
+{
+	.people {
+		width: inherit;
+		width: 180px;
+	}
 }
 
 .people:hover {
-	filter: blur(3px);
+	filter: grayscale(100%);
+}
+
+span {
+	font-size: 16px;
+	color: purple;
+
 }
