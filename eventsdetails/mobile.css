@@ -1,0 +1,39 @@
+.button{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+
+}
+.body{
+  width: 100vw;
+  height: 100vh;
+}
+.buttonbody{
+background-color: rgb(32, 35, 42);
+bottom: 44px;
+color: rgb(97, 218, 251);
+display: none;
+cursor: pointer;
+position: fixed;
+display: inline-block;
+right: 20px;
+z-index: 3;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
+border-radius: 50%;
+}
+.listitems{
+top: 0px;
+left: 0px;
+bottom: 0px;
+right: 0px;
+position: fixed;
+background-color: rgb(255, 255, 255);
+z-index: 2;
+height: 100vh;
+overflow-y: auto;
+pointer-events: auto;
+margin: 0;
+padding: 0;
+opacity: 1;
+transition: opacity 0.5s ease 0s;
+}

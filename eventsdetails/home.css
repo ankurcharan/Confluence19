@@ -1,0 +1,36 @@
+.section{
+  height: 100vh;
+  background: transparent;
+  width: 100vw;
+  position: relative;
+}
+.fixed{
+  position: fixed;
+  width: 100vw;
+  height:100vh;
+  background-image: url("https://media1.giphy.com/media/xTiTnBcHFZQKrPNMTC/200w.webp?cid=3640f6095c3758c847726f6e73a48b5e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+.section p{
+  font-size: 50px;
+  color: white
+}
+.button{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(32, 35, 42);
+  bottom: 44px;
+  color: rgb(97, 218, 251);
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  display: inline-block;
+  right: 20px;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
+  border-radius: 50%;
+}
