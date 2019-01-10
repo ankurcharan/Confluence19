@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery One Page Scroll by Pete R. | The Pete Design</title>
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <style>
+    .wrapper {
+    	height: 100vh;
+    }
+	</style>
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: false
+      });
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+	    
+      <section class="page 1">
+        <div class="page_container">
+          <h1>jai jai</h1>
+        </div>
+      </section>
+	    
+	    <section class="page 2">
+	      <div class="page_container">
+          <h1> hi</h1>
+  	    </div>
+      </section>
+	    
+	    <section class="page 3">
+	      <div class="page_container">
+          <h1> hi</h1>
+  	    </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

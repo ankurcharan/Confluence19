@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 import './Home.css';
 import EventsGenre from './eventsGenre.js'
+import ReactFullpage from '@fullpage/react-fullpage';
+
 
 class Confluence extends React.Component {
 
@@ -70,15 +72,6 @@ class ContactUs extends React.Component {
 
 class Home extends React.Component {
 
-    componentDidMount() {
-
-        let elems = document.querySelectorAll('.scrollspy');
-        M.ScrollSpy.init(elems, {
-            scrollOffset: 0,
-            throttle: 10
-        });
-    }
-
     render () {
 
         return (
@@ -101,9 +94,36 @@ class Home extends React.Component {
                     <ContactUs />
                 </div>
             </div>
-
         );
     }
 }
 
-export default Home;
+const Fullpage = () => (
+    <ReactFullpage
+      render={({ state, fullpageApi }) => {
+        return (
+          <ReactFullpage.Wrapper>
+            <div className="center">
+                <div id="1" class="section page center grey darken-2 active section scrollspy">
+                    <Confluence />
+                </div>
+                <div id="2" class="section page center red darken-2 active section scrollspy">
+                    <AboutConfluence />
+                </div>
+                <div id="3" class="section page center darken-2 active section scrollspy">
+                    <EventsGenre />
+                </div>
+                <div id="4" class="section page center pink darken-2 active section scrollspy">
+                    <Photos />
+                </div>
+                <div id="5" class="section page center yellow darken-2 active section scrollspy">
+                    <ContactUs />
+                </div>
+            </div>
+          </ReactFullpage.Wrapper>
+        );
+      }}
+    />
+  );
+
+export default Fullpage;
