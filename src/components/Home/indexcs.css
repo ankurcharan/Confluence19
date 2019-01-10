@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+.about2{
+    position: relative;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: 0;
+    font-size: 6rem;
+    padding: 0;
+    font-family: 'Satisfy', cursive;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom:8px solid #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+.about3{
+    width: 100%;
+    margin-top: 10%;
+    z-index: 0;
+}
+.about2 span{
+        position: relative;
+        display: inline-block;
+        animation: animate 1.5s linear infinite;
+    }
+    .about2 span:before
+    {
+        content: '';
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: #fff ;
+        animation: spanBorder 1.5s linear infinite;
+        
+    }
+    .about2 span:nth-child(1),
+    .about2 span:nth-child(1):before{
+        animation-delay: 0s;
+    }
+    .about2 span:nth-child(2),
+    .about2 span:nth-child(2):before{
+        animation-delay: 0.2s;
+    }
+    .about2 span:nth-child(3),
+    .about2 span:nth-child(3):before{
+        animation-delay: 0.4s;
+    }
+    .about2 span:nth-child(4),
+    .about2 span:nth-child(4):before{
+        animation-delay: 0.6s;
+    }
+    .about2 span:nth-child(5),
+    .about2 span:nth-child(5):before{
+        animation-delay: 0.8s;
+    }
+    .about2 span:nth-child(6),
+    .about2 span:nth-child(6):before{
+        animation-delay: 1s;
+    }
+    .about2 span:nth-child(7),
+    .about2 span:nth-child(7):before{
+        animation-delay: 1.2s;
+    }
+    .about2 span:nth-child(8),
+    .about2 span:nth-child(8):before{
+        animation-delay: 1.4s;
+    }
+    .about2 span:nth-child(9),
+    .about2 span:nth-child(9):before{
+        animation-delay: 1.6s;
+    }
+    .about2 span:nth-child(10),
+    .about2 span:nth-child(10):before{
+        animation-delay: 1.8s;
+    }
+    .about2 span:nth-child(11),
+    .about2 span:nth-child(11):before{
+        animation-delay: 2.0s;
+    }
+    .about2 span:nth-child(12),
+    .about2 span:nth-child(12):before{
+        animation-delay: 2.2s;
+    }
+    .about2 span:nth-child(13),
+    .about2 span:nth-child(13):before{
+        animation-delay: 2.4s;
+    }
+    .about2 span:nth-child(14),
+    .about2 span:nth-child(14):before{
+        animation-delay: 2.6s;
+    }
+    .about2 span:nth-child(15),
+    .about2 span:nth-child(15):before{
+        animation-delay: 2.8s;
+    }
+    .about2 span:nth-child(16),
+    .about2 span:nth-child(16):before{
+        animation-delay: 3.0s;
+    }
+    .about2 span:nth-child(17),
+    .about2 span:nth-child(17):before{
+        animation-delay: 3.2s;
+    }
+    .about2 span:nth-child(18),
+    .about2 span:nth-child(18):before{
+        animation-delay: 3.4s;
+    }
+    .about2 span:nth-child(19),
+    .about2 span:nth-child(19):before{
+        animation-delay: 3.6s;
+    }
+    @keyframes animate{
+        0%{
+            transform: translateY(0px);
+        }
+        10%{
+            transform: translateY(-30px);
+        }
+        15%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(-20px);
+        }
+        30%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: translateY(-10px);
+        }
+        45%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes animate{
+        0%{
+            transform: translateY(0px);
+        }
+        10%{
+            transform: translateY(-30px);
+        }
+        15%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(-20px);
+        }
+        30%{
+            transform: translateY(0px);
+        }
+        40%{
+            transform: translateY(-10px);
+        }
+        45%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes spanBorder{
+        0%{
+           bottom: 0;
+           height: 4px;
+        }
+        10%{
+            bottom: -30px;
+            height: 34px;
+        }
+        15%{
+            bottom: 0;
+            height: 4px;
+        }
+        25%{
+            bottom: -20px;
+            height: 24px;
+        }
+        30%{
+            bottom: 0;
+            height: 4px;
+        }
+        40%{
+            bottom: -10px;
+            height: 14px;
+        }
+        45%{
+            bottom: 0;
+            height: 4px;
+        }
+        100%{
+            bottom: 0;
+            height: 4px;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        .about2 {
+          font-size: 7vw;
+        }
+        .about3{
+            margin-top: 50%;
+        }
+       
+      }   

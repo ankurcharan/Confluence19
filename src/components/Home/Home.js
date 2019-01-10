@@ -5,8 +5,15 @@ import { Link } from 'react-router-dom';
 
 
 import './Home.css';
+
 import './About.css';
 import './ScrollNav.css';
+
+import './aboutconfluence.css';
+import './indexcs.css';
+
+import street from './bg-016.jpg';
+import logo from './logo.png';
 
 import EventsGenre from './eventsGenre.js'
 
@@ -66,6 +73,7 @@ class ScrollNav extends React.Component {
 	}
 }
 	
+
 class Confluence extends React.Component {
 	
 	render() {
@@ -84,56 +92,80 @@ class Confluence extends React.Component {
 		);
 	}
 }
-		
+
 class AboutConfluence extends React.Component {
+
+    componentDidMount() {
+        // document.addEventListener('DOMContentLoaded', function () {
+        // var elems = document.querySelectorAll('.parallax');
+        // var instances = M.Parallax.init(elems, {});
+        // });
+
+    }
 
     render() {
 
         return (
+            <div>
+                
+                <div className="about3">
+                    <div className="about2 center">
+                        <span>C</span>
+                        <span>A</span>
+                        <span>R</span>
+                        <span>N</span>
+                        <span>I</span>
+                        <span>V</span>
+                        <span>A</span>
+                        <span>L</span>
+                        <span>&nbsp;</span>
+                        <span>O</span>
+                        <span>F</span>
+                        <span>&nbsp;</span>
+                        <span>H</span>
+                        <span>E</span>
+                        <span>R</span>
+                        <span>I</span>
+                        <span>T</span>
+                        <span>A</span>
+                        <span>G</span>
+                        <span>E</span>
+                    </div>
 
-            <React.Fragment>
-                    <div className='row'>
-                            <h1>About Confluence</h1>
-                        </div>
-
-							
-
-                    <div className='row'>
-
-						
-
-					<div className='valign-wrapper'>
-						<div className='col s6 m6 l6 responsive-img'>
-								<img id='alooooo'
-									src='https://images.unsplash.com/photo-1546828209-a922d7c1c3db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80' 
-								/>
-								hell
-								oooo
-								ooooo
-								oooooooooooooooo	
-						</div>
-						<div className='col s6 m6 l6'>
-
-								<p>
-									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
-									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
-
-									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
-									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
-									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
-									Confluence is the Annual Cultural Fest N.I.T Kurukshetra, stands second in Northern Region with a footfall of over 25k people and mesmerizing events.
-								</p>
-								<a class="waves-effect waves-light btn">After Movie 2k18</a>
-						</div>
-
-
-					</div>
+                    <p className="center white-text textf">Lorem ipsum dolor sit amet, consectetur <br />
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br />
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br />
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo <br />
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate <br />
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur <br />
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia<br />
+                        deserunt mollit anim id est laborum</p>
                 </div>
-            </React.Fragment>
+                <div className="container1">
+                    <div class="bird-container one1">
+                        <div class="bird one"></div>
+                    </div>
+
+                    <div class="bird-container two2">
+                        <div class="bird two"></div>
+                    </div>
+
+                    <div class="bird-container three3">
+                        <div class="bird three"></div>
+                    </div>
+
+                    <div class="bird-container four4">
+                        <div class="bird four"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
         );
     }
 }
-	
 	
 class Photos extends React.Component {
 	
@@ -166,64 +198,46 @@ class ContactUs extends React.Component {
 
 class Home extends React.Component {
 
-componentDidMount() {
-	
-	let elems = document.querySelectorAll('.scrollspy');
-	M.ScrollSpy.init(elems, {
-		scrollOffset: 0,
-		throttle: 10
-	});
-}
+    componentDidMount() {
 
-render () {
+        let elems = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(elems, {
+            scrollOffset: 0,
+            throttle: 10
+        });
+    }
 
-	const siv = {
+    render() {
 
-		// position: fixed
-	}
-	
-	return (
-		
-		
+        return (
+            <div>
+            <div>
+                <img className="logoconfluence" src={logo} alt="not loading"></img>
+                <a class="register responsive-text transparent black-text waves-effect waves-light btn pink">Register</a>
+            </div>
+            <div className='center'>
 
-		<>
-
-			<aside>
-				<ul style={siv}>
-					<li>Heyy</li>
-					<li>Heyy</li>
-					<li>Heyy</li>
-					<li>Heyy</li>
-					<li>Heyy</li>
-				</ul>
-			</aside>
+                <div id="1" class="page center grey darken-2 active section scrollspy">
+                    <Confluence />
+                </div>
+                <div id="2" class="page center about-confluence active section scrollspy">
+                    <AboutConfluence />
+                </div>
 
 
-			<ScrollNav />
-
-			<div className='center'>
-			
-				<div id="1" class="page center grey darken-2 section scrollspy">
-					<Confluence />
-				</div>
-				<div id="2" class="page center red darken-2 section scrollspy">
-					<AboutConfluence />
-				</div>
-				<div id="3" class="page center darken-2 section scrollspy">
-					<EventsGenre />
-				</div>
-				<div id="4" class="page center pink darken-2 section scrollspy">
-					<Photos />
-				</div>
-				<div id="5" class="page center yellow darken-2 section scrollspy">
-					<ContactUs />
-				</div>
-			</div>
-			
-		</>
-
-		);
-	}
+                <div id="3" class="page center darken-2 active section scrollspy">
+                    <EventsGenre />
+                </div>
+                <div id="4" class="page center pink darken-2 active section scrollspy">
+                    <Photos />
+                </div>
+                <div id="5" class="page center yellow darken-2 active section scrollspy">
+                    <ContactUs />
+                </div>
+            </div>
+            </div>
+        );
+    }
 }
 
 export default Home;
