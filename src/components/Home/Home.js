@@ -8,7 +8,7 @@ import './aboutconfluence.css';
 import './indexcs.css';
 import EventsGenre from './eventsGenre.js';
 
-import street from './street.jpg';
+import street from './bg-016.jpg';
 
 class Confluence extends React.Component {
 
@@ -47,20 +47,26 @@ class AboutConfluence extends React.Component {
             <div>
                 <div className="about3">
                     <div className="about2 center">
-                        <span>S</span>
-                        <span>H</span>
+                        <span>C</span>
                         <span>A</span>
                         <span>R</span>
-                        <span>I</span>
                         <span>N</span>
-                        <span>G</span>
-                        <span>&nbsp;</span>
-                        <span>L</span>
                         <span>I</span>
-                        <span>G</span>
+                        <span>V</span>
+                        <span>A</span>
+                        <span>L</span>
+                        <span>&nbsp;</span>
+                        <span>O</span>
+                        <span>F</span>
+                        <span>&nbsp;</span>
                         <span>H</span>
+                        <span>E</span>
+                        <span>R</span>
+                        <span>I</span>
                         <span>T</span>
-                        <span>S</span>
+                        <span>A</span>
+                        <span>G</span>
+                        <span>E</span>
                     </div>
 
                     <p className="center white-text textf">Lorem ipsum dolor sit amet, consectetur <br />
@@ -98,42 +104,13 @@ class AboutConfluence extends React.Component {
     }
 }
 
-
-class Parralaxinbetween extends React.Component {
-
-    componentDidMount() {
-        // document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.parallax');
-        var instances = M.Parallax.init(elems, {});
-        // });
-
-    }
-
-    render() {
-
-        return (
-            <div>
-                <div class="parallax-container">
-                    <div class="parallax imgs" >
-                        <img src={street} className="responsive-img" />
-                    </div>
-                </div>
-
-            </div>
-
-
-
-        );
-    }
-}
 class Photos extends React.Component {
 
     render() {
 
         return (
             <div>
-                photos here
-					{/*kuch slight fotos but redirection ka link rkhege jahan aur bhi jyada photos videos hngi */}
+
             </div>
         );
     }
@@ -178,16 +155,15 @@ class Home extends React.Component {
                 <div id="2" class="page center about-confluence active section scrollspy">
                     <AboutConfluence />
                 </div>
-                <div id="3" class="page center imgs active section scrollspy">
-                    <Parralaxinbetween />
-                </div>
-                <div id="4" class="page center darken-2 active section scrollspy">
+
+
+                <div id="3" class="page center darken-2 active section scrollspy">
                     <EventsGenre />
                 </div>
-                <div id="5" class="page center pink darken-2 active section scrollspy">
+                <div id="4" class="page center pink darken-2 active section scrollspy">
                     <Photos />
                 </div>
-                <div id="6" class="page center yellow darken-2 active section scrollspy">
+                <div id="5" class="page center yellow darken-2 active section scrollspy">
                     <ContactUs />
                 </div>
             </div>

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
 .about2{
     position: relative;
     left: 50%;
@@ -8,13 +8,14 @@
     margin: 0;
     font-size: 6rem;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Satisfy', cursive;
     color: #fff;
     text-transform: uppercase;
     border-bottom:8px solid #fff;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 .about3{
+    width: 100%;
     margin-top: 15%;
 }
 .about2 span{
@@ -72,6 +73,42 @@
     .about2 span:nth-child(10),
     .about2 span:nth-child(10):before{
         animation-delay: 1.8s;
+    }
+    .about2 span:nth-child(11),
+    .about2 span:nth-child(11):before{
+        animation-delay: 2.0s;
+    }
+    .about2 span:nth-child(12),
+    .about2 span:nth-child(12):before{
+        animation-delay: 2.2s;
+    }
+    .about2 span:nth-child(13),
+    .about2 span:nth-child(13):before{
+        animation-delay: 2.4s;
+    }
+    .about2 span:nth-child(14),
+    .about2 span:nth-child(14):before{
+        animation-delay: 2.6s;
+    }
+    .about2 span:nth-child(15),
+    .about2 span:nth-child(15):before{
+        animation-delay: 2.8s;
+    }
+    .about2 span:nth-child(16),
+    .about2 span:nth-child(16):before{
+        animation-delay: 3.0s;
+    }
+    .about2 span:nth-child(17),
+    .about2 span:nth-child(17):before{
+        animation-delay: 3.2s;
+    }
+    .about2 span:nth-child(18),
+    .about2 span:nth-child(18):before{
+        animation-delay: 3.4s;
+    }
+    .about2 span:nth-child(19),
+    .about2 span:nth-child(19):before{
+        animation-delay: 3.6s;
     }
     @keyframes animate{
         0%{
@@ -161,3 +198,12 @@
             height: 4px;
         }
     }
+    @media screen and (max-width: 650px) {
+        .about2 {
+          font-size: 7vw;
+        }
+        .about3{
+            margin-top: 50%;
+        }
+       
+      }   

@@ -2,15 +2,9 @@
 
 .about-confluence{
     
-    /*background-image: url(street.jpg);
-    background-size: 100%;*/
-    background: rgb(0, 110, 255);
-    /*background: repeating-radial-gradient(
-  rgba(0, 0, 0, 0.3),
-  rgba(0, 0, 0, 0.2) 100px,
-  rgba(0, 0, 0, 0.3) 30px,
-  rgba(0, 0, 0, 0.3) 100px 
-  );*/
+    background-image: url(bg-016.jpg);
+	background-repeat: no-repeat;
+   
 }
 .imgs{
     background-size: 100%;
@@ -24,7 +18,8 @@ div.about {
 }
 .textf{
 	font-size: 2rem;
-
+	font-weight:300;
+	text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 div.about span {
@@ -201,3 +196,10 @@ div.about span {
 	}
 	
 }
+@media screen and (max-width: 650px) {
+	.textf {
+	  font-size: 3vw;
+	}
+	
+   
+  }   
