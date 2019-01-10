@@ -9,7 +9,7 @@ import './indexcs.css';
 import EventsGenre from './eventsGenre.js';
 
 import street from './bg-016.jpg';
-
+import logo from './logo.png';
 class Confluence extends React.Component {
 
     render() {
@@ -45,6 +45,7 @@ class AboutConfluence extends React.Component {
 
         return (
             <div>
+                
                 <div className="about3">
                     <div className="about2 center">
                         <span>C</span>
@@ -146,7 +147,8 @@ class Home extends React.Component {
     render() {
 
         return (
-
+            <div>
+            <div className="logoconfluence"><img className="logoconfluence" src={logo} alt="not loading"></img></div>
             <div className='center'>
 
                 <div id="1" class="page center grey darken-2 active section scrollspy">
@@ -167,7 +169,7 @@ class Home extends React.Component {
                     <ContactUs />
                 </div>
             </div>
-
+            </div>
         );
     }
 }

@@ -6,6 +6,15 @@
 	background-repeat: no-repeat;
    
 }
+.logoconfluence{
+	height: 9vw;
+	width: 10vw;
+	margin-top: 0%;
+	float: left;
+	top: 0;
+	z-index: 10;
+	position: fixed;
+}
 .imgs{
     background-size: 100%;
 }
@@ -199,6 +208,12 @@ div.about span {
 @media screen and (max-width: 650px) {
 	.textf {
 	  font-size: 3vw;
+	}
+	.logoconfluence{
+		height: 12vw;
+		width: 13vw;
+		left: 0;
+		
 	}
 	
    

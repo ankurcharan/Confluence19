@@ -16,7 +16,8 @@
 }
 .about3{
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
+    z-index: 0;
 }
 .about2 span{
         position: relative;
