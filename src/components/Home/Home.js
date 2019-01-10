@@ -2,6 +2,7 @@ import React from 'react';
 import M from 'materialize-css';
 
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
 import './Home.css';
 import EventsGenre from './eventsGenre.js'
@@ -70,33 +71,6 @@ class ContactUs extends React.Component {
 // {/** I have made background for different colors for the sake of differentiation. We will use a fixed background in the final production */}
 
 
-class Home extends React.Component {
-
-    render () {
-
-        return (
-
-            <div className='center'>
-
-                <div id="1" class="page center grey darken-2 active section scrollspy">
-                    <Confluence />
-                </div>
-                <div id="2" class="page center red darken-2 active section scrollspy">
-                    <AboutConfluence />
-                </div>
-                <div id="3" class="page center darken-2 active section scrollspy">
-                    <EventsGenre />
-                </div>
-                <div id="4" class="page center pink darken-2 active section scrollspy">
-                    <Photos />
-                </div>
-                <div id="5" class="page center yellow darken-2 active section scrollspy">
-                    <ContactUs />
-                </div>
-            </div>
-        );
-    }
-}
 
 const Fullpage = () => (
     <ReactFullpage
@@ -126,4 +100,26 @@ const Fullpage = () => (
     />
   );
 
-export default Fullpage;
+class Home extends React.Component {
+
+    
+    render () {
+
+        return (
+            <div className='center' id="main">
+                <div id="list" class="hide-on-small-only">
+                    <ul>
+                        <li><a href="#1" class="navtext">CONFLUENCE</a></li>
+                        <li><a href="#2" class="navtext">ABOUT CONFLUENCE</a></li>
+                        <li><a href="#3" class="navtext">EVENTS</a></li>
+                        <li><a href="#4" class="navtext">GALARY</a></li>
+                        <li><a href="#5" class="navtext">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <Fullpage />
+            </div>
+        );
+    }
+}
+
+export default Home;

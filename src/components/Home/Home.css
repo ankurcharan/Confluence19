@@ -11,6 +11,39 @@
 	background: transparent;
 }
 
+a
+{
+	transition: all 0.2s linear;
+}
+
+#list
+{
+	position: fixed;
+	top: 50%;
+	left: 6%;
+	transform: translate(-50%, -50%);
+	padding-left: 2vw;
+	z-index: 5;
+}
+
+@media screen and (max-width: 960px) {
+	a.navtext {
+	  font-size: 1rem;
+	}
+  }
+
+
+  @media screen and (max-width: 800px) {
+	a.navtext {
+	  font-size: 0.75rem;
+	}
+  }
+
+.navtext
+{
+	font-size: 1.3rem;
+}
+
 /* #fixed-bg {
 	
 	background: url('https://i.ytimg.com/vi/hF_LjTUvP-U/maxresdefault.jpg');
