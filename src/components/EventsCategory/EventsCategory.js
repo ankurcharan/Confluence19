@@ -15,17 +15,24 @@ class EventsCategory extends React.Component {
 	
 	// shouldComponentUpdate(nextProps, nextState) {
 
-	// 	console.log('should update');
-	// 	console.log(this.props);
-	// 	console.log(nextProps);
+		// console.log('should update');
+		// console.log(this.props);
+		// console.log(nextProps);
 
-	// 	if(nextProps === undefined) {
-	// 		return true;
-	// 	}
+		// if(nextProps === undefined) {
+		// 	return true;
+		// }
 
-	// 	let shouldUpdate = this.props.match.params.category !== nextProps.match.params.category;
-	// 	return shouldUpdate;
-	// 	// return false;
+		// let shouldUpdate = this.props.match.params.category !== nextProps.match.params.category;
+		// return shouldUpdate;
+		// return false;
+	// }
+
+	// componentWillUpdate() {
+	// 	alert('updating');
+
+	// 	const x = this.props.match.params.category.toLowerCase();
+	// 	this.props.getEventsByCategory(x);
 	// }
 	
 	// componentDidUpdate() {
@@ -41,6 +48,7 @@ class EventsCategory extends React.Component {
 	render() {
 		
 		let events = this.props.events;
+
 		// there they are 
 		// render them as you want
 		
@@ -55,7 +63,7 @@ class EventsCategory extends React.Component {
 		
 		return (
 			
-			<div>
+			<div id='events'>
 			<h1>events of {this.props.match.params.category}</h1>
 			
 			{(events && events.length > 0) ? (events.map((event, index) => {

@@ -13,14 +13,14 @@ h1 {
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: white;
+    color: rgb(168, 3, 3);
     background-color:blue;
     border: none;
     border-radius: 10px;
     font-family: 'Patrick Hand', cursive;
 }
 p{
-    color:white;
+    color:rgb(158, 15, 15);
     font-family: 'Indie Flower', cursive;
     font-size: 20px;
 }

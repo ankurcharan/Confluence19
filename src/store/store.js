@@ -6,6 +6,8 @@ import {
 import { createLogger } from 'redux-logger';
 import rootReducer from '../reducers';
 
+import { composeWithDevTools } from 'redux-devtools-extension';
+
 const loggerMiddleware = createLogger();
 
 function configureStore(preloadedState) {
@@ -13,7 +15,7 @@ function configureStore(preloadedState) {
     return createStore(
         rootReducer,
         preloadedState,
-        applyMiddleware(thunkMiddleware, loggerMiddleware)
+        composeWithDevTools(applyMiddleware(thunkMiddleware, loggerMiddleware))
     )
 }
 

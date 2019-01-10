@@ -27,9 +27,11 @@ const events = (state = initialState.events, action) => {
 
         case actionTypes.FETCH_EVENTS_BY_CATEGORY_SUCCESS:
             let categoryEvents = action.payload.category;
-            let events = {};
-            events[categoryEvents] = action.payload.data.events;
-            return Object.assign({}, state, events);
+            // let events = {};
+            // events[categoryEvents] = action.payload.data.events;
+            return Object.assign({}, state, {
+                [categoryEvents]: action.payload.data.events
+            });
         case actionTypes.FETCH_EVENTS_BY_CATEGORY_FAILURE: 
             SweetAlert('Unable to fectch events. Try Again.');
             return state;
