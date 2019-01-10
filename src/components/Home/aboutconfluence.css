@@ -15,6 +15,13 @@
 	z-index: 10;
 	position: fixed;
 }
+.register{
+	margin-bottom: 0%;
+	float: right;
+	bottom: 2%;
+	right: 2%;
+	position: fixed;
+}
 .imgs{
     background-size: 100%;
 }

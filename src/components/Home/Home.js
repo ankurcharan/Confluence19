@@ -148,7 +148,10 @@ class Home extends React.Component {
 
         return (
             <div>
-            <div className="logoconfluence"><img className="logoconfluence" src={logo} alt="not loading"></img></div>
+            <div>
+                <img className="logoconfluence" src={logo} alt="not loading"></img>
+                <a class="register responsive-text transparent black-text waves-effect waves-light btn pink">Register</a>
+            </div>
             <div className='center'>
 
                 <div id="1" class="page center grey darken-2 active section scrollspy">
