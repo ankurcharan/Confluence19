@@ -26,12 +26,13 @@ const events = (state = initialState.events, action) => {
     switch(action.type) {
 
         case actionTypes.FETCH_EVENTS_BY_CATEGORY_SUCCESS:
-            let categoryEvents = action.payload.category;
+            // let categoryEvents = action.payload.category;
             // let events = {};
             // events[categoryEvents] = action.payload.data.events;
-            return Object.assign({}, state, {
-                [categoryEvents]: action.payload.data.events
-            });
+            // return Object.assign({}, state, {
+                // [categoryEvents]: action.payload.data.events
+            // });
+            return action.payload.data.events;
         case actionTypes.FETCH_EVENTS_BY_CATEGORY_FAILURE: 
             SweetAlert('Unable to fectch events. Try Again.');
             return state;
@@ -40,10 +41,25 @@ const events = (state = initialState.events, action) => {
     }
 }
 
+const isFetchingEvents = (state = initialState.isFetchingEvents, action) => {
+
+    switch(action.type) {
+
+        case actionTypes.API_CALL_FETCHING_EVENTS:
+            return true;
+        case actionTypes.FETCH_EVENTS_BY_CATEGORY_SUCCESS:
+            return false;
+        case actionTypes.FETCH_EVENTS_BY_CATEGORY_FAILURE:
+            return false
+        default: return state;
+    }
+}
+
 
 const rootReducer = combineReducers({
     gallery,
-    events
+    events,
+    isFetchingEvents
 });
 
 export default rootReducer;

@@ -6,11 +6,18 @@ import { connect } from "react-redux";
 import { getEventsByCategory } from '../../actions/action';
 
 class EventsCategory extends React.Component {
+
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			category: this.props.match.params.category.toLowerCase()
+		}
+	}
 	
 	componentWillMount() {
 		
-		const x = this.props.match.params.category.toLowerCase();
-		this.props.getEventsByCategory(x);
+		this.props.getEventsByCategory(this.state.category);
 	}
 	
 	// shouldComponentUpdate(nextProps, nextState) {
@@ -28,13 +35,24 @@ class EventsCategory extends React.Component {
 		// return false;
 	// }
 
-	// componentWillUpdate() {
-	// 	alert('updating');
-
+	// componentWillReceiveProps() {
 	// 	const x = this.props.match.params.category.toLowerCase();
 	// 	this.props.getEventsByCategory(x);
 	// }
+
+	// componentWillUpdate() {
+
+	// 	this.props.getEventsByCategory(this.state.category);
+	// }
 	
+	// componentWillUpdate(nextProps, nextState) {
+	// 	const x = nextProps.match.params.category.toLowerCase();
+
+	// 	this.setState({
+	// 		category: x
+	// 	})
+	// }
+
 	// componentDidUpdate() {
 
 	// 	if(this.shouldComponentUpdate()) {
@@ -47,7 +65,15 @@ class EventsCategory extends React.Component {
 	
 	render() {
 		
-		let events = this.props.events;
+		// let allEvents = this.props.events;
+
+		// let cat = this.props.match.params.category;
+		// let events =  allEvents[cat];
+
+		// console.log(cat);
+		// console.log('ndering 22 -----', allEvents);
+
+		// let isFetchingEvents = this.props.isFetchingEvents;
 
 		// there they are 
 		// render them as you want
@@ -60,23 +86,31 @@ class EventsCategory extends React.Component {
 		
 		// let eventsssss = event.map((event, index) => {
 		
+		let events = this.props.events;
+		let isFetchingEvents = this.props.isFetchingEvents;
 		
 		return (
 			
 			<div id='events'>
 			<h1>events of {this.props.match.params.category}</h1>
 			
-			{(events && events.length > 0) ? (events.map((event, index) => {
-				return (
-					<div key={index}>
-					<p>{event.eventName}</p>
-					<p>{event.venue}</p>
-					<p>{event.description}</p>
-					<p>{event.category}</p>
-					<br />
-					</div>
-				);
-			})) : '' }
+			{
+				(isFetchingEvents) ? 
+				(<h1>loading ...</h1>) :
+				(
+					(events && events.length > 0) ? (events.map((event, index) => {
+					return (
+						<div key={index}>
+						<p>{event.eventName}</p>
+						<p>{event.venue}</p>
+						<p>{event.description}</p>
+						<p>{event.category}</p>
+						<br />
+						</div>
+					);
+					})) : '' 
+				)
+			}
 				
 			
 			
@@ -94,13 +128,19 @@ class EventsCategory extends React.Component {
 	}
 }
 
+
 const mapStateToProps = (state, ownProps) => {
 	
-	const { events } = state;
-	const eventsCat = getEventsCategory(events, ownProps.match.params.category);
-	return { 
-		events: eventsCat 
-	};
+	const { events, isFetchingEvents } = state;
+	// const eventsCat = getEventsCategory(events, ownProps.match.params.category);
+	// return { 
+		// events: eventsCat 
+	// };
+
+	return {
+		events,
+		isFetchingEvents
+	}
 }
 
 const mapDispatchToProps = {

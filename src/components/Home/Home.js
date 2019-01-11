@@ -3,12 +3,11 @@ import M from 'materialize-css';
 
 import { Link } from 'react-router-dom';
 
-
 import './Home.css';
 import './About.css';
 import './ScrollNav.css';
 
-import EventsGenre from './eventsGenre.js'
+import EventsGenre from './eventsGenre.js';
 
 class ScrollNav extends React.Component {
 	
