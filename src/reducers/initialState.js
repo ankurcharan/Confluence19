@@ -1,8 +1,7 @@
 const initialState = {
     gallery: [],
-    events: {
-
-    },
+    events: [],
+    isFetchingEvents: false,
 };
 
 export default initialState;

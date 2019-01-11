@@ -48,6 +48,8 @@ export const getEventsByCategory = (categoryName) => (dispatch, getState) => {
         return;
     }
 
+    dispatch(success(actionTypes.API_CALL_FETCHING_EVENTS, {}))
+
     services.getEventsByCategory(categoryName)
         .then((data) => {
 
