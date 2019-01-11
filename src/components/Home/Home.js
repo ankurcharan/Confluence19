@@ -85,7 +85,10 @@ const Fullpage = () => (
                     <AboutConfluence />
                 </div>
                 <div id="3" class="section page center darken-2 active section scrollspy">
-                    <EventsGenre />
+                    {/**
+                        <EventsGenre />
+                    */}
+                    <h1>Events</h1>
                 </div>
                 <div id="4" class="section page center pink darken-2 active section scrollspy">
                     <Photos />
@@ -100,9 +103,7 @@ const Fullpage = () => (
     />
   );
 
-class Home extends React.Component {
-
-    
+class Home extends React.Component {    
     render () {
 
         return (
