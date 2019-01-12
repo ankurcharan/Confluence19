@@ -11,6 +11,26 @@
 	background: transparent;
 }
 
+a
+{
+	transition: all 0.2s linear;
+}
+
+#list
+{
+	position: fixed;
+	top: 50%;
+	left: 30px;
+	transform: translate(0%, -50%);
+	text-align: left;
+	z-index: 5;
+}
+
+.navtext
+{
+	font-size: 1.1rem;
+}
+
 /* #fixed-bg {
 	
 	background: url('https://i.ytimg.com/vi/hF_LjTUvP-U/maxresdefault.jpg');
