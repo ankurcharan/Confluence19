@@ -4,6 +4,19 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+
+
+var config = {
+    apiKey: "AIzaSyD11bvvf7jgLETdABLIm4WDHX1eB8Z3m9g",
+    authDomain: "confluence19.firebaseapp.com",
+    databaseURL: "https://confluence19.firebaseio.com",
+    projectId: "confluence19",
+    storageBucket: "confluence19.appspot.com",
+    messagingSenderId: "950391973459"
+  };
+
+
+
 // initialize default app
 admin.initializeApp(functions.config().firebase);
 
@@ -24,7 +37,7 @@ app.use(cors({ origin: true }));
 
 
 // api routes
-app.use('/a', (req, res) => {
+app.use('/ccsscscscsc', (req, res) => {
 
     res.send("saaasasasasds");
 })

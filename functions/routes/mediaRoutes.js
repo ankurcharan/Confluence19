@@ -15,23 +15,24 @@ app.route('/')
 // add image
 // {
 // 	"imageURL": "https://i.ytimg.com/vi/hF_LjTUvP-U/maxresdefault.jpg",
-// 	"caption": "This is the caption"
+// 	"caption": "This is the caption",
+//  "category": "Arts"
 // }
 function addImage (req, res) {
 
     console.log(req.body);
 
-    if(req.body.title === undefined || req.body.imageURL === undefined || req.body.caption === undefined) {
+    if(req.body.imageURL === undefined || req.body.category === undefined) {
 
         res.status(400).json({
             success: false,
-            message: 'send imageURL, caption and title'
+            message: 'send imageURL, and category'
         });
     }
 
     req.body.priority = 1;
-    let title = req.body.title;
-    media.doc(title).set(req.body)
+    let url = req.body.imageURL;
+    media.doc(url).set(req.body)
         .then(() => {
 
             return res.status(200).json({
@@ -46,7 +47,7 @@ function addImage (req, res) {
                 message: 'image could not be added, try again',
                 error: err
             });
-        })
+        });
 }
 
 
