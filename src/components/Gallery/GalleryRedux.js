@@ -4,7 +4,10 @@ import React from 'react';
 import './Gallery.css';
 
 import PhotoGallery from 'react-photo-gallery';
-import Jumbotron from '../Jumbotron/Jumbotron';
+import LightBox from 'react-images';
+
+
+// import Jumbotron from '../Jumbotron/Jumbotron';
 
 import { connect } from 'react-redux';
 import { getImages } from '../../actions/action';
@@ -30,10 +33,10 @@ class Image extends React.Component {
 		return (
 
 			<div className='col s12 m12 l6'>
-				<img 
-					className="center responsive-img materialboxed"  
+				<img
+					className="center responsive-img materialboxed"
 					data-caption={this.props.caption}
-					src={this.props.imageURL} 
+					src={this.props.imageURL}
 					alt={this.props.title}
 					onClick={this.onClickHandler}
 				/>
@@ -51,186 +54,186 @@ class Image extends React.Component {
 
 const photos = [
 	{
-	  src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-	  width: 18,
-	  height: 9
+		src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+		width: 18,
+		height: 9
 	},
 	{
-	  src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-	  width: 1,
-	  height: 1
+		src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+		width: 1,
+		height: 1
 	},
 	{
-	  src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-	  width: 3,
-	  height: 4
+		src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+		width: 3,
+		height: 4
 	},
 	{
-	  src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-	  width: 3,
-	  height: 4
+		src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+		width: 3,
+		height: 4
 	},
 	{
-	  src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-	  width: 3,
-	  height: 4
+		src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+		width: 3,
+		height: 4
 	},
 	{
-	  src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-	  width: 4,
-	  height: 3
+		src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+		width: 4,
+		height: 3
 	},
 	{
-	  src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-	  width: 3,
-	  height: 4
+		src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+		width: 3,
+		height: 4
 	},
 	{
-	  src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-	  width: 4,
-	  height: 3
+		src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+		width: 4,
+		height: 3
 	},
 	{
-	  src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-	  width: 4,
-	  height: 3
+		src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+		width: 4,
+		height: 3
 	},
 	{
 		src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
 		width: 18,
 		height: 9
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
 		width: 1,
 		height: 1
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
 		width: 4,
 		height: 3
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/PpOHJezOalU/800x599",
 		width: 4,
 		height: 3
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
 		width: 4,
 		height: 3
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
 		width: 18,
 		height: 9
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
 		width: 1,
 		height: 1
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
 		width: 4,
 		height: 3
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/PpOHJezOalU/800x599",
 		width: 4,
 		height: 3
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
 		width: 4,
 		height: 3
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
 		width: 18,
 		height: 9
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
 		width: 1,
 		height: 1
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
 		width: 4,
 		height: 3
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
 		width: 3,
 		height: 4
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/PpOHJezOalU/800x599",
 		width: 4,
 		height: 3
-	  },
-	  {
+	},
+	{
 		src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
 		width: 4,
 		height: 3
-	  }
-  ];
+	}
+];
 
 
 
@@ -250,57 +253,93 @@ class Gallery extends React.Component {
 	// 	this.props.getImages();
 	// }
 
+
+	constructor() {
+		super();
+
+		this.state = {
+			currentImage: 0
+		};
+		this.openLightBox = this.openLightBox.bind(this);
+		this.closeLightBox = this.closeLightBox.bind(this);
+		this.gotoPrevious = this.gotoPrevious.bind(this);
+		this.gotoNext = this.gotoNext.bind(this);
+	}
+
+
+	openLightBox(event, obj) {
+
+		this.setState({
+			currentImage: obj.index,
+			lightboxIsOpen: true,
+		})
+	}
+
+	closeLightBox() {
+
+		this.setState({
+			currentImage: 0,
+			lightboxIsOpen: false,
+		})
+	}
+
+	gotoPrevious() {
+
+		this.setState({
+			currentImage: this.state.currentImage - 1
+		})
+	}
+
+	gotoNext() {
+
+		this.setState({
+			currentImage: this.state.currentImage + 1
+		})
+	}
+
+
 	componentDidMount() {
 
 		alert('hello');
-	
+
 		let boxes = document.querySelectorAll('.materialboxed');
 		M.Materialbox.init(boxes, {});
-	
+
 	}
 
-    render () {
+	render() {
 
 		// let x = this.props.images.gallery;
 
-		// let images;
-		// if(x !== undefined) {
-
-		// 	images = x.map((image, index) => {
-
-		// 		return <Image
-		// 					key={index}
-		// 					caption={image.caption}
-		// 					imageURL={image.imageURL}
-		// 					title={image.title}
-		// 				/>
-		// 	});
-		// } else {
-		// 	images = '';
-		// }
-
-
-
-        return (
+		return (
 
 
 			<div id='images'>
 
 				<h1 className='center'>#weDealInMemories</h1>
 
-				<PhotoGallery 
+				<PhotoGallery
 					photos={photos}
-					direction={"column"} 
+					direction={"column"}
+					onClick={this.openLightBox}
 				/>
-		
+
+				<LightBox
+					images={photos}
+					onClose={this.closeLightBox}
+					onClickPrev={this.gotoPrevious}
+					onClickNext={this.gotoNext}
+					currentImage={this.state.currentImage}
+					isOpen={this.state.lightboxIsOpen}
+				/>
 			</div>
-        );
-    }
+		);
+	}
 }
 
 
 const mapStateToProps = state => ({
-    images: state.gallery,
+	images: state.gallery,
 });
 
 
