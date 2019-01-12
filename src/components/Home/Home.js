@@ -111,7 +111,7 @@ class AboutConfluence extends React.Component {
     render() {
 
         return (
-            <div>
+            <div id='aboutcc'>
                 
                 <div className="about3">
                     <div className="about2 center">
@@ -262,7 +262,7 @@ class Home extends React.Component {
                         <li><a href="#1" class="navtext">CONFLUENCE</a></li>
                         <li><a href="#2" class="navtext">ABOUT CONFLUENCE</a></li>
                         <li><a href="#3" class="navtext">EVENTS</a></li>
-                        <li><a href="#4" class="navtext">GALARY</a></li>
+                        <li><a href="#4" class="navtext">GALLERY</a></li>
                         <li><a href="#5" class="navtext">CONTACT US</a></li>
                     </ul>
                 </div>
