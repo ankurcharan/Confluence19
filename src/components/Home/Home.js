@@ -91,7 +91,9 @@ class Confluence extends React.Component {
 			<Link to='/events/literature'>literature</Link>
 			<br />
 			<Link to='/events/photography'>photography</Link>
-			</div>
+            <br />
+			<Link to='/gallery'>gallery</Link>
+            </div>
 		);
 	}
 }
@@ -207,22 +209,22 @@ const Fullpage = () => (
 
             
             <div className="center">
-                <div id="1" class="section page center grey darken-2 active section scrollspy">
+                <div id="1" class="section page center grey darken-2 section scrollspy">
                     <Confluence />
                 </div>
-                <div id="2" class="section page center red darken-2 active section scrollspy">
+                <div id="2" class="section page center red darken-2 section scrollspy">
                     <AboutConfluence />
                 </div>
-                <div id="3" class="section page center darken-2 active section scrollspy">
+                <div id="3" class="section page center darken-2 section scrollspy">
                     {/**
                         <EventsGenre />
                     */}
                     <h1>Events</h1>
                 </div>
-                <div id="4" class="section page center pink darken-2 active section scrollspy">
+                <div id="4" class="section page center pink darken-2 section scrollspy">
                     <Photos />
                 </div>
-                <div id="5" class="section page center yellow darken-2 active section scrollspy">
+                <div id="5" class="section page center yellow darken-2 section scrollspy">
                     <ContactUs />
                 </div>
             </div>
