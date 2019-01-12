@@ -16,7 +16,7 @@ import './aboutconfluence.css';
 import './indexcs.css';
 
 import street from './bg-016.jpg';
-import logo from './logo.png';
+import logo from './Confluence Logo.png';
 
 // import EventsGenre from './eventsGenre.js'
 
@@ -204,6 +204,8 @@ const Fullpage = () => (
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
+
+            
             <div className="center">
                 <div id="1" class="section page center grey darken-2 active section scrollspy">
                     <Confluence />
@@ -245,6 +247,13 @@ class Home extends React.Component {
     render () {
 
         return (
+            
+        <>
+            <div>
+                <img className="logoconfluence" src={logo} alt="not loading" />
+            </div>
+            <a id='register' class="responsive-text transparent black-text waves-effect waves-light btn pink">Register</a>
+
             <div className='center' id="main">
                 <div id="list" class="hide-on-small-only">
                     <ul>
@@ -257,6 +266,8 @@ class Home extends React.Component {
                 </div>
                 <Fullpage />
             </div>
+        </>
+
         );
     }
 }
