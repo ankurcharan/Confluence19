@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import './aboutconfluence.css';
 import './indexcs.css';
+import $ from 'jquery';
 import EventsGenre from './eventsGenre.js';
 
 import street from './bg-016.jpg';
-import logo from './logo.png';
+import logo from './conlogo.png';
 class Confluence extends React.Component {
 
     render() {
@@ -34,10 +35,33 @@ class Confluence extends React.Component {
 class AboutConfluence extends React.Component {
 
     componentDidMount() {
-        // document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.parallax');
-        var instances = M.Parallax.init(elems, {});
-        // });
+        $(function(){  // $(document).ready shorthand
+            $('.monster').fadeIn('slow');
+          });
+          
+          $(document).ready(function() {
+              
+              /* Every time the window is scrolled ... */
+              $(window).scroll( function(){
+              
+                  /* Check the location of each desired element */
+                  $('.hideme').each( function(i){
+                      
+                      var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                      var bottom_of_window = $(window).scrollTop() + $(window).height();
+                      
+                      /* If the object is completely visible in the window, fade it it */
+                      if( bottom_of_window > bottom_of_object ){
+                          
+                          $(this).animate({'opacity':'1'},3000);
+                              
+                      }
+                      
+                  }); 
+              
+              });
+              
+          });
 
     }
 
@@ -46,7 +70,7 @@ class AboutConfluence extends React.Component {
         return (
             <div>
                 
-                <div className="about3">
+                <div className="about3 hideme black-text">
                     <div className="about2 center">
                         <span>C</span>
                         <span>A</span>
@@ -70,7 +94,7 @@ class AboutConfluence extends React.Component {
                         <span>E</span>
                     </div>
 
-                    <p className="center white-text textf">Lorem ipsum dolor sit amet, consectetur <br />
+                    <p className="center textf">Lorem ipsum dolor sit amet, consectetur <br />
                         adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br />
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br />
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo <br />
@@ -150,9 +174,16 @@ class Home extends React.Component {
             <div>
             <div>
                 <img className="logoconfluence" src={logo} alt="not loading"></img>
+                <div  className="scrollnav black-text hide-on-small-only">
+                    <a href="#1">Home</a><br></br>
+                    <a href="#2">About Confluence</a><br></br>
+                    <a href="#3">Events</a><br></br>
+                    <a href="#4">Photos</a><br></br>
+                    <a href="#5">Contact Us</a><br></br>
+                </div>
                 <a class="register responsive-text transparent black-text waves-effect waves-light btn pink">Register</a>
-            </div>
-            <div className='center'>
+                </div>
+                <div className='center'>
 
                 <div id="1" class="page center grey darken-2 active section scrollspy">
                     <Confluence />
