@@ -13,8 +13,9 @@ const gallery = (state = initialState.gallery, action) => {
             // return Object.assign({}, state, {
             //     gallery: action.payload.data.images
             // });
-            // return action.payload.data.images;
-            return {...state, action.payload.data.images};
+            return {...state, ...action.payload.data.images};
+            // let i = action.payload.data.images;
+            // return {...state, i};
         case actionTypes.FETCH_GALLERY_FAILURE:
             SweetAlert('Unable To Fetch Images. You Can Try Again', 'error');
             return state;
