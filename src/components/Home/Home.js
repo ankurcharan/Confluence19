@@ -12,19 +12,8 @@ import './ScrollNav.css';
 import './aboutconfluence.css';
 import './indexcs.css';
 import $ from 'jquery';
-import EventsGenre from './eventsGenre.js';
 
-import street from './bg-016.jpg';
-import logo from './conlogo.png';
-
-
-
-class Confluence extends React.Component {
-
-// import street from './bg-016.jpg';
 import logo from './Confluence Logo.png';
-
-// import EventsGenre from './eventsGenre.js'
  
 class ScrollNav extends React.Component {
 	
@@ -140,10 +129,12 @@ class AboutConfluence extends React.Component {
     render() {
 
         return (
-            <div id='aboutcc'>
+            <div>
                 
                 <div className="about3 hideme black-text">
-                    <div className="about2 center">
+                    <div className="about2 center" style={{
+                    	'font-size': '20px'
+                    }}>
                         <span>C</span>
                         <span>A</span>
                         <span>R</span>
@@ -237,26 +228,8 @@ const Fullpage = () => (
           <ReactFullpage.Wrapper>
 
             
-            <div className="center">
-                <div id="1" class="section page center grey darken-2 section scrollspy">
-                    <Confluence />
-                </div>
-                <div id="2" class="section page center red darken-2 section scrollspy">
-                    <AboutConfluence />
-                </div>
-                <div id="3" class="section page center darken-2 section scrollspy">
-                    {/**
-                        <EventsGenre />
-                    */}
-                    <h1>Events</h1>
-                </div>
-                <div id="4" class="section page center pink darken-2 section scrollspy">
-                    <Photos />
-                </div>
-                <div id="5" class="section page center yellow darken-2 section scrollspy">
-                    <ContactUs />
-                </div>
-            </div>
+
+
           </ReactFullpage.Wrapper>
         );
       }}
@@ -281,7 +254,7 @@ class Home extends React.Component {
         return (
         <>
             <div>
-                <img className="logoconfluence" src={logo} alt="not loading" />
+                <img id="logoconfluence" src={logo} alt="not loading" />
             </div>
             <a href='#register' id='register' className='responsive-text transparent black-text waves-effect waves-teal btn-flat'>Register</a>
 
@@ -295,7 +268,62 @@ class Home extends React.Component {
                         <li><a href="#5" class="navtext">CONTACT US</a></li>
                     </ul>
                 </div>
-                <Fullpage />
+
+
+
+
+
+
+
+
+
+
+
+                <div>
+            <div>
+                {/* <img className="logoconfluence" src={logo} alt="not loading"></img>
+                <a class="register responsive-text transparent black-text waves-effect waves-light btn pink">Register</a> */}
+                </div>
+                <div className='center'>
+
+                <div id="1" class="page center grey darken-2 active section scrollspy">
+                    <Confluence />
+                </div>
+                <div id="2" class="page center about-confluence active section scrollspy">
+                    <AboutConfluence />
+                </div>
+
+
+                <div id="3" class="page center darken-2 active section scrollspy">
+                    {/* <EventsGenre /> */}
+                    <h1>Events</h1>
+                </div>
+                <div id="4" class="page center pink darken-2 active section scrollspy">
+                    <Photos />
+                </div>
+                <div id="5" class="page center yellow darken-2 active section scrollspy">
+                    <ContactUs />
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* <Fullpage /> */}
             </div>
         </>
 

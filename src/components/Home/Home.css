@@ -5,7 +5,7 @@
 /* .container {
 	padding: 0px;
 } */
-
+/* 
 #3
 {
 	background: transparent;
@@ -16,6 +16,8 @@ a
 	transition: all 0.2s linear;
 }
 
+*/
+
 #list
 {
 	position: fixed;
@@ -25,11 +27,11 @@ a
 	text-align: left;
 	z-index: 5;
 }
-
+/*
 .navtext
 {
 	font-size: 1.1rem;
-}
+} */
 
 /* #fixed-bg {
 	

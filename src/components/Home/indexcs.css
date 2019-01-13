@@ -6,13 +6,13 @@
     transform: translate(-50%,-50%);
     text-align: center;
     margin: 0;
-    font-size: 6rem;
-    padding: 0;
-    font-family: 'Satisfy', cursive;
+    font-size: 6rem !important;
+    padding: 0 !important;
+    font-family: 'Satisfy', cursive !important;
     
-    text-transform: uppercase;
-    border-bottom:8px solid black;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    text-transform: uppercase !important;
+    border-bottom:8px solid black !important;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2) !important;
 }
 .about3{
     width: 100%;
