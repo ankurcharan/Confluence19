@@ -1,123 +1,168 @@
 import React from 'react';
 // import { MediaBox } from 'react-materialize';
 
+import './Gallery.css';
+
+import PhotoGallery from 'react-photo-gallery';
+import LightBox from 'react-images';
+
+
+// import Jumbotron from '../Jumbotron/Jumbotron';
+
+import { connect } from 'react-redux';
+import { getImages } from '../../actions/action';
+
+
 import M from 'materialize-css';
 
-import './Gallery.css';
-import Jumbotron from '../Jumbotron/Jumbotron';
+import camera from './cam.jpeg';
 
-class Image extends React.Component {
+class Gallery extends React.Component {
 
-	constructor(props) {
-		super(props);
-
-		this.onClickHandler = this.onClickHandler.bind(this);
+	componentWillMount() {
+		this.props.getImages();
 	}
 
-	onClickHandler(e) {
+	constructor() {
+		super();
 
-		e.preventDefault();
+		this.state = {
+			currentImage: 0
+		};
+		this.openLightBox = this.openLightBox.bind(this);
+		this.closeLightBox = this.closeLightBox.bind(this);
+		this.gotoPrevious = this.gotoPrevious.bind(this);
+		this.gotoNext = this.gotoNext.bind(this);
 	}
+
+	openLightBox(event, obj) {
+
+		this.setState({
+			currentImage: obj.index,
+			lightboxIsOpen: true,
+		})
+	}
+
+	closeLightBox() {
+
+		this.setState({
+			currentImage: 0,
+			lightboxIsOpen: false,
+		})
+	}
+
+	gotoPrevious() {
+
+		this.setState({
+			currentImage: this.state.currentImage - 1
+		})
+	}
+
+	gotoNext() {
+
+		this.setState({
+			currentImage: this.state.currentImage + 1
+		})
+	}
+
+	// componentDidMount() {
+	// 	let boxes = document.querySelectorAll('.materialboxed');
+	// 	M.Materialbox.init(boxes, {});
+	// }
 
 	render() {
 
+		let imgs = this.props.images;
+
+		let photos = [];
+
+		for(let one in imgs) {
+
+			let obj = {};
+			obj["src"] = imgs[one]["imageURL"];
+			obj["width"] = imgs[one]["width"]; 
+			obj["height"] = imgs[one]["height"];
+
+			photos.push(obj);
+		}
+
 		return (
+			<div id='images'>
+				{/* <h1 className='center'>#weDealInMemories</h1> */}
 
-			<div className='col s12 m12 l6'>
-				<img 
-					className="center responsive-img materialboxed"  
-					data-caption={this.props.caption}
-					src={this.props.imageURL} 
-					alt={this.props.title}
-					onClick={this.onClickHandler}
-				/>
+				{/**Jumbotron */}
+				{/* <div class="parallax-container">
+					<div class="parallax">
+						<img 
+							src={camera} 
+							alt='memories'
+						/>
+					</div>
+				</div> */}
+
+
+			<div id="index-banner" class="parallax-container">
+                <div class="section no-pad-bot">
+                    <div class="container">
+                        <br />
+                        <br />
+                        <h1 id='memoriesHeader' class="header center text-lighten-2">
+							#weDealInMemories
+                        </h1>
+                        <div class="row center">
+                            <h5 class="header col s12 light">
+                                {this.props.text}
+                            </h5>
+                        </div>
+                        {/*<div class="row center">*/}
+                            {/*<a href="https://www.instagram.com/ankurcharan/" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">*/}
+                                {/*Get to know me :)*/}
+                            {/*</a>*/}
+                        {/*</div>*/}
+                        <br />
+                        <br />
+                    </div>
+                </div>
+                <div class="parallax">
+                    <img src={camera} alt="memories" />
+                </div>
+            </div>
+
+				{
+					(this.props.isFetchingImages) ?
+					(<h1 className='center'>Loading</h1>) : 
+					(
+						<>
+							<PhotoGallery
+								photos={photos}
+								direction={"column"}
+								onClick={this.openLightBox}
+							/>
+
+							<LightBox
+								images={photos}
+								onClose={this.closeLightBox}
+								onClickPrev={this.gotoPrevious}
+								onClickNext={this.gotoNext}
+								currentImage={this.state.currentImage}
+								isOpen={this.state.lightboxIsOpen}
+							/>
+						</>					
+					)
+				}
 			</div>
-
 		);
 	}
 }
 
-class Gallery extends React.Component {
 
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			images: []
-		}
-	}
-
-	componentWillMount() {
-
-		const reqOptions = {
-			method: 'GET',
-			Accept: 'application/json'
-		}
-		fetch('https://us-central1-confluence19.cloudfunctions.net/api/gallery', reqOptions)
-			.then(data => data.json())
-			.then(data => {
-
-				if(data.success) {
-					this.setState({
-						images: data.data.images
-					})
-				}
-			})
-	}
-
-	componentDidMount() {
-
-	
-		let boxes = document.querySelectorAll('.materialboxed');
-		M.Materialbox.init(boxes, {});
-	
-	}
-
-    render () {
-
-		const images = this.state.images.map((image, index) => {
-
-			return <Image
-						key={index}
-						caption={image.caption}
-						imageURL={image.imageURL}
-						title={image.title}
-					/>
-
-			// return <MediaBox
-			// 			key={index}
-			// 			caption={image.caption}
-			// 			src={image.imageURL}
-			// 		/>
-		});
-
-		console.log(images);
-
-        return (
+const mapStateToProps = state => ({
+	images: state.gallery,
+	isFetchingImages: state.isFetchingImages
+});
 
 
-			<div>
-
-				<Jumbotron 
-					title='#WeDealInMemories' 
-					text='Glimpses of Confluence' 
-					photo='https://i.ytimg.com/vi/hF_LjTUvP-U/maxresdefault.jpg'
-					
-				/>
-
-				<br />
-
-				<div className='container'>
-					<div className='row'>
-		
-						{images}
-
-					</div>
-				</div>
-
-			</div>
-        );
-    }
-}
-
-export default Gallery;
+export default connect(
+	mapStateToProps,
+	{ getImages }
+)(Gallery);

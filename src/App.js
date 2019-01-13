@@ -4,12 +4,11 @@ import { Switch, BrowserRouter, Route, Link } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
-import Gallery from './components/Gallery/Gallery';
 import Home from './components/Home/Home';
 import Sponsors from './components/Sponsors/Sponsors';
 import Team from './components/TeamConfluence/TeamConfluence';
 
-import GalRed from './components/Gallery/GalleryRedux';
+import Gallery from './components/Gallery/Gallery';
 
 import EventsCategory from './components/EventsCategory/EventsCategory';
 
@@ -44,7 +43,7 @@ class App extends Component {
 					<Switch>
 
 						<Route exact path='/events' component={Events} />
-						<Route exact path='/gallery' component={GalRed} />
+						<Route exact path='/gallery' component={Gallery} />
 						<Route exact path='/sponsors' component={Sponsors} />
 						<Route exact path='/' component={Home} />
 
