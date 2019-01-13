@@ -12,22 +12,32 @@ const failure = (type, payload) => ({
     payload,
 });
 
+const isFetchGalleryReqd = (getState) => {
 
-export function getImages() {
-
-    return (dispatch) => {
-
-        dispatch(success(actionTypes.FETCHING_GALLERY, null));
-
-        services.galleryImages()
-        .then(data => {
-            if(data.success) {
-                dispatch(success(actionTypes.FETCH_GALLERY_SUCCESS, data));
-            } else {
-                dispatch(failure(actionTypes.FETCH_GALLERY_FAILURE, data));
-            }
-        });
+    const images = getState().gallery;
+    if(images.length > 0) {
+        return false;
     }
+    return true;
+
+}
+
+export const getImages = () => (dispatch, getState) => {
+
+    if(isFetchGalleryReqd(getState) === false) {
+        return;
+    }
+
+    dispatch(success(actionTypes.API_CALL_FETCHING_IMAGES, {}));
+
+    services.galleryImages()
+    .then(data => {
+        if(data.success) {
+            dispatch(success(actionTypes.FETCH_GALLERY_SUCCESS, data));
+        } else {
+            dispatch(failure(actionTypes.FETCH_GALLERY_FAILURE, data));
+        }
+    });
 }
 
 const isFetchingEventsNeeded = (state, categoryName) => {

@@ -10,9 +10,11 @@ const gallery = (state = initialState.gallery, action) => {
     switch(action.type) {
 
         case actionTypes.FETCH_GALLERY_SUCCESS:
-            return Object.assign({}, state, {
-                gallery: action.payload.data.images
-            });
+            // return Object.assign({}, state, {
+            //     gallery: action.payload.data.images
+            // });
+            // return action.payload.data.images;
+            return {...state, action.payload.data.images};
         case actionTypes.FETCH_GALLERY_FAILURE:
             SweetAlert('Unable To Fetch Images. You Can Try Again', 'error');
             return state;
@@ -55,11 +57,26 @@ const isFetchingEvents = (state = initialState.isFetchingEvents, action) => {
     }
 }
 
+const isFetchingImages = (state = initialState.isFetchingImages, action) => {
+
+    switch(action.type) {
+
+        case actionTypes.API_CALL_FETCHING_IMAGES:
+            return true;
+        case actionTypes.FETCH_GALLERY_SUCCESS:
+            return false;
+        case actionTypes.FETCH_GALLERY_FAILURE:
+            return false;
+        default:
+            return state;
+    }
+}
 
 const rootReducer = combineReducers({
     gallery,
     events,
-    isFetchingEvents
+    isFetchingEvents,
+    isFetchingImages
 });
 
 export default rootReducer;

@@ -15,6 +15,9 @@ import { getImages } from '../../actions/action';
 
 import M from 'materialize-css';
 
+
+// eslint-disable-next-line no-lone-blocks
+{/***
 class Image extends React.Component {
 
 	constructor(props) {
@@ -45,10 +48,7 @@ class Image extends React.Component {
 		);
 	}
 }
-
-
-
-
+ */}
 
 
 
@@ -248,10 +248,10 @@ const photos = [
 
 class Gallery extends React.Component {
 
-	// componentWillMount() {
+	componentWillMount() {
 
-	// 	this.props.getImages();
-	// }
+		this.props.getImages();
+	}
 
 
 	constructor() {
@@ -309,30 +309,60 @@ class Gallery extends React.Component {
 
 	render() {
 
-		// let x = this.props.images.gallery;
+		let imgs = this.props.images;
+
+		let photosApi = [
+			{
+				src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+				width: 4,
+				height: 3
+			}];
+
+		for(let one in imgs) {
+
+			let obj = {};
+			obj["src"] = one["imageURL"];
+			obj["width"] = one["width"]; 
+			obj["height"] = one["height"];
+
+			console.log(obj);
+			photosApi.push(obj);
+		}
+
+		console.log("photosApi");
+		console.log(photosApi);
+
 
 		return (
 
 
-			<div id='images'>
+			<span id='images'>
 
 				<h1 className='center'>#weDealInMemories</h1>
 
-				<PhotoGallery
-					photos={photos}
-					direction={"column"}
-					onClick={this.openLightBox}
-				/>
+				{
+					(this.props.isFetchingImages) ?
+					(<h1 className='center'>Loading</h1>) : 
+					(
+						<>
+							<PhotoGallery
+								photos={photosApi}
+								direction={"column"}
+								onClick={this.openLightBox}
+							/>
 
-				<LightBox
-					images={photos}
-					onClose={this.closeLightBox}
-					onClickPrev={this.gotoPrevious}
-					onClickNext={this.gotoNext}
-					currentImage={this.state.currentImage}
-					isOpen={this.state.lightboxIsOpen}
-				/>
-			</div>
+							<LightBox
+								images={photosApi}
+								onClose={this.closeLightBox}
+								onClickPrev={this.gotoPrevious}
+								onClickNext={this.gotoNext}
+								currentImage={this.state.currentImage}
+								isOpen={this.state.lightboxIsOpen}
+							/>
+						</>					
+					)
+				}
+			</span>
 		);
 	}
 }
@@ -340,6 +370,7 @@ class Gallery extends React.Component {
 
 const mapStateToProps = state => ({
 	images: state.gallery,
+	isFetchingImages: state.isFetchingImages
 });
 
 

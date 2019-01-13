@@ -8,3 +8,8 @@
     margin: 0px;
     margin-top: 0px;
 }
+
+#images > h1 {
+    color: blue;
+    text-shadow: none;
+}
