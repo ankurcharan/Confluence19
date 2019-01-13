@@ -174,7 +174,7 @@ class Home extends React.Component {
             <div>
             <div>
                 <img className="logoconfluence" src={logo} alt="not loading"></img>
-                <div  className="scrollnav black-text hide-on-small-only">
+                <div  className="scrollnav hide-on-small-only">
                     <a href="#1">Home</a><br></br>
                     <a href="#2">About Confluence</a><br></br>
                     <a href="#3">Events</a><br></br>
