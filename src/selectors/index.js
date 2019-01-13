@@ -1,5 +1,5 @@
 
-const getAllEvents = store => store.events;
+// const getAllEvents = store => store.events;
 
 export const getEventsCategory = (allEvents, catgeory) => {
 

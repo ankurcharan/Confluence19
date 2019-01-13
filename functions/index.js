@@ -24,7 +24,7 @@ app.use(cors({ origin: true }));
 
 
 // api routes
-app.use('/a', (req, res) => {
+app.use('/scxaaaa', (req, res) => {
 
     res.send("saaasasasasds");
 })

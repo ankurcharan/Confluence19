@@ -4,6 +4,11 @@ import M from 'materialize-css';
 import { Link } from 'react-router-dom';
 
 import './Home.css';
+import ReactFullpage from '@fullpage/react-fullpage';
+
+import './About.css';
+import './ScrollNav.css';
+
 import './aboutconfluence.css';
 import './indexcs.css';
 import $ from 'jquery';
@@ -11,30 +16,98 @@ import EventsGenre from './eventsGenre.js';
 
 import street from './bg-016.jpg';
 import logo from './conlogo.png';
+
+
+
 class Confluence extends React.Component {
 
-    render() {
+// import street from './bg-016.jpg';
+import logo from './Confluence Logo.png';
 
-        return (
-            <div>
-                home video background
-                    {/*yahan wo video wala backhround daalana hai so try that */}
+// import EventsGenre from './eventsGenre.js'
+ 
+class ScrollNav extends React.Component {
+	
+	render() {
+		
+		return (
+			
+			<React.Fragment>
 
-                <Link to='/events/music'>music</Link>
-                <br />
-                <Link to='/events/literature'>literature</Link>
-                <br />
-                <Link to='/events/photography'>photography</Link>
-            </div>
-        );
-    }
+				<aside>
+					<div class="fixed-nav  hide-on-small-only">
+						<ul class="fixed-nav__list">
+                            <li class="fixed-nav__list-item">
+								<a href="#1">
+									<span class="fixed-nav__line"></span>
+									<span class="fixed-nav__number">01</span>
+									<span class="fixed-nav__name">Home</span>
+								</a>
+							</li>
+                            <li class="fixed-nav__list-item ">
+								<a href="#2">
+									<span class="fixed-nav__line"></span>
+									<span class="fixed-nav__number">02</span>
+									<span class="fixed-nav__name">About Confluence</span>
+								</a>
+							</li>
+                            <li class="fixed-nav__list-item ">
+								<a href="#3">
+									<span class="fixed-nav__line"></span>
+									<span class="fixed-nav__number">03</span>
+									<span class="fixed-nav__name">Events</span>
+								</a>
+							</li>
+                            <li class="fixed-nav__list-item ">
+								<a href="#4">
+									<span class="fixed-nav__line"></span>
+									<span class="fixed-nav__number">04</span>
+									<span class="fixed-nav__name">Photos</span>
+								</a>
+							</li>
+                            <li class="fixed-nav__list-item ">
+								<a href="#5">
+									<span class="fixed-nav__line"></span>
+									<span class="fixed-nav__number">05</span>
+									<span class="fixed-nav__name">Contact Us</span>
+								</a>
+							</li>
+                    	</ul>
+					</div>
+				</aside>
+
+			</React.Fragment>
+			
+		);			
+	}
 }
+ 	
 
-
+class Confluence extends React.Component {
+	
+	render() {
+		
+		return (
+			<div>
+			home video background
+			{/*yahan wo video wala backhround daalana hai so try that */}
+			
+			<Link to='/events/music'>music</Link>
+			<br />
+			<Link to='/events/literature'>literature</Link>
+			<br />
+			<Link to='/events/photography'>photography</Link>
+            <br />
+			<Link to='/gallery'>gallery</Link>
+            </div>
+		);
+	}
+}
 
 class AboutConfluence extends React.Component {
 
     componentDidMount() {
+
         $(function(){  // $(document).ready shorthand
             $('.monster').fadeIn('slow');
           });
@@ -62,13 +135,12 @@ class AboutConfluence extends React.Component {
               });
               
           });
-
     }
 
     render() {
 
         return (
-            <div>
+            <div id='aboutcc'>
                 
                 <div className="about3 hideme black-text">
                     <div className="about2 center">
@@ -128,36 +200,72 @@ class AboutConfluence extends React.Component {
         );
     }
 }
-
+	
 class Photos extends React.Component {
-
-    render() {
-
-        return (
-            <div>
-
-            </div>
-        );
-    }
+	
+	render() {
+		
+		return (
+			<div>
+			photos here
+			{/*kuch slight fotos but redirection ka link rkhege jahan aur bhi jyada photos videos hngi */}
+			</div>
+		);
+	}
 }
 
 class ContactUs extends React.Component {
-
-    render() {
-        return (
-            <div>
-                Query Form here
-					{/**yahan pe query wala form daalege contact us and some other links */}
-                <a href="#1">jhghjb</a>
-            </div>
-        );
-    }
+	
+	render() {
+		return (
+			<div>
+			Query Form here
+			{/**yahan pe query wala form daalege contact us and some other links */}
+			<a href="#1">jhghjb</a>
+			</div>
+		);
+	}
 }
-
+	
 // {/** I have made background for different colors for the sake of differentiation. We will use a fixed background in the final production */}
+					
+
+const Fullpage = () => (
+    <ReactFullpage
+      render={({ state, fullpageApi }) => {
+        return (
+          <ReactFullpage.Wrapper>
+
+            
+            <div className="center">
+                <div id="1" class="section page center grey darken-2 section scrollspy">
+                    <Confluence />
+                </div>
+                <div id="2" class="section page center red darken-2 section scrollspy">
+                    <AboutConfluence />
+                </div>
+                <div id="3" class="section page center darken-2 section scrollspy">
+                    {/**
+                        <EventsGenre />
+                    */}
+                    <h1>Events</h1>
+                </div>
+                <div id="4" class="section page center pink darken-2 section scrollspy">
+                    <Photos />
+                </div>
+                <div id="5" class="section page center yellow darken-2 section scrollspy">
+                    <ContactUs />
+                </div>
+            </div>
+          </ReactFullpage.Wrapper>
+        );
+      }}
+    />
+  );
 
 
-class Home extends React.Component {
+class Home extends React.Component {    
+
 
     componentDidMount() {
 
@@ -168,42 +276,29 @@ class Home extends React.Component {
         });
     }
 
-    render() {
+    render () {
 
         return (
+        <>
             <div>
-            <div>
-                <img className="logoconfluence" src={logo} alt="not loading"></img>
-                <div  className="scrollnav hide-on-small-only">
-                    <a href="#1">Home</a><br></br>
-                    <a href="#2">About Confluence</a><br></br>
-                    <a href="#3">Events</a><br></br>
-                    <a href="#4">Photos</a><br></br>
-                    <a href="#5">Contact Us</a><br></br>
-                </div>
-                <a class="register responsive-text transparent black-text waves-effect waves-light btn pink">Register</a>
-                </div>
-                <div className='center'>
-
-                <div id="1" class="page center grey darken-2 active section scrollspy">
-                    <Confluence />
-                </div>
-                <div id="2" class="page center about-confluence active section scrollspy">
-                    <AboutConfluence />
-                </div>
-
-
-                <div id="3" class="page center darken-2 active section scrollspy">
-                    <EventsGenre />
-                </div>
-                <div id="4" class="page center pink darken-2 active section scrollspy">
-                    <Photos />
-                </div>
-                <div id="5" class="page center yellow darken-2 active section scrollspy">
-                    <ContactUs />
-                </div>
+                <img className="logoconfluence" src={logo} alt="not loading" />
             </div>
+            <a href='#register' id='register' className='responsive-text transparent black-text waves-effect waves-teal btn-flat'>Register</a>
+
+            <div className='center' id="main">
+                <div id="list" class="hide-on-small-only">
+                    <ul>
+                        <li><a href="#1" class="navtext">CONFLUENCE</a></li>
+                        <li><a href="#2" class="navtext">ABOUT CONFLUENCE</a></li>
+                        <li><a href="#3" class="navtext">EVENTS</a></li>
+                        <li><a href="#4" class="navtext">GALLERY</a></li>
+                        <li><a href="#5" class="navtext">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <Fullpage />
             </div>
+        </>
+
         );
     }
 }

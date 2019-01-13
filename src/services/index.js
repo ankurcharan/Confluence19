@@ -24,6 +24,8 @@ const galleryImages = () => {
 
 const getEventsByCategory = (category) => {
 
+    alert(`fetchign ${category}`);
+
     const reqOptions = {
         headers: {
             Accept: 'application/json',

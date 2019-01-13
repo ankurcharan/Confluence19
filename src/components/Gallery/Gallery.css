@@ -1,4 +1,10 @@
-img {
+/* img {
     margin: 5px;
-}
+} */
 
+#images {
+    background: #222;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+}
