@@ -2,10 +2,10 @@ import React from 'react';
 import M from 'materialize-css';
 
 import { Link } from 'react-router-dom';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 import './Home.css';
-import EventsGenre from './eventsGenre.js';
+// import EventsGenre from './eventsGenre.js';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 
@@ -15,11 +15,11 @@ import './ScrollNav.css';
 import './aboutconfluence.css';
 import './indexcs.css';
 
-import street from './bg-016.jpg';
+// import street from './bg-016.jpg';
 import logo from './Confluence Logo.png';
 
 // import EventsGenre from './eventsGenre.js'
-
+ 
 class ScrollNav extends React.Component {
 	
 	render() {
@@ -75,7 +75,7 @@ class ScrollNav extends React.Component {
 		);			
 	}
 }
-	
+ 	
 
 class Confluence extends React.Component {
 	
@@ -254,7 +254,7 @@ class Home extends React.Component {
             <div>
                 <img className="logoconfluence" src={logo} alt="not loading" />
             </div>
-            <a id='register' class="responsive-text transparent black-text waves-effect waves-light btn pink">Register</a>
+            <a href='#register' id='register' className='responsive-text transparent black-text waves-effect waves-teal btn-flat'>Register</a>
 
             <div className='center' id="main">
                 <div id="list" class="hide-on-small-only">

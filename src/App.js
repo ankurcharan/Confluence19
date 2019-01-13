@@ -14,6 +14,9 @@ import GalRed from './components/Gallery/GalleryRedux';
 import EventsCategory from './components/EventsCategory/EventsCategory';
 
 
+import AddEvent from './components/Admin/Admin';
+
+
 class Page404 extends React.Component {
 
 	render() {
@@ -46,6 +49,8 @@ class App extends Component {
 						<Route exact path='/' component={Home} />
 
 						<Route exact path='/team' component={Team} />
+
+						<Route exact path='/admin' component={AddEvent} />
 
 						<Route exact path='/events/:category' component={EventsCategory} />
 
