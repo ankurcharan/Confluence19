@@ -1,4 +1,16 @@
-.about-confluence{
+.about-confluence{    
+    background-image: url(historyback.png);
+	background-repeat: no-repeat;
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+.logoconfluence{
+/* 	height: 6vw; */
+/* 	width: 10vw; */
     background-image: url('bg-016.jpg');
 	background-repeat: no-repeat;   
 }

@@ -2,18 +2,24 @@ import React from 'react';
 import M from 'materialize-css';
 
 import { Link } from 'react-router-dom';
-// import $ from 'jquery';
 
 import './Home.css';
-// import EventsGenre from './eventsGenre.js';
 import ReactFullpage from '@fullpage/react-fullpage';
-
 
 import './About.css';
 import './ScrollNav.css';
 
 import './aboutconfluence.css';
 import './indexcs.css';
+import $ from 'jquery';
+import EventsGenre from './eventsGenre.js';
+
+import street from './bg-016.jpg';
+import logo from './conlogo.png';
+
+
+
+class Confluence extends React.Component {
 
 // import street from './bg-016.jpg';
 import logo from './Confluence Logo.png';
@@ -101,11 +107,34 @@ class Confluence extends React.Component {
 class AboutConfluence extends React.Component {
 
     componentDidMount() {
-        // document.addEventListener('DOMContentLoaded', function () {
-        // var elems = document.querySelectorAll('.parallax');
-        // var instances = M.Parallax.init(elems, {});
-        // });
 
+        $(function(){  // $(document).ready shorthand
+            $('.monster').fadeIn('slow');
+          });
+          
+          $(document).ready(function() {
+              
+              /* Every time the window is scrolled ... */
+              $(window).scroll( function(){
+              
+                  /* Check the location of each desired element */
+                  $('.hideme').each( function(i){
+                      
+                      var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                      var bottom_of_window = $(window).scrollTop() + $(window).height();
+                      
+                      /* If the object is completely visible in the window, fade it it */
+                      if( bottom_of_window > bottom_of_object ){
+                          
+                          $(this).animate({'opacity':'1'},3000);
+                              
+                      }
+                      
+                  }); 
+              
+              });
+              
+          });
     }
 
     render() {
@@ -113,7 +142,7 @@ class AboutConfluence extends React.Component {
         return (
             <div id='aboutcc'>
                 
-                <div className="about3">
+                <div className="about3 hideme black-text">
                     <div className="about2 center">
                         <span>C</span>
                         <span>A</span>
@@ -137,7 +166,7 @@ class AboutConfluence extends React.Component {
                         <span>E</span>
                     </div>
 
-                    <p className="center white-text textf">Lorem ipsum dolor sit amet, consectetur <br />
+                    <p className="center textf">Lorem ipsum dolor sit amet, consectetur <br />
                         adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br />
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br />
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo <br />
@@ -234,6 +263,7 @@ const Fullpage = () => (
     />
   );
 
+
 class Home extends React.Component {    
 
 
@@ -249,7 +279,6 @@ class Home extends React.Component {
     render () {
 
         return (
-            
         <>
             <div>
                 <img className="logoconfluence" src={logo} alt="not loading" />

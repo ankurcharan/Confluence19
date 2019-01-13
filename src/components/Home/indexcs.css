@@ -9,13 +9,14 @@
     font-size: 6rem;
     padding: 0;
     font-family: 'Satisfy', cursive;
-    color: #fff;
+    
     text-transform: uppercase;
-    border-bottom:8px solid #fff;
+    border-bottom:8px solid black;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 .about3{
     width: 100%;
+    color:black;
     margin-top: 10%;
     z-index: 0;
 }
@@ -31,7 +32,7 @@
         bottom: 0;
         width: 100%;
         height: 4px;
-        background: #fff ;
+        background: black ;
         animation: spanBorder 1.5s linear infinite;
         
     }
