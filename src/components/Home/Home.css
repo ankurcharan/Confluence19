@@ -18,6 +18,12 @@ a
 
 */
 
+.megaEvents
+{
+	padding-top: 5%;
+	padding-left:13%; 
+}
+
 #list
 {
 	position: fixed;

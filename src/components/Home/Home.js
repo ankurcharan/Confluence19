@@ -1,6 +1,7 @@
 import React from 'react';
 import M from 'materialize-css';
 
+import Carousel from 'nuka-carousel';
 import { Link } from 'react-router-dom';
 
 import './Home.css';
@@ -238,7 +239,22 @@ class ContactUs extends React.Component {
 }
 	
 // {/** I have made background for different colors for the sake of differentiation. We will use a fixed background in the final production */}
-					
+    
+
+class MegaEvents extends React.Component {
+    render() {
+      return (
+        <Carousel animation={'zoom'} cellAllign={"center"} pauseOnHover={true}>
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide1" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide3" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide4" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6" />
+        </Carousel>
+      );
+    }
+  }
 
 const Fullpage = () => (
     <ReactFullpage
@@ -246,15 +262,31 @@ const Fullpage = () => (
         return (
           <ReactFullpage.Wrapper>
 
-            
-
-
+{/*             
+            <div className="center">
+                <div id="1" class="section page center grey darken-2 section scrollspy">
+                    <Confluence />
+                </div>
+                <div id="2" class="section page center red darken-2 section scrollspy">
+                    <AboutConfluence />
+                </div>
+                <div id="3" class="section page center darken-2 section scrollspy">
+                    
+                    
+                    <h1>Events</h1>
+                </div>
+                <div id="4" class="section page center pink darken-2 section scrollspy megaEvents">
+                    <MegaEvents />
+                </div>
+                <div id="5" class="section page center yellow darken-2 section scrollspy">
+                    <ContactUs />
+                </div>
+            </div> */}
           </ReactFullpage.Wrapper>
         );
       }}
     />
   );
-
 
 class Home extends React.Component {    
 
@@ -317,8 +349,9 @@ class Home extends React.Component {
                     {/* <EventsGenre /> */}
                     <h1>Events</h1>
                 </div>
-                <div id="4" class="page center pink darken-2 active section scrollspy">
-                    <Photos />
+                <div id="4" class="megaEvents page center pink darken-2 active section scrollspy">
+                    {/* <Photos /> */}
+                    <MegaEvents />
                 </div>
                 <div id="5" class="page center yellow darken-2 active section scrollspy">
                     <ContactUs />
