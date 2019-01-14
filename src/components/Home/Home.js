@@ -14,14 +14,16 @@ import './aboutconfluence.css';
 import './indexcs.css';
 import $ from 'jquery';
 
+import Contact from "../ContactUs/ContactUs";
+import "../ContactUs/ContactUs.css";
 import logo from './Confluence Logo.png';
- 
+
 class ScrollNav extends React.Component {
-	
+
 	render() {
-		
+
 		return (
-			
+
 			<React.Fragment>
 
 				<aside>
@@ -67,21 +69,21 @@ class ScrollNav extends React.Component {
 				</aside>
 
 			</React.Fragment>
-			
-		);			
+
+		);
 	}
 }
- 	
+
 
 class Confluence extends React.Component {
-	
+
 	render() {
-		
+
 		return (
 			<div>
 			home video background
 			{/*yahan wo video wala backhround daalana hai so try that */}
-			
+
 			<Link to='/events/music'>music</Link>
 			<br />
 			<Link to='/events/literature'>literature</Link>
@@ -101,29 +103,29 @@ class AboutConfluence extends React.Component {
         $(function(){  // $(document).ready shorthand
             $('.monster').fadeIn('slow');
           });
-          
+
           $(document).ready(function() {
-              
+
               /* Every time the window is scrolled ... */
               $(window).scroll( function(){
-              
+
                   /* Check the location of each desired element */
                   $('.hideme').each( function(i){
-                      
+
                       var bottom_of_object = $(this).position().top + $(this).outerHeight();
                       var bottom_of_window = $(window).scrollTop() + $(window).height();
-                      
+
                       /* If the object is completely visible in the window, fade it it */
                       if( bottom_of_window > bottom_of_object ){
-                          
+
                           $(this).animate({'opacity':'1'},3000);
-                              
+
                       }
-                      
-                  }); 
-              
+
+                  });
+
               });
-              
+
           });
     }
 
@@ -131,7 +133,7 @@ class AboutConfluence extends React.Component {
 
         return (
             <div>
-                
+
                 <div className="about3 hideme black-text">
                     <div className="about2 center" style={{
                     	'font-size': '20px'
@@ -192,18 +194,18 @@ class AboutConfluence extends React.Component {
         );
     }
 }
-	
+
 class Photos extends React.Component {
 
     componentDidMount() {
 
         let elems = document.querySelectorAll('.carousel');
         M.Carousel.init(elems, {});
- 
+
     }
-	
+
 	render() {
-		
+
 		return (
 			<div>
 
@@ -226,20 +228,55 @@ class Photos extends React.Component {
 }
 
 class ContactUs extends React.Component {
-	
+
 	render() {
 		return (
-			<div>
-			Query Form here
+      <div className="contact">
+      <div className="row center-align">
+        <img className="logo center-align" src="http://develop.spacemacs.org/layers/+web-services/confluence/img/confluence.png"></img>
+      </div>
+      <div className="row texta">
+
+        <div className="col l4 s12 m5">
+        <h1 className="text follow">LINKS</h1>
+        <ul className="text links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">THEME</a></li>
+          <li><a href="#">STATICS</a></li>
+          <li><a href="#">SOCIAL</a></li>
+          <li><a href="#">EVENTS</a></li>
+        </ul>
+        </div>
+        <div className="col l4 s12 m5">
+
+          <h1 className="text follow ">FOLLOW US</h1>
+          <ul className="text links ">
+            <li><a href="#">FACEBOOK</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">GOOGLE</a></li>
+            <li><a href="#">SNAPCHAT</a></li>
+            <li><a href="#">TWITTER</a></li>
+            <li><a href="#">FACEBOOK</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className="row">
+    <div className="wrapper ">
+    <a href="#" className="fa fa-facebook"></a>
+    <a href="#" className="fa fa-twitter"></a>
+    <a href="#" className="fa fa-google"></a>
+    <a href="#" className="fa fa-linkedin"></a>
+    </div>
+    </div>
 			{/**yahan pe query wala form daalege contact us and some other links */}
-			<a href="#1">jhghjb</a>
 			</div>
 		);
 	}
 }
-	
+
 // {/** I have made background for different colors for the sake of differentiation. We will use a fixed background in the final production */}
-    
+
 
 class MegaEvents extends React.Component {
     render() {
@@ -262,7 +299,7 @@ const Fullpage = () => (
         return (
           <ReactFullpage.Wrapper>
 
-{/*             
+{/*
             <div className="center">
                 <div id="1" class="section page center grey darken-2 section scrollspy">
                     <Confluence />
@@ -271,8 +308,8 @@ const Fullpage = () => (
                     <AboutConfluence />
                 </div>
                 <div id="3" class="section page center darken-2 section scrollspy">
-                    
-                    
+
+
                     <h1>Events</h1>
                 </div>
                 <div id="4" class="section page center pink darken-2 section scrollspy megaEvents">
@@ -288,7 +325,7 @@ const Fullpage = () => (
     />
   );
 
-class Home extends React.Component {    
+class Home extends React.Component {
 
 
     componentDidMount() {
@@ -353,7 +390,7 @@ class Home extends React.Component {
                     {/* <Photos /> */}
                     <MegaEvents />
                 </div>
-                <div id="5" class="page center yellow darken-2 active section scrollspy">
+                <div id="5" class="">
                     <ContactUs />
                 </div>
             </div>

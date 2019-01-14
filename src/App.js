@@ -23,7 +23,7 @@ class Page404 extends React.Component {
 		return (
 
 			<div className='center'>
-			
+
 				<Link to='/'>Go Home</Link>
 
 			</div>
@@ -64,6 +64,5 @@ class App extends Component {
 			);
 		}
 	}
-	
+
 	export default App;
-	
