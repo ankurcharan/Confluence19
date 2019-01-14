@@ -347,7 +347,7 @@ class Home extends React.Component {
 
                 <div id="3" class="page center darken-2 active section scrollspy">
                     {/* <EventsGenre /> */}
-                    <h1>Events</h1>
+                    <h1>Events2</h1>
                 </div>
                 <div id="4" class="megaEvents page center pink darken-2 active section scrollspy">
                     {/* <Photos /> */}

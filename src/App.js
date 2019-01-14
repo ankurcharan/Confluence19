@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, BrowserRouter, Route, Link } from 'react-router-dom';
 
-import Nav from './components/Nav/Nav';
-import Footer from './components/Footer/Footer';
+// import Nav from './components/Nav/Nav';
+// import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
 import Home from './components/Home/Home';
 import Sponsors from './components/Sponsors/Sponsors';
@@ -39,25 +39,30 @@ class App extends Component {
 			<BrowserRouter>
 
 				<div>
-					{/* <Nav /> */}
-					<Switch>
+					{/* <Nav /> */} 
+					
+					<React.Suspense fallback={<div>Loading...</div>}>
 
-						<Route exact path='/events' component={Events} />
-						<Route exact path='/gallery' component={Gallery} />
-						<Route exact path='/sponsors' component={Sponsors} />
-						<Route exact path='/' component={Home} />
+						<Switch>
 
-						<Route exact path='/team' component={Team} />
+							<Route exact path='/events' component={Events} />
+							<Route exact path='/gallery' component={Gallery} />
+							<Route exact path='/sponsors' component={Sponsors} />
+							<Route exact path='/' component={Home} />
 
-						<Route exact path='/admin' component={AddEvent} />
+							<Route exact path='/team' component={Team} />
 
-						<Route exact path='/events/:category' component={EventsCategory} />
+							<Route exact path='/admin' component={AddEvent} />
+
+							<Route exact path='/events/:category' component={EventsCategory} />
 
 
-						<Route path = '/*' component={Page404} />
+							<Route path = '/*' component={Page404} />
 
-					</Switch>
+						</Switch>
 					{/* <Footer /> */}
+
+					</React.Suspense>
 				</div>
 
 			</BrowserRouter>

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-* {
+/* * {
 	box-sizing: border-box;
 	font-weight: normal;
-}
+} */
 
 /* .front {
 	;
@@ -99,17 +99,17 @@
 	}
 } */
 
-.material-icons{
+/* .material-icons{
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	vertical-align: middle;
-}
+} */
 
-.socialTag {
+/* .socialTag {
 	height: 30px;
 	width: 30px;
-}
+} */
 
 .flip {
 	margin: 20px;
@@ -145,8 +145,16 @@
 	filter: grayscale(100%);
 }
 
-span {
-	font-size: 16px;
-	color: purple;
+.teamPhone {
+	font-size: 0.9rem;
+	color: grey !important;
+}
 
+.socialTags {
+	width: 26px;
+}
+
+.personName {
+	font-size: 17px;
+	color: grey;
 }
