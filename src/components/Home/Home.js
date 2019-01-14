@@ -1,13 +1,13 @@
 import React from 'react';
 import M from 'materialize-css';
 
+import Carousel from 'nuka-carousel';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 
 import './Home.css';
 import EventsGenre from './eventsGenre.js';
 import ReactFullpage from '@fullpage/react-fullpage';
-
 
 import './About.css';
 import './ScrollNav.css';
@@ -199,7 +199,22 @@ class ContactUs extends React.Component {
 }
 	
 // {/** I have made background for different colors for the sake of differentiation. We will use a fixed background in the final production */}
-					
+    
+
+class Ajeeb extends React.Component {
+    render() {
+      return (
+        <Carousel>
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide1" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide3" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide4" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5" />
+          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6" />
+        </Carousel>
+      );
+    }
+  }
 
 const Fullpage = () => (
     <ReactFullpage
@@ -222,7 +237,7 @@ const Fullpage = () => (
                     <h1>Events</h1>
                 </div>
                 <div id="4" class="section page center pink darken-2 section scrollspy">
-                    <Photos />
+                    <Ajeeb />
                 </div>
                 <div id="5" class="section page center yellow darken-2 section scrollspy">
                     <ContactUs />
@@ -233,6 +248,8 @@ const Fullpage = () => (
       }}
     />
   );
+
+
 
 class Home extends React.Component {    
 
