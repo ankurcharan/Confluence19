@@ -55,12 +55,7 @@ div.about {
   font-size: 70px;
   position: relative;
 }
-.textf{
-	font-size: 2rem;
-	font-weight:300;
-	text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 div.about span {
   position: relative;
   bottom: 0;
@@ -237,9 +232,6 @@ div.about span {
 	
 }
 @media screen and (max-width: 650px) {
-	.textf {
-	  font-size: 3vw;
-	}
 	.logoconfluence{
 		height: 12vw;
 		width: 13vw;
