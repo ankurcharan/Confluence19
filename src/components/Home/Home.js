@@ -18,6 +18,8 @@ import Contact from "../ContactUs/ContactUs";
 import "../ContactUs/ContactUs.css";
 import logo from './Confluence Logo.png';
 
+import Events from '../Events/Events';
+
 class ScrollNav extends React.Component {
 
 	render() {
@@ -384,7 +386,7 @@ class Home extends React.Component {
 
                 <div id="3" class="page center darken-2 active section scrollspy">
                     {/* <EventsGenre /> */}
-                    <h1>Events</h1>
+                    <Events/>
                 </div>
                 <div id="4" class="megaEvents page center pink darken-2 active section scrollspy">
                     {/* <Photos /> */}
