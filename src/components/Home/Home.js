@@ -373,8 +373,20 @@ class ContactUs extends React.Component {
 
 class Home extends React.Component {
 
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            lastY: 0,
+            waiting: false,
+            lastToLast: 0
+        }
+
+        this.handleScroll = this.handleScroll.bind(this);
+    }
 
     componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
 
         let elems = document.querySelectorAll('.scrollspy');
         M.ScrollSpy.init(elems, {
@@ -382,6 +394,64 @@ class Home extends React.Component {
             throttle: 10
         });
     }
+
+    changeDivDown = () => {
+        let height = this.state.lastY;
+        let divHeight = window.innerHeight;
+        let idx = parseInt(height / divHeight) + 1;
+        let newIdx = idx + 1;
+        if(newIdx > 5)
+        {
+            return;
+        }
+        console.log(newIdx * divHeight);
+    }
+
+    changeDivUp = () => {
+        let height = window.scrollY;
+        let divHeight = window.innerHeight;
+        let idx = parseInt(height / divHeight) + 1;
+
+        let newIdx = idx - 1;
+        if(newIdx < 1)
+        {
+            return;
+        }
+        console.log(newIdx * divHeight);
+        console.log("Hi");
+    }
+    
+    handleScroll = () => {
+        if(this.state.waiting)
+        {
+            return;
+        }
+        this.setState({
+            waiting: true,
+            lastToLast: this.state.lastY,
+            lastY: window.scrollY,
+        });
+        let direction = "up";
+        if(this.state.lastY > this.state.lastToLast)
+        {
+            direction = "down";
+        }
+        if(direction === "up")
+        {
+            this.changeDivUp();
+        }
+        else
+        {
+            this.changeDivDown();
+        }
+        setTimeout(function () {
+            this.setState({
+                waiting: false,
+                lastToLast: this.state.lastY,
+                lastY: window.scrollY
+            });
+        }.bind(this), 500)
+      };
 
     render() {
 
@@ -466,7 +536,7 @@ class Home extends React.Component {
                             {/* <img className="logoconfluence" src={logo} alt="not loading"></img>
                 <a class="register responsive-text transparent black-text waves-effect waves-light btn pink">Register</a> */}
                         </div>
-                        <div className='center'>
+                        <div className='center llll'>
 
                             <div id="1" class="page center grey darken-2 active section scrollspy">
                                 <Confluence />
