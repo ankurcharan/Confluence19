@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Button from './button.js';
+import "./mobile.css";
+import "./eventlist.css";
+import Description from "./eventdescription.js";
+import './eventdescription.css';
 import { getEventsCategory } from '../../selectors';
 import { connect } from "react-redux";
 import { getEventsByCategory } from '../../actions/action';
@@ -11,130 +15,98 @@ class EventsCategory extends React.Component {
 		super(props);
 
 		this.state = {
-			category: this.props.match.params.category.toLowerCase()
+			category: this.props.match.params.category.toLowerCase(),
+			index:0,
+			events:this.props.events,
+			status:true
 		}
+		this.changehandler=this.changehandler.bind(this);
+		this.eventhandler=this.eventhandler.bind(this);
 	}
-	
+	changehandler=()=>{
+    const current=this.state.status;
+    this.setState({
+      status:!current
+    })
+  }
+	eventhandler=(i)=> {
+		const current=this.state.status;
+    this.setState({
+      index:i,
+			events:this.props.events[i],
+			status:!current
+    })
+	}
 	componentWillMount() {
-		
+
 		this.props.getEventsByCategory(this.state.category);
+		console.log(this.state.category);
 	}
-	
-	// shouldComponentUpdate(nextProps, nextState) {
 
-		// console.log('should update');
-		// console.log(this.props);
-		// console.log(nextProps);
-
-		// if(nextProps === undefined) {
-		// 	return true;
-		// }
-
-		// let shouldUpdate = this.props.match.params.category !== nextProps.match.params.category;
-		// return shouldUpdate;
-		// return false;
-	// }
-
-	// componentWillReceiveProps() {
-	// 	const x = this.props.match.params.category.toLowerCase();
-	// 	this.props.getEventsByCategory(x);
-	// }
-
-	// componentWillUpdate() {
-
-	// 	this.props.getEventsByCategory(this.state.category);
-	// }
-	
-	// componentWillUpdate(nextProps, nextState) {
-	// 	const x = nextProps.match.params.category.toLowerCase();
-
-	// 	this.setState({
-	// 		category: x
-	// 	})
-	// }
-
-	// componentDidUpdate() {
-
-	// 	if(this.shouldComponentUpdate()) {
-	// 		const x = this.props.match.params.category.toLowerCase();
-	// 		this.props.getEventsByCategory(x);
-
-	// 		this.render();
-	// 	}
-	// }
-	
 	render() {
-		
-		// let allEvents = this.props.events;
 
-		// let cat = this.props.match.params.category;
-		// let events =  allEvents[cat];
-
-		// console.log(cat);
-		// console.log('ndering 22 -----', allEvents);
-
-		// let isFetchingEvents = this.props.isFetchingEvents;
-
-		// there they are 
-		// render them as you want
-		
-		// events will be null initially before the api call
-		// so we'll handle that too
-		// if(events === null || events === undefined) {
-		// 	alert('see this');
-		// }
-		
-		// let eventsssss = event.map((event, index) => {
-		
-		let events = this.props.events;
 		let isFetchingEvents = this.props.isFetchingEvents;
-		
-		return (
-			
-			<div id='events'>
-			<h1>events of {this.props.match.params.category}</h1>
-			
-			{
-				(isFetchingEvents) ? 
-				(<h1>loading ...</h1>) :
+
+		let events = this.props.events;
+		const list = events.map((eve,index)=>{
+      return(
+        <div>
+	        <Button
+						key={index}
+						title={eve.eventName}
+	        	click={()=>this.eventhandler(index)}
+					/>
+        </div>
+      )});
+
+			const description=(
+				(isFetchingEvents)?
+				(<h1>loading....</h1>):
 				(
-					(events && events.length > 0) ? (events.map((event, index) => {
-					return (
-						<div key={index}>
-						<p>{event.eventName}</p>
-						<p>{event.venue}</p>
-						<p>{event.description}</p>
-						<p>{event.category}</p>
-						<br />
-						</div>
-					);
-					})) : '' 
+					<Description
+						key={events[this.state.index]}
+						events={events[this.state.index]} />
 				)
-			}
-				
-			
-			
-			<Link to='/events/music'>music</Link>
-			<br />
-			<Link to='/events/literature'>literature</Link>
-			<br />
-			<Link to='/events/photography'>photography</Link>
-			<br />
-			<Link to='/events/dance'>dance</Link>
-			<br />
-			<Link to='/'>home</Link>
-			</div>			
-		);
-	}
+			)
+			const list_view=(
+				(!this.state.status)?
+				(<div className="mobile_list">
+					{list}
+				</div>):null
+			);
+		return (
+			isFetchingEvents ?
+			(
+				<h1>loading ...</h1>
+			) : (
+				<div className="main-body">
+				<div className="mobile_events">
+				{list_view}
+				<div className="right-align buttonbody">
+					<div onClick={this.changehandler} className="button "></div>
+				</div>
+				</div>
+          <div className="row" >
+          	<div className="col l9 s12">
+							{description}
+	          </div>
+		         <div className="button-list col l3 s12">
+		          {list}
+		        </div>
+	        </div>
+					</div>
+				)
+			)
+		}
 }
 
 
 const mapStateToProps = (state, ownProps) => {
-	
+
 	const { events, isFetchingEvents } = state;
 	// const eventsCat = getEventsCategory(events, ownProps.match.params.category);
-	// return { 
-		// events: eventsCat 
+	// return {
+		// events: eventsCat
 	// };
 
 	return {

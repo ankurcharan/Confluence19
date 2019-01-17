@@ -1,0 +1,26 @@
+.name{
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 20px;
+  width:200px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display:block;
+}
+.main{
+  margin-bottom: 20px;
+}
+.name:hover {
+color: #494949;
+border-radius:50px;
+border-color: #494949;
+transition: all 0.3s ease 0s;
+}
+.name:active{
+  border-radius: 50px;
+  background-color: white;
+  color: inherit;
+}
