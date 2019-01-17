@@ -27,41 +27,41 @@ class ScrollNav extends React.Component {
             <React.Fragment>
 
                 <aside>
-                    <div class="fixed-nav  hide-on-small-only">
-                        <ul class="fixed-nav__list">
-                            <li class="fixed-nav__list-item">
+                    <div className="fixed-nav  hide-on-small-only">
+                        <ul className="fixed-nav__list">
+                            <li className="fixed-nav__list-item">
                                 <a href="#1">
-                                    <span class="fixed-nav__line"></span>
-                                    <span class="fixed-nav__number">01</span>
-                                    <span class="fixed-nav__name">Home</span>
+                                    <span className="fixed-nav__line"></span>
+                                    <span className="fixed-nav__number">01</span>
+                                    <span className="fixed-nav__name">Home</span>
                                 </a>
                             </li>
-                            <li class="fixed-nav__list-item ">
+                            <li className="fixed-nav__list-item ">
                                 <a href="#2">
-                                    <span class="fixed-nav__line"></span>
-                                    <span class="fixed-nav__number">02</span>
-                                    <span class="fixed-nav__name">About Confluence</span>
+                                    <span className="fixed-nav__line"></span>
+                                    <span className="fixed-nav__number">02</span>
+                                    <span className="fixed-nav__name">About Confluence</span>
                                 </a>
                             </li>
-                            <li class="fixed-nav__list-item ">
+                            <li className="fixed-nav__list-item ">
                                 <a href="#3">
-                                    <span class="fixed-nav__line"></span>
-                                    <span class="fixed-nav__number">03</span>
-                                    <span class="fixed-nav__name">Events</span>
+                                    <span className="fixed-nav__line"></span>
+                                    <span className="fixed-nav__number">03</span>
+                                    <span className="fixed-nav__name">Events</span>
                                 </a>
                             </li>
-                            <li class="fixed-nav__list-item ">
+                            <li className="fixed-nav__list-item ">
                                 <a href="#4">
-                                    <span class="fixed-nav__line"></span>
-                                    <span class="fixed-nav__number">04</span>
-                                    <span class="fixed-nav__name">Photos</span>
+                                    <span className="fixed-nav__line"></span>
+                                    <span className="fixed-nav__number">04</span>
+                                    <span className="fixed-nav__name">Photos</span>
                                 </a>
                             </li>
-                            <li class="fixed-nav__list-item ">
+                            <li className="fixed-nav__list-item ">
                                 <a href="#5">
-                                    <span class="fixed-nav__line"></span>
-                                    <span class="fixed-nav__number">05</span>
-                                    <span class="fixed-nav__name">Contact Us</span>
+                                    <span className="fixed-nav__line"></span>
+                                    <span className="fixed-nav__number">05</span>
+                                    <span className="fixed-nav__name">Contact Us</span>
                                 </a>
                             </li>
                         </ul>
@@ -169,20 +169,20 @@ class AboutConfluence extends React.Component {
                     </p>
                 </div>
                 <div className="container1">
-                    <div class="bird-container one1">
-                        <div class="bird one"></div>
+                    <div className="bird-container one1">
+                        <div className="bird one"></div>
                     </div>
 
-                    <div class="bird-container two2">
-                        <div class="bird two"></div>
+                    <div className="bird-container two2">
+                        <div className="bird two"></div>
                     </div>
 
-                    <div class="bird-container three3">
-                        <div class="bird three"></div>
+                    <div className="bird-container three3">
+                        <div className="bird three"></div>
                     </div>
 
-                    <div class="bird-container four4">
-                        <div class="bird four"></div>
+                    <div className="bird-container four4">
+                        <div className="bird four"></div>
                     </div>
 
                 </div>
@@ -208,12 +208,12 @@ class Photos extends React.Component {
         return (
             <div>
 
-                <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1" /></a>
-                    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2" /></a>
-                    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3" /></a>
-                    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4" /></a>
-                    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5" /></a>
+                <div className="carousel">
+                    <a className="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1" /></a>
+                    <a className="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2" /></a>
+                    <a className="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3" /></a>
+                    <a className="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4" /></a>
+                    <a className="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5" /></a>
                 </div>
 
 
@@ -250,21 +250,21 @@ const Fullpage = () => (
 
                     {/*
             <div className="center">
-                <div id="1" class="section page center grey darken-2 section scrollspy">
+                <div id="1" className="section page center grey darken-2 section scrollspy">
                     <Confluence />
                 </div>
-                <div id="2" class="section page center red darken-2 section scrollspy">
+                <div id="2" className="section page center red darken-2 section scrollspy">
                     <AboutConfluence />
                 </div>
-                <div id="3" class="section page center darken-2 section scrollspy">
+                <div id="3" className="section page center darken-2 section scrollspy">
 
 
                     <h1>Events</h1>
                 </div>
-                <div id="4" class="section page center pink darken-2 section scrollspy megaEvents">
+                <div id="4" className="section page center pink darken-2 section scrollspy megaEvents">
                     <MegaEvents />
                 </div>
-                <div id="5" class="section page center yellow darken-2 section scrollspy">
+                <div id="5" className="section page center yellow darken-2 section scrollspy">
                     <ContactUs />
                 </div>
             </div> */}
@@ -326,9 +326,9 @@ class ContactUs extends React.Component {
                 </div>
 
                 {/* <div className="contactLogo row center">
-                        <img 
-                            className="logo center" 
-                            src="http://develop.spacemacs.org/layers/+web-services/confluence/img/confluence.png" 
+                        <img
+                            className="logo center"
+                            src="http://develop.spacemacs.org/layers/+web-services/confluence/img/confluence.png"
                             alt='confluence logo'
                         />
                     </div>
@@ -420,7 +420,7 @@ class Home extends React.Component {
         console.log(newIdx * divHeight);
         console.log("Hi");
     }
-    
+
     handleScroll = () => {
         if(this.state.waiting)
         {
@@ -483,25 +483,25 @@ class Home extends React.Component {
 
                     <img
                         id='facebookNetwork'
-                        className='socialNetwork'   
+                        className='socialNetwork'
                         src={facebookLogo}
                         alt='facebook'
                     />
                     <img
                         id='instagramNetwork'
-                        className='socialNetwork'   
+                        className='socialNetwork'
                         src={instagramNetwork}
                         alt='facebook'
                     />
                     <img
                         id='twitterNetwork'
-                        className='socialNetwork'   
+                        className='socialNetwork'
                         src={twitterLogo}
                         alt='facebook'
                     />
                     <img
                         id='linkedInNetwork'
-                        className='socialNetwork'   
+                        className='socialNetwork'
                         src={linkedInNetwork}
                         alt='facebook'
                     />
@@ -511,13 +511,13 @@ class Home extends React.Component {
 
 
                 <div className='center' id="main">
-                    <div id="list" class="hide-on-med-and-down">
+                    <div id="list" className="hide-on-med-and-down">
                         <ul>
-                            <li className='white-text'><a href="#1" class="navtext">CONFLUENCE</a></li>
-                            <li className='white-text'><a href="#2" class="navtext">ABOUT CONFLUENCE</a></li>
-                            <li className='white-text'><a href="#3" class="navtext">EVENTS</a></li>
-                            <li className='white-text'><a href="#4" class="navtext">GALLERY</a></li>
-                            <li className='white-text'><a href="#5" class="navtext">CONTACT US</a></li>
+                            <li className='white-text'><a href="#1" className="navtext">CONFLUENCE</a></li>
+                            <li className='white-text'><a href="#2" className="navtext">ABOUT CONFLUENCE</a></li>
+                            <li className='white-text'><a href="#3" className="navtext">EVENTS</a></li>
+                            <li className='white-text'><a href="#4" className="navtext">GALLERY</a></li>
+                            <li className='white-text'><a href="#5" className="navtext">CONTACT US</a></li>
                         </ul>
                     </div>
 
@@ -534,27 +534,27 @@ class Home extends React.Component {
                     <div>
                         <div>
                             {/* <img className="logoconfluence" src={logo} alt="not loading"></img>
-                <a class="register responsive-text transparent black-text waves-effect waves-light btn pink">Register</a> */}
+                <a className="register responsive-text transparent black-text waves-effect waves-light btn pink">Register</a> */}
                         </div>
                         <div className='center llll'>
 
-                            <div id="1" class="page center grey darken-2 active section scrollspy">
+                            <div id="1" className="page center grey darken-2 active section scrollspy">
                                 <Confluence />
                             </div>
-                            <div id="2" class="page center about-confluence active section scrollspy">
+                            <div id="2" className="page center about-confluence active section scrollspy">
                                 <AboutConfluence />
                             </div>
 
 
-                            <div id="3" class="page center darken-2 active section scrollspy">
+                            <div id="3" className="page center darken-2 active section scrollspy">
                                 {/* <EventsGenre /> */}
                                 <h1>Events2</h1>
                             </div>
-                            <div id="4" class="megaEvents page center pink darken-2 active section scrollspy">
+                            <div id="4" className="megaEvents page center pink darken-2 active section scrollspy">
                                 {/* <Photos /> */}
                                 <MegaEvents />
                             </div>
-                            <div id="5" class="">
+                            <div id="5" className="">
                                 <ContactUs />
                             </div>
                         </div>
