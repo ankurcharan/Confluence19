@@ -18,6 +18,8 @@ import Contact from "../ContactUs/ContactUs";
 import "../ContactUs/ContactUs.css";
 import logo from './Confluence Logo.png';
 
+import Events from '../Events/Events';
+
 class ScrollNav extends React.Component {
 
     render() {
@@ -384,7 +386,6 @@ class Home extends React.Component {
 
         this.handleScroll = this.handleScroll.bind(this);
     }
-
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
 
@@ -530,7 +531,6 @@ class Home extends React.Component {
 
 
 
-
                     <div>
                         <div>
                             {/* <img className="logoconfluence" src={logo} alt="not loading"></img>
@@ -548,7 +548,7 @@ class Home extends React.Component {
 
                             <div id="3" className="page center darken-2 active section scrollspy">
                                 {/* <EventsGenre /> */}
-                                <h1>Events2</h1>
+                                <Events />
                             </div>
                             <div id="4" className="megaEvents page center pink darken-2 active section scrollspy">
                                 {/* <Photos /> */}
