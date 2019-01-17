@@ -19,7 +19,7 @@ class description extends Component{
               {this.props.events.eventName}
             </h1>
           <div className="row ">
-            <div className="card">
+            <div className="card1">
                   <p>{this.props.events.description}</p>
             </div>
           </div>
