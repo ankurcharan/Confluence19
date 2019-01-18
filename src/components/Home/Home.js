@@ -248,10 +248,10 @@ class CarouselMaterialize extends React.Component {
     componentDidMount()
     {
         let options = {
-            duration: 400,
-            dist: -200,
-            shift: 10,
-            numVisible: 3,
+            duration: 300,
+            dist: -300,
+            numVisible: 6,
+            shift: 50,
             indicators: true,
 
         };
@@ -262,11 +262,11 @@ class CarouselMaterialize extends React.Component {
     }
     render() {
         return (
-                <div className="carousel">
-                    <a className="carousel-item" href="#one!"><img src="http://placehold.it/250"></img></a>
-                    <a className="carousel-item" href="#two!"><img src="http://placehold.it/250"></img></a>
-                    <a className="carousel-item" href="#three!"><img src="http://placehold.it/250"></img></a>
-                    <a className="carousel-item" href="#four!"><img src="http://placehold.it/250"></img></a>
+                <div className="carousel" class="carousel">
+                    <a className="carousel-item" href="#one!"><img src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img></a>
+                    <a className="carousel-item" href="#two!"><img src="https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img></a>
+                    <a className="carousel-item" href="#three!"><img src="https://images.pexels.com/photos/457702/pexels-photo-457702.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"></img></a>
+                    <a className="carousel-item" href="#four!"><img src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img></a>
                     <a className="carousel-item" href="#five!"><img src="http://placehold.it/250"></img></a>
                 </div>
         );
