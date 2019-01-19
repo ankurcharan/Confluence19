@@ -1,12 +1,3 @@
 .card {
-	text-align: center;
-	background-color: blue;
-	border: 2px solid black;
-	border-radius: 10px;
-	transition: transform 1.5s;
 	margin: 20px;
-}
-
-.card:hover {
-	transform: scale(1.3);
 }
