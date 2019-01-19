@@ -5,6 +5,8 @@ import { Switch, BrowserRouter, Route, Link } from 'react-router-dom';
 // import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
 import Home from './components/Home/Home';
+
+import Register from './components/Home/Register/Register.js';
 import Sponsors from './components/Sponsors/Sponsors';
 import Team from './components/TeamConfluence/TeamConfluence';
 
@@ -39,8 +41,8 @@ class App extends Component {
 			<BrowserRouter>
 
 				<div>
-					{/* <Nav /> */} 
-					
+					{/* <Nav /> */}
+
 					<React.Suspense fallback={<div>Loading...</div>}>
 
 						<Switch>
@@ -48,6 +50,7 @@ class App extends Component {
 							<Route exact path='/events' component={Events} />
 							<Route exact path='/gallery' component={Gallery} />
 							<Route exact path='/sponsors' component={Sponsors} />
+							<Route exact path='/register' component={Register} />
 							<Route exact path='/' component={Home} />
 
 							<Route exact path='/team' component={Team} />

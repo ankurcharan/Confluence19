@@ -315,7 +315,7 @@ class ContactUs extends React.Component {
         return (
             <div className="contact">
 
-                <div className='container'>
+                {/**<div className='container'>
 
                     <div className='row'>
 
@@ -355,9 +355,9 @@ class ContactUs extends React.Component {
 
                     </div>
 
-                </div>
+                </div>**/}
 
-                {/* <div className="contactLogo row center">
+               <div className="row center">
                         <img
                             className="logo center"
                             src="http://develop.spacemacs.org/layers/+web-services/confluence/img/confluence.png"
@@ -390,14 +390,6 @@ class ContactUs extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="wrapper ">
-                        <a href="#" className="fa fa-facebook"></a>
-                        <a href="#" className="fa fa-twitter"></a>
-                        <a href="#" className="fa fa-google"></a>
-                        <a href="#" className="fa fa-linkedin"></a>
-                    </div>
-                </div> */}
             </div>
         );
     }
@@ -497,7 +489,7 @@ class Home extends React.Component {
                 <div>
                     <img id="logoconfluence" src={logo} alt="not loading" />
                 </div>
-                <a href='#register' id='register' className='responsive-text transparent black-text waves-effect waves-teal btn-flat'>Register</a>
+                <a href='/register' id='register' className='responsive-text transparent black-text waves-effect waves-teal btn-flat'>Register</a>
 
 
 
