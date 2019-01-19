@@ -244,6 +244,36 @@ class MegaEvents extends React.Component {
     }
 }
 
+class CarouselMaterialize extends React.Component {
+    componentDidMount()
+    {
+        let options = {
+            duration: 300,
+            dist: -300,
+            numVisible: 6,
+            shift: 50,
+            indicators: true,
+
+        };
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, options);
+        });
+    }
+    render() {
+        return (
+                <div className="carousel" class="carousel">
+                    <a className="carousel-item" href="#one!"><img src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img></a>
+                    <a className="carousel-item" href="#two!"><img src="https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img></a>
+                    <a className="carousel-item" href="#three!"><img src="https://images.pexels.com/photos/457702/pexels-photo-457702.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"></img></a>
+                    <a className="carousel-item" href="#four!"><img src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></img></a>
+                    <a className="carousel-item" href="#five!"><img src="http://placehold.it/250"></img></a>
+                </div>
+        );
+    }
+}
+
+
 const Fullpage = () => (
     <ReactFullpage
         render={({ state, fullpageApi }) => {
@@ -379,6 +409,7 @@ class Home extends React.Component {
         this.handleScroll = this.handleScroll.bind(this);
     }
     componentDidMount() {
+
         window.addEventListener('scroll', this.handleScroll);
 
         let elems = document.querySelectorAll('.scrollspy');
@@ -543,8 +574,7 @@ class Home extends React.Component {
                                 <Events />
                             </div>
                             <div id="4" className="megaEvents page center pink darken-2 active section scrollspy">
-                                {/* <Photos /> */}
-                                <MegaEvents />
+                                <CarouselMaterialize />
                             </div>
                             <div id="5" className="">
                                 <ContactUs />
