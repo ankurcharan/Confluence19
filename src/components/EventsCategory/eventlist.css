@@ -1,4 +1,5 @@
-body{
+.main-body{
+      padding-top: 10vh;
       background: linear-gradient(110deg,#222 33%,rgba(0,0,0,0) 33%),linear-gradient(110deg,#221 66%,#112 66%);
       height: 100vh;
       width: 100wh;

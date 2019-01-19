@@ -15,7 +15,7 @@ class description extends Component{
           <h1>loading ..</h1>
         ) : (
           <div>
-            <h1 className="title row">
+            <h1 className="titlename row center-align">
               {this.props.events.eventName}
             </h1>
           <div className="row ">

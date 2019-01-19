@@ -9,10 +9,10 @@
 }
 .mobile_list{
   width: 100vw;
+  padding-top: 5vh;
   height: 100vh;
   background-color:transparent;
   padding-left: 30%;
-  padding-top: 10%;
 }
 .body{
   width: 100vw;
