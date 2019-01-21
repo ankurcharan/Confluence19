@@ -1,9 +1,6 @@
 ## Status and Bugs
 
 *TODO*
-1. Cannot scroll normally
-2. inc font-size for last links div
-3. last div mobile reposnsive
 4. margin-top theme div in phone 
 5. carousel not working for attractions
 6. events div not mobile responsive
