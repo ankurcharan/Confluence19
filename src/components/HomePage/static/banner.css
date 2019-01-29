@@ -1,0 +1,278 @@
+.banner{
+  height:150vh;
+  width:100%;
+  background-color:#21132C;
+  position: relative;
+}
+
+.main_heading{
+  position: absolute;
+  border:12px double cornsilk;
+  right:150px;
+  top:15vh;
+  z-index: 500;
+  text-align: center;
+  text-transform: uppercase;
+  padding:10px 25px;
+  color:cornsilk;
+  width:max-content;
+  box-shadow: inset 5px 5px 20px rgba(0,0,0,0.5),inset -5px -5px 20px rgba(0,0,0,0.5);
+}
+.confluence_text{
+  font-size:90px;
+  text-shadow: 2px 3px 20px rgba(0,0,0,0.8);
+}
+.confluence_year{
+  font-size:50px;
+  font-weight: 100;
+  text-align: right;
+  text-shadow:2px 2px 10px rgba(0,0,0,1);
+}
+
+.ray_box{
+  height:500px;
+  width:500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+.ray_box .banner_sun{
+  height:200px;
+  width:200px;
+  background-color:cornsilk;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px 100px rgba(255,255,255,0.1); 
+  z-index:300;
+}
+.ray_box .second_sun{
+  position: absolute;
+  height:800px;
+  width:800px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  box-shadow: 0 10px 10px 100px rgba(255,255,255,0.05),inset 0 10px 10px 50px rgba(255,255,255,0.05); 
+}
+.ray_box .ray_circle{
+  position: absolute;
+  border-color:cornsilk;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  transform-origin: center center;
+}
+.mountain_box{
+  position:absolute;
+  left:0;
+  bottom:0;
+  height: 100%;
+  width:100%;
+}
+.gallery_heading{
+  z-index:800;
+  font-size:40px;
+  font-weight: 100;
+  border:10px double #903;
+  padding:5px 30px;
+  color:cornsilk;
+  position: absolute;
+  bottom:190px;
+  left:50%;
+  box-shadow:0 4px 20px rgba(0,0,0,0.3),0 -4px 10px rgba(0,0,0,0.3);
+  background-color:#21132C;
+  transform:translateX(-50%);
+}
+.mountain{
+  position: absolute;
+}
+.mountain  img{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.mountain_1{
+  bottom:150px;
+  left:-50px;
+}
+.mountain_2{
+  z-index:100;
+  bottom:40px;
+  z-index:100;
+}
+.mountain_2  img{
+  transform: scaleX(1.08) scaleY(1.12);
+}
+.mahal{
+  z-index:200;
+  right:-370px;
+  transform:scale(0.7);
+  bottom:-220px;
+}
+.mountain_3{
+  z-index:300;
+  bottom:-200px;
+  left:-10px;
+}
+.mountain_3 img{
+  transform:scaleX(1.05) scaleY(1.08);
+}
+
+@media only screen and (max-width:1200px){
+  .main_heading{
+    right:40px;
+  }
+}
+@media only screen and (max-width:1100px){
+  .main_heading{
+    top:55vh;
+  }
+}
+
+@media only screen and (max-width:1000px){
+  .banner{
+    height:130vh;
+  }
+  .mountain_1{
+    bottom:100px;
+  }
+  .mountain_2{
+    bottom:0px;
+  }
+  .mountain_2  img{
+    transform: scaleX(1.08) scaleY(1.4);
+  }
+  .mahal{
+    z-index:200;
+    right:-490px;
+    transform:scale(0.7);
+    bottom:-280px;
+  }
+  .mountain_3{
+    bottom:-180px;
+  }
+}
+@media only screen and (max-width:800px){
+  .banner{
+    height:120vh;
+  }
+  .main_heading{
+    left:30px;
+    top:70vh;
+  }
+  .confluence_text{
+    font-size:50px;
+  }
+  .confluence_year{
+    font-size:30px;
+  }
+  .mountain_1{
+    bottom:30px;
+    left:-100px;
+  }
+  .mountain_1  img{
+    transform:scale(0.8);
+  }
+  .mahal{
+    transform:scale(0.6);
+    bottom:-390px;
+    right:-540px;
+  }
+  .mountain_3{
+    bottom:-200px;
+  }
+  .gallery_heading{
+    bottom:110px;
+  }
+}
+@media only screen and (max-width:650px){
+  .main_heading{
+    top:75vh;
+  }
+  .confluence_text{
+    font-size:40px;
+  }
+  .confluence_year{
+    font-size:20px;
+  }
+  .gallery_heading{
+    font-size:25px;
+    font-weight: 100;
+    border:8px double #903;
+    padding:4px 25px;
+    color:cornsilk;
+    position: absolute;
+    bottom:120px;
+  }
+}
+@media only screen and (max-width:550px){
+  .banner{
+    height:110vh;
+  }
+  .main_heading{
+    left:50%;
+    transform:translateX(-50%);
+    top:70vh;
+  }
+  .confluence_text{
+    font-size:40px;
+  }
+  .confluence_year{
+    font-size:20px;
+  }
+  .mountain_1{
+    bottom:-20px;
+    left:-200px;  
+  }
+  .mountain_1  img{
+    transform:scale(0.6);
+  }
+  .mountain_2{
+    bottom:0px;
+  }
+  .mountain_2  img{
+    transform: scaleX(1.08) scaleY(1.4);
+  }
+  .mahal{
+    transform:scale(0.55);
+    bottom:-300px;
+    right:-400px;
+  }
+  .mountain_3{
+    bottom:-130px;
+  }
+  .gallery_heading{
+    bottom:90px;  
+  }
+}
+@media only screen and (max-width:420px){
+  .banner{
+    height:110vh;
+  }
+  .main_heading{
+    top:70vh;
+  }
+  .confluence_text{
+    font-size:40px;
+  }
+  .confluence_year{
+    font-size:20px;
+  }
+  .mountain_1{
+    bottom:-30px;
+    left:-200px;  
+  }
+  .mountain_1  img{
+    transform:scale(0.5);
+  }
+  .mahal{
+    bottom:-250px;
+    right:-300px;
+    transform:scale(0.6)
+  }
+  .gallery_heading{
+    bottom:70px;
+    font-size:15px;
+  }
+}
