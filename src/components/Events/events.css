@@ -1,8 +1,11 @@
 .cardList {
 	display:flex;
-	overflow-x: scroll;
+	overflow: auto;
 }
-
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
 .container {
 	color: white;
 }

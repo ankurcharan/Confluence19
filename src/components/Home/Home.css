@@ -7,7 +7,12 @@
 	width: 100%;
 	width: 100vw;
 }
-
+.contains{
+	scroll-snap-type: y mandatory;
+}
+.contains div{
+	scroll-snap-align: start;
+}
 .carousel-item {
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
@@ -15,7 +20,7 @@
 /* .container {
 	padding: 0px;
 } */
-/* 
+/*
 #3
 {
 	background: transparent;
@@ -31,7 +36,7 @@ a
 .megaEvents
 {
 	padding-top: 5%;
-	padding-left:13%; 
+	padding-left:13%;
 }
 
 #list
@@ -50,7 +55,7 @@ a
 } */
 
 /* #fixed-bg {
-	
+
 	background: url('https://i.ytimg.com/vi/hF_LjTUvP-U/maxresdefault.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -69,7 +74,7 @@ a
 	position: relative;
 }
 #content .section {
-	/* height: 500px; 
+	/* height: 500px;
 	width: 100%;
 	background: rgba(255,255,255, 0.5);
 	opacity: 0;

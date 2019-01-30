@@ -10,6 +10,7 @@
   background: transparent;
   height: 600px;
   float: left;
+  z-index: 100;
   width: 60%;
   box-sizing: border-box;
   margin-right: 5%;
@@ -19,8 +20,10 @@
    text-align: center;
    width:70%;
    color: white;
+   z-index: 100;
 }
 .card1 p{
+  z-index: 100;
   font-size: 20px;
   display: flex;
   text-align: justify;

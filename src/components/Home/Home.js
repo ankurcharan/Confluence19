@@ -3,7 +3,6 @@ import M from 'materialize-css';
 
 import Carousel from 'nuka-carousel';
 import { Link } from 'react-router-dom';
-
 import './Home.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 
@@ -559,21 +558,21 @@ class Home extends React.Component {
                             {/* <img className="logoconfluence" src={logo} alt="not loading"></img>
                 <a className="register responsive-text transparent black-text waves-effect waves-light btn pink">Register</a> */}
                         </div>
-                        <div className='center llll'>
+                        <div className='center llll contains'>
 
-                            <div id="1" className="page center grey darken-2 active section scrollspy">
+                            <div id="1" className="page center grey darken-2 ">
                                 <Confluence />
                             </div>
-                            <div id="2" className="page center about-confluence active section scrollspy">
+                            <div id="2" className="page center about-confluence">
                                 <AboutConfluence />
                             </div>
 
 
-                            <div id="3" className="page center darken-2 active section scrollspy">
+                            <div id="3" className="page center darken-2 active y">
                                 {/* <EventsGenre /> */}
                                 <Events />
                             </div>
-                            <div id="4" className="megaEvents page center pink darken-2 active section scrollspy">
+                            <div id="4" className="megaEvents page center pink darken-2 ">
                                 <CarouselMaterialize />
                             </div>
                             <div id="5" className="">

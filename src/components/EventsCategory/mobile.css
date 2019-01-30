@@ -9,6 +9,7 @@
 }
 .mobile_list{
   width: 100vw;
+  z-index: 100;
   padding-top: 5vh;
   height: 100vh;
   background-color:transparent;
@@ -16,9 +17,11 @@
 }
 .body{
   width: 100vw;
-  height: 100vh;
+  height: 100vh; 
 }
 .buttonbody{
+  
+  z-index: 100;
 background-color: rgb(32, 35, 42);
 bottom: 44px;
 color: rgb(97, 218, 251);
@@ -34,6 +37,7 @@ border-radius: 50%;
 .listitems{
 top: 0px;
 left: 0px;
+z-index: 100;
 bottom: 0px;
 right: 0px;
 position: fixed;

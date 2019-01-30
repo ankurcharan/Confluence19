@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from './button.js';
 import "./mobile.css";
+import Loader from "../loader/loader.js";
+import {findDOMNode} from 'react-dom';
+import $ from "jquery";
 import "./eventlist.css";
 import Description from "./eventdescription.js";
 import './eventdescription.css';
@@ -22,6 +25,20 @@ class EventsCategory extends React.Component {
 		}
 		this.changehandler=this.changehandler.bind(this);
 		this.eventhandler=this.eventhandler.bind(this);
+	}
+	componentWillReceiveProps(nextprops)
+	{
+		if(nextprops.visible!==this.props.visible)
+		{
+			if(nextprops.visible)
+			{
+				$(findDOMNode(this)).stop(true,true).fadeIn("slow");
+			}
+			else
+			{
+				$(findDOMNode(this)).stop(true,true).fadeOut("slow");
+			}
+		}
 	}
 	changehandler=()=>{
     const current=this.state.status;
@@ -61,7 +78,7 @@ class EventsCategory extends React.Component {
 
 			const description=(
 				(isFetchingEvents)?
-				(<h1>loading....</h1>):
+				(<Loader/>):
 				(
 					<Description
 						key={events[this.state.index]}
@@ -77,7 +94,7 @@ class EventsCategory extends React.Component {
 		return (
 			isFetchingEvents ?
 			(
-				<h1>loading ...</h1>
+				<Loader/>
 			) : (
 				<div className="main-body">
 				<div className="mobile_events">
@@ -94,7 +111,15 @@ class EventsCategory extends React.Component {
 		          {list}
 		        </div>
 	        </div>
-					</div>
+			<div className="lantern1"></div>
+			<div className="lantern2"></div>
+			<div className="lantern3"></div>
+			<div className="lantern4"></div>
+			<div className="lantern5"></div>
+				</div>
+			
+				
+			
 				)
 			)
 		}
