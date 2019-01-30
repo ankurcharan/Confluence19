@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './components/HomePage/HomePage'
 import * as serviceWorker from './serviceWorker';
 
 import { Provider } from 'react-redux';
 import store from './store/store';
+import HomePage from './components/HomePage/HomePage';
 
 console.log(store);
 
@@ -14,8 +16,9 @@ const stateStore = store.configureStore();
 
 ReactDOM.render(
     <Provider store={stateStore}>
-        <App />
-    </Provider>, 
+        {/*<App />*/}
+        <HomePage />
+    </Provider>,
     document.getElementById('root')
 );
 

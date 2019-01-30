@@ -1,0 +1,26 @@
+.HomePage{
+  height:auto;
+  max-width: 1400px;
+  background-color:cornsilk;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x:hidden;
+}
+.gallery_back{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100%;
+}
+.gallery_back > img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.App-nav-active{
+  overflow:hidden;
+}

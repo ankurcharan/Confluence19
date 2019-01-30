@@ -1,0 +1,281 @@
+.About_Section{
+  height:700px;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+.about_us{
+  height:100%;
+  width:100%;
+  background-color:cornsilk;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom:30px;
+}
+.about_header{
+  text-align: center;
+}
+.chakra_1{
+  position: absolute;
+  width:100vw;
+  height:140%;
+  overflow: hidden;
+  transform: translateX(-40%);
+  bottom:-480px;
+  display:flex;
+}
+.chakra_1>svg{
+  width:100%;
+  height:100%;
+}
+.circle_parallax{
+  position: absolute;
+  z-index:500;
+}
+.circle{
+  
+  width:180px;
+  height:180px;
+  background-color:white;
+  border-radius:50%;
+  box-shadow: 0 3px 50px rgba(0,0,0,0.4);
+}
+.circle_1{
+  left:200px;
+  top:250px;
+}
+.circle_2{
+  right:500px;
+  bottom:100px;
+}
+.kite_parallax{
+  position: absolute;
+  z-index:500;
+}
+.kite{
+  
+  height:250px;
+  width:250px;
+}
+.kite_1{
+  top:120px;
+  left:200px;
+}
+.kite_2{
+  bottom:150px;
+  right:450px;
+  transform:rotateZ(-30deg);
+}
+.about_us_data{
+  position: absolute;
+  height:80%;
+  width:400px;
+  right:80px;
+  top:80px;
+  color:white;
+  border:20px double rgb(252, 175, 34);
+  font-size:20px;
+  overflow: hidden;
+  padding:10px 10px;
+  background-color:rgba(204, 121, 121, 0.9);
+}
+.about_us_data> .about_para{
+  font-weight: 100;
+}
+
+@media only screen and (max-width:1200px){
+  .circle_1{
+    left:120px;
+    top:250px;
+  }
+  .circle_2{
+    right:500px;
+    bottom:100px;
+  }
+  .kite_1{
+    left:130px;
+    top:120px;
+  }
+  .kite_2{
+    right:450px;
+    bottom:150px;
+    transform:rotateZ(-30deg);
+  }
+}
+@media only screen and (max-width:1000px){
+  .chakra_1{
+    bottom:-400px;
+    transform:translateX(-40%) scale(0.9);
+  }
+  .chakra_1>svg{
+    height: 100%;
+    width:120%;
+  }
+  .circle_1{
+    left:20px;
+    top:250px;
+  }
+  .circle_2{
+    right:400px;
+    bottom:100px;
+  }
+  .kite_1{
+    left:50px;
+    top:120px;
+  }
+  .kite_2{
+    right:350px;
+    bottom:150px;
+    transform:rotateZ(-30deg);
+  }
+  .about_us_data{
+    right:10px;
+  }
+}
+@media only screen and (max-width:800px){
+  .About_Section{
+    height:650px;
+  }
+  .chakra_1{
+    
+  }
+  .circle_1{
+    left:20px;
+    top:250px;
+  }
+  .circle_2{
+    right:400px;
+    bottom:100px;
+  }
+  .kite_1{
+    left:50px;
+    top:120px;
+  }
+  .kite_2{
+    right:350px;
+    bottom:150px;
+    transform:rotateZ(-30deg);
+  }
+  .about_us_data{
+    right:10px;
+  }
+  .circle{
+    width:120px;
+    height:120px;
+  }
+  .kite{
+    height:200px;
+    width:200px;
+  }
+}
+@media only screen and (max-width:650px){
+  
+  .circle_1{
+    left:20px;
+    top:250px;
+  }
+  .circle_2{
+    right:400px;
+    bottom:100px;
+  }
+  .kite_1{
+    left:50px;
+    top:180px;
+  }
+  .kite_2{
+    right:350px;
+    bottom:140px;
+    transform:rotateZ(-30deg);
+  }
+  .about_us_data{
+    right:10px;
+    width:320px;
+    font-size:18px;
+  }
+  .circle{
+    width:100px;
+    height:100px;
+  }
+  .kite{
+    height:160px;
+    width:160px;
+  }
+}
+@media only screen and (max-width:550px){
+  .circle_1{
+    left:20px;
+    top:100px;
+  }
+  .circle_2{
+    right:400px;
+    bottom:100px;
+  }
+  .kite_1{
+    left:50px;
+    top:20px;
+  }
+  .kite_2{
+    right:350px;
+    bottom:140px;
+    transform:rotateZ(-30deg);
+  }
+  .about_us_data{
+    right:10px;
+    width:350px;
+    font-size:18px;
+  }
+  .circle{
+    width:100px;
+    height:100px;
+  }
+  .kite{
+    height:160px;
+    width:160px;
+  }
+}
+@media only screen and (max-width:500px){
+  .circle_1{
+    left:20px;
+    top:50px;
+  }
+  .circle_2{
+    right:80px;
+    bottom:50px;
+  }
+  .kite_1{
+    left:50px;
+    top:0px;
+  }
+  .kite_2{
+    right:50px;
+    bottom:60px;
+    transform:rotateZ(-30deg);
+  }
+  .about_us_data{
+    left:50%;
+    transform: translateX(-50%);
+    width:380px;
+    font-size:18px;
+    top:10px;
+  }
+  .about_us_data >header{
+    text-align: center;
+  }
+  .circle{
+    width:80px;
+    height:80px;
+  }
+  .kite{
+    height:120px;
+    width:120px;
+  }
+}
+@media only screen and (max-width:420px){
+  .about_us_data{
+    width:360px;
+    font-size:16px;
+    top:8px;
+  }
+}
