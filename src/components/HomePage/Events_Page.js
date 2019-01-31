@@ -62,7 +62,7 @@ class Events_Page extends Component {
                   <svg className="card_icon">
                     <use xlinkHref={window.location.href + 'img/literature.svg#literature'} />
                   </svg>
-                  <div className="category_head">Literature</div>
+                  <div className="category_head">Literary</div>
                 </div>
               </div>
             </div>
@@ -74,6 +74,71 @@ class Events_Page extends Component {
                     <use xlinkHref={window.location.href + 'img/informals.svg#informals'} />
                   </svg>
                   <div className="category_head">Informals</div>
+                </div>
+              </div>
+            </div>
+            <div className="col m4 s6 pad-fix">
+              <div className="event_card">
+                <div className="card_frame">
+                  <svg className="card_icon">
+                    <use xlinkHref={window.location.href + 'img/music.svg#music'} />
+                  </svg>
+                  <div className="category_head">Oratory</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col m4 s6 pad-fix">
+              <div className="event_card">
+                <div className="card_frame">
+                  <svg className="card_icon">
+                    <use xlinkHref={window.location.href + 'img/camera.svg#camera'} />
+                  </svg>
+                  <div className="category_head">Audio Visual</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col m4 s6 pad-fix">
+              <div className="event_card">
+                <div className="card_frame">
+                  <svg className="card_icon">
+                    <use xlinkHref={window.location.href + 'img/dance.svg#dance'} />
+                  </svg>
+                  <div className="category_head">Quizzing</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col m4 s6 pad-fix">
+              <div className="event_card">
+                <div className="card_frame">
+                  <svg className="card_icon">
+                    <use xlinkHref={window.location.href + 'img/painting.svg#painting'} />
+                  </svg>
+                  <div className="category_head">Htc</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col m4 s6 pad-fix">
+              <div className="event_card">
+                <div className="card_frame">
+                  <svg className="card_icon">
+                    <use xlinkHref={window.location.href + 'img/literature.svg#literature'} />
+                  </svg>
+                  <div className="category_head">Lifestyle</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col m4 s6 pad-fix">
+              <div className="event_card">
+                <div className="card_frame">
+                  <svg className="card_icon">
+                    <use xlinkHref={window.location.href + 'img/informals.svg#informals'} />
+                  </svg>
+                  <div className="category_head">Dramatics</div>
                 </div>
               </div>
             </div>
