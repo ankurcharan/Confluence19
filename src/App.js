@@ -37,36 +37,22 @@ class App extends Component {
 	render() {
 		return (
 			<BrowserRouter>
-
 				<div>
-					{/* <Nav /> */}
-
 					<React.Suspense fallback={<div>Loading...</div>}>
-
 						<Switch>
-
 							<Route exact path='/events' component={Events} />
 							<Route exact path='/gallery' component={Gallery} />
 							<Route exact path='/sponsors' component={Sponsors} />
 							<Route exact path='/register' component={Register} />
 							<Route exact path='/' component={HomePage} />
-
 							<Route exact path='/team' component={Team} />
-
 							<Route exact path='/admin' component={AddEvent} />
 							<Route exact path='/developers' component={Developers} />
-
 							<Route exact path='/events/:category' component={EventsCategory} />
-
-
 							<Route path = '/*' component={Page404} />
-
 						</Switch>
-					{/* <Footer /> */}
-
 					</React.Suspense>
 				</div>
-
 			</BrowserRouter>
 			);
 		}
