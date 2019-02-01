@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, BrowserRouter, Route, Link } from 'react-router-dom';
-import HomePage from './components/HomePage/HomePage';
 // import Nav from './components/Nav/Nav';
 // import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
-<<<<<<< HEAD
 
 import Home from './components/Home/Home';
-=======
->>>>>>> 257e213b58f375e102203d08e1ee99a7f4dc629b
 
 import Register from './components/Home/Register/Register.js';
 import Sponsors from './components/Sponsors/Sponsors';

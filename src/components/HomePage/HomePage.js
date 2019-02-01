@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
-
+import {Link} from 'react-router-dom';
 import Navigation from './Navigation';
 import Banner from './banner';
 import Gallery from './Gallery';
@@ -30,7 +30,7 @@ class HomePage extends Component {
         <Navigation isActive={this.state.active} toggleNavigation={this.toggleNavigation} />
         <ParallaxProvider>
           <div className={`HomePage ${(this.state.active) ? 'App-nav-active' : ''}`}>
-            <div className="Register_button">register</div>
+            <Link to="/register"><div className="Register_button">register</div></Link>
             <Banner />
             <Gallery />
             <Aboutus />

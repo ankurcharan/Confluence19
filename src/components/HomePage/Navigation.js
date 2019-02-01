@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import { Link as ScrollLink, Events as ScrollObj } from 'react-scroll';
-import { Link } from 'react-router-dom';
 import './static/navigation.css';
 
 class Navigation extends Component {
@@ -24,20 +23,8 @@ class Navigation extends Component {
             <ScrollLink to="Gallery_Section" className="nav_item" smooth={true} duration={500}><li>Gallery</li></ScrollLink>
             <ScrollLink to="About_Section" className="nav_item" smooth={true} duration={500}><li>About Us</li></ScrollLink>
             <ScrollLink to="Events_Section" className="nav_item" smooth={true} duration={500}><li>Events</li></ScrollLink>
-<<<<<<< HEAD
             <Link className="nav_item" to='/sponsors'><li>Sponsors</li></Link>
             <Link className="nav_item" to="/team"><li>The Team</li></Link>
-=======
-            <Link to='/sponsors'>
-              <li>Sponsors</li>
-            </Link>
-            <Link to='/team'>
-              <li>The Team</li>
-            </Link>
-            <Link to='/developers'>
-              <li>Developers</li>
-            </Link>
->>>>>>> 257e213b58f375e102203d08e1ee99a7f4dc629b
           </ul>
         </div>
         <div className="nav_social">

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 import { Element as ScrollElement } from 'react-scroll';
-
-import { Link } from 'react-router-dom';
-
 import './static/events.css'
 
 class Events_Page extends Component {
