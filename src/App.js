@@ -4,18 +4,16 @@ import { Switch, BrowserRouter, Route, Link } from 'react-router-dom';
 // import Nav from './components/Nav/Nav';
 // import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
-import Home from './components/Home/Home';
 
 import Register from './components/Home/Register/Register.js';
 import Sponsors from './components/Sponsors/Sponsors';
 import Team from './components/TeamConfluence/TeamConfluence';
-
 import Gallery from './components/Gallery/Gallery';
-
 import EventsCategory from './components/EventsCategory/EventsCategory';
-
-
 import AddEvent from './components/Admin/Admin';
+import HomePage from './components/HomePage/HomePage';
+
+import Developers from './components/Developers/Developers';
 
 
 class Page404 extends React.Component {
@@ -51,11 +49,12 @@ class App extends Component {
 							<Route exact path='/gallery' component={Gallery} />
 							<Route exact path='/sponsors' component={Sponsors} />
 							<Route exact path='/register' component={Register} />
-							<Route exact path='/' component={Home} />
+							<Route exact path='/' component={HomePage} />
 
 							<Route exact path='/team' component={Team} />
 
 							<Route exact path='/admin' component={AddEvent} />
+							<Route exact path='/developers' component={Developers} />
 
 							<Route exact path='/events/:category' component={EventsCategory} />
 
