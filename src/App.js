@@ -13,6 +13,7 @@ import Team from './components/TeamConfluence/TeamConfluence';
 import Gallery from './components/Gallery/Gallery';
 
 import EventsCategory from './components/EventsCategory/EventsCategory';
+import TeamConflu2 from './components/TeamConfluence/TeamConflu2';
 
 
 import AddEvent from './components/Admin/Admin';
@@ -53,24 +54,24 @@ class App extends Component {
 							<Route exact path='/register' component={Register} />
 							<Route exact path='/' component={Home} />
 
-							<Route exact path='/team' component={Team} />
+							<Route exact path='/team' component={TeamConflu2} />
 
 							<Route exact path='/admin' component={AddEvent} />
 
 							<Route exact path='/events/:category' component={EventsCategory} />
 
 
-							<Route path = '/*' component={Page404} />
+							<Route path='/*' component={Page404} />
 
 						</Switch>
-					{/* <Footer /> */}
+						{/* <Footer /> */}
 
 					</React.Suspense>
 				</div>
 
 			</BrowserRouter>
-			);
-		}
+		);
 	}
+}
 
-	export default App;
+export default App;

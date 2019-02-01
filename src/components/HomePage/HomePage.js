@@ -30,6 +30,7 @@ class HomePage extends Component {
         <Navigation isActive={this.state.active} toggleNavigation={this.toggleNavigation} />
         <ParallaxProvider>
           <div className={`HomePage ${(this.state.active) ? 'App-nav-active' : ''}`}>
+            <div className="Register_button">register</div>
             <Banner />
             <Gallery />
             <Aboutus />

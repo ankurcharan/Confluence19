@@ -81,7 +81,7 @@ class Events_Page extends Component {
               <div className="event_card">
                 <div className="card_frame">
                   <svg className="card_icon">
-                    <use xlinkHref={window.location.href + 'img/music.svg#music'} />
+                    <use xlinkHref={window.location.href + 'img/oratory.svg#oratory'} />
                   </svg>
                   <div className="category_head">Oratory</div>
                 </div>
@@ -92,7 +92,7 @@ class Events_Page extends Component {
               <div className="event_card">
                 <div className="card_frame">
                   <svg className="card_icon">
-                    <use xlinkHref={window.location.href + 'img/camera.svg#camera'} />
+                    <use xlinkHref={window.location.href + 'img/av.svg#av'} />
                   </svg>
                   <div className="category_head">Audio Visual</div>
                 </div>
@@ -103,7 +103,7 @@ class Events_Page extends Component {
               <div className="event_card">
                 <div className="card_frame">
                   <svg className="card_icon">
-                    <use xlinkHref={window.location.href + 'img/dance.svg#dance'} />
+                    <use xlinkHref={window.location.href + 'img/quiz.svg#quiz'} />
                   </svg>
                   <div className="category_head">Quizzing</div>
                 </div>
@@ -114,9 +114,9 @@ class Events_Page extends Component {
               <div className="event_card">
                 <div className="card_frame">
                   <svg className="card_icon">
-                    <use xlinkHref={window.location.href + 'img/painting.svg#painting'} />
+                    <use xlinkHref={window.location.href + 'img/hiking.svg#hiking'} />
                   </svg>
-                  <div className="category_head">Htc</div>
+                  <div className="category_head">Hiking</div>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@ class Events_Page extends Component {
               <div className="event_card">
                 <div className="card_frame">
                   <svg className="card_icon">
-                    <use xlinkHref={window.location.href + 'img/literature.svg#literature'} />
+                    <use xlinkHref={window.location.href + 'img/fashion.svg#fashion'} />
                   </svg>
                   <div className="category_head">Lifestyle</div>
                 </div>
@@ -136,7 +136,7 @@ class Events_Page extends Component {
               <div className="event_card">
                 <div className="card_frame">
                   <svg className="card_icon">
-                    <use xlinkHref={window.location.href + 'img/informals.svg#informals'} />
+                    <use xlinkHref={window.location.href + 'img/drama.svg#drama'} />
                   </svg>
                   <div className="category_head">Dramatics</div>
                 </div>
@@ -144,7 +144,7 @@ class Events_Page extends Component {
             </div>
 
           </div>
-          <div className="viewall_events">View all &rarr;</div>
+          {/*<div className="viewall_events">View all &rarr;</div>*/}
         </div>
       </ScrollElement>
     );
