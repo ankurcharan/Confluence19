@@ -24,3 +24,26 @@
 .App-nav-active{
   overflow:hidden;
 }
+.Register_button{
+  position:fixed;
+  z-index:1000;
+  color:white;
+  width:90px;
+  height:40px;
+  background-color:#903;
+  right:10px;
+  bottom:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size:14px;
+  font-weight: 100;
+  box-shadow:0 5px 10px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition:all 0.2s;
+}
+.Register_button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 10px rgba(0,0,0,0.3);
+}

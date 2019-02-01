@@ -56,7 +56,7 @@ class Banner extends Component {
           {Array(50).fill(0).map((el, index) => <div key={index} className={`ray_circle ray_circle_${index}`}></div>)}
         </div>
         <div className="mountain_box">
-          <div className="mountain mountain_2">
+          {/*<div className="mountain mountain_2">
             <Parallax offsetYMax={20} offsetYMin={-5} slowerScrollRate={true}>
               <img src={window.location.origin + '/img/mountain2.svg'} alt="mountain2" />
             </Parallax>
@@ -65,10 +65,10 @@ class Banner extends Component {
             <Parallax offsetYMax={10} offsetYMin={-2} slowerScrollRate={true}>
               <img src={window.location.origin + '/img/mountain1.svg'} alt="mountain1" />
             </Parallax>
-          </div>
+    </div>
           <div className="mountain mahal">
             <img src={window.location.href + '/img/mahal.svg'} alt="mahal" />
-          </div>
+    </div>*/}
           <div className="mountain mountain_3">
             <img src={window.location.origin + '/img/mountain3_3.svg'} alt="mountain3" />
             <div className="gallery_heading">Gallery</div>

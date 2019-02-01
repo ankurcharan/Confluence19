@@ -73,8 +73,8 @@
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.8),0 3px 5px rgba(0,0,0,0.5), 0 -1px 5px rgba(0,0,0,0.5);
 }
 .TV_button  img{
-  height:90%;
-  width:90%;
+  height:70%;
+  width:70%;
   z-index: 100;
 }
 .TV_button > .left_arrow{

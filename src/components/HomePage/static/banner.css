@@ -1,13 +1,17 @@
 .banner{
   height:150vh;
   width:100%;
+<<<<<<< HEAD
   background-image:linear-gradient(to top, rgb(241, 109, 33) 1%, rgb(252, 172, 23) 81%);
+=======
+  background-image:linear-gradient(322deg, rgba(196,1,80,1) 6%, rgba(237,65,65,1) 32%, rgba(252,197,53,1) 87%);
+>>>>>>> 257e213b58f375e102203d08e1ee99a7f4dc629b
   position: relative;
 }
 
 .main_heading{
   position: absolute;
-  border:12px double cornsilk;
+  border:12px solid cornsilk;
   right:150px;
   top:15vh;
   z-index: 500;
@@ -16,11 +20,11 @@
   padding:10px 25px;
   color:cornsilk;
   width:max-content;
-  box-shadow: inset 5px 5px 20px rgba(0,0,0,0.5),inset -5px -5px 20px rgba(0,0,0,0.5);
+  
 }
 .confluence_text{
   font-size:90px;
-  text-shadow: 2px 3px 20px rgba(0,0,0,0.8);
+  
 }
 .confluence_year{
   font-size:50px;

@@ -50,14 +50,18 @@ h6
 	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 	} */
 
+
 .sponsorSection {
 	font-weight: 700;
-	font-family: 'Montserrat', 'Helvetica Nueu', Helvetica, Arial, sans-serif;
+	/*font-family: 'Montserrat', 'Helvetica Nueu', Helvetica, Arial, sans-serif;*/
 	margin-bottom: 50px;
+	color:black;
+	font-weight: 100;
 }
 
 section {
 	padding: 10px 0; 
+	background-color:cornsilk;
 }
 
 section h2.section-heading {		
@@ -73,6 +77,13 @@ section h3.section-subheading {
 	margin-bottom: 75px;
 	text-transform: none;
 	font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
+.portfolio-item{
+	padding:0 !important;
+	margin:0 !important;
+	border:1px solid rgba(128, 128, 128, 0.411);
+	background-color: white;
 }
 
 @media (min-width: 768px) 
