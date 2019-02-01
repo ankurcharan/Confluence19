@@ -1,9 +1,5 @@
 import React from 'react';
-// import M from 'materialize-css';
-
-// import { Link } from 'react-router-dom';
-
-import './TeamConfluence.css';
+import './Developers.css';
 
 const workForce = [
 	{
@@ -139,7 +135,7 @@ class Team extends React.Component {
 		
 		return (
 			<div id='team'>
-			<h1>Team Confluence</h1>
+			<h1>Developers</h1>
 
 				<br />
 				<br />
