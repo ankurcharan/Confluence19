@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, BrowserRouter, Route, Link } from 'react-router-dom';
-
+import HomePage from './components/HomePage/HomePage';
 // import Nav from './components/Nav/Nav';
 // import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
+
 import Home from './components/Home/Home';
 
 import Register from './components/Home/Register/Register.js';
@@ -51,7 +52,7 @@ class App extends Component {
 							<Route exact path='/gallery' component={Gallery} />
 							<Route exact path='/sponsors' component={Sponsors} />
 							<Route exact path='/register' component={Register} />
-							<Route exact path='/' component={Home} />
+							<Route exact path='/' component={HomePage} />
 
 							<Route exact path='/team' component={Team} />
 

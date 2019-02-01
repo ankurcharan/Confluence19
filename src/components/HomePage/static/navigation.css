@@ -90,6 +90,32 @@
   transform:scaleY(1);
   width:100%;
 }
+.lii{
+  width:100%;
+  text-align: right;
+  padding-right:30px;
+  font-size:25px;
+  font-weight: 100;
+  color:white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+  position: relative;
+}
+.lii:after{
+  content:'';
+  display: block;
+  height:100%;
+  background-color:white;
+  width:30px;
+  position: absolute;
+  top:0;
+  transform:scaleY(0);
+  transition:transform 0.2s, width 0.4s cubic-bezier(1,0,0,1) 0.2s;
+  opacity: 0.3;
+}
+.lii:hover:after{
+  transform:scaleY(1);
+  width:100%;
+}
 .nav_social{
   
   width:100%;

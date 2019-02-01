@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 import { Element as ScrollElement } from 'react-scroll';
 
@@ -12,6 +13,7 @@ class Events_Page extends Component {
 
           <div className="event_heading">Events</div>
           <div className="event_card_box row">
+            <Link to="/events/music">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -22,7 +24,9 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            
+            <Link to="/events/photography">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -33,7 +37,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link to="/events/dance">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -44,7 +49,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link to="/events/painting">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -55,7 +61,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link to="/events/literary">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -66,7 +73,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link to="/events/informals">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -77,6 +85,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
+            </Link>
+            <Link to="/events/oratory">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -87,7 +97,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link to="/events/audiovisual">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -98,7 +109,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link to="/events/quizzing">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -109,7 +121,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link to="/events/htc">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -120,7 +133,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link to="/events/lifestyle">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -131,7 +145,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+            </Link>
+            <Link to="/events/dramatics">
             <div className="col m4 s6 pad-fix">
               <div className="event_card">
                 <div className="card_frame">
@@ -142,9 +157,8 @@ class Events_Page extends Component {
                 </div>
               </div>
             </div>
-
+          </Link>
           </div>
-          <div className="viewall_events">View all &rarr;</div>
         </div>
       </ScrollElement>
     );

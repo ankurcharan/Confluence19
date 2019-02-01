@@ -16,8 +16,7 @@ const stateStore = store.configureStore();
 
 ReactDOM.render(
     <Provider store={stateStore}>
-        {/*<App />*/}
-        <HomePage />
+        <App />
     </Provider>,
     document.getElementById('root')
 );
