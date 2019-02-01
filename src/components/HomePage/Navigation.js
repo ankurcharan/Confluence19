@@ -25,6 +25,7 @@ class Navigation extends Component {
             <ScrollLink to="Events_Section" className="nav_item" smooth={true} duration={500}><li>Events</li></ScrollLink>
             <Link className="nav_item" to='/sponsors'><li>Sponsors</li></Link>
             <Link className="nav_item" to="/team"><li>The Team</li></Link>
+            <Link className="nav_item" to="/developers"><li>Developers</li></Link>
           </ul>
         </div>
         <div className="nav_social">
