@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import anime from 'animejs';
 
 import { Element as ScrollElement } from 'react-scroll';
 
@@ -7,6 +8,17 @@ import { Link } from 'react-router-dom';
 import './static/events.css'
 
 class Events_Page extends Component {
+  componentDidMount() {
+    const wheel = document.getElementsByClassName('big_wheel')[0];
+    console.log(wheel);
+    anime({
+      targets: wheel,
+      rotateZ: '-180deg',
+      duration: 50000,
+      loop: true,
+      easing: 'linear'
+    })
+  }
   render() {
     return (
       <ScrollElement name="Events_Section" className="Events_Section">
@@ -173,6 +185,11 @@ class Events_Page extends Component {
 
           </div>
           {/*<div className="viewall_events">View all &rarr;</div>*/}
+          <div className="big_wheel">
+            <svg>
+              <use xlinkHref={window.location.href + '/img/wheel2.svg#wheel'}></use>
+            </svg>
+          </div>
         </div>
       </ScrollElement>
     );

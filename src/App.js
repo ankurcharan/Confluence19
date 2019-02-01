@@ -11,6 +11,7 @@ import Team from './components/TeamConfluence/TeamConfluence';
 import Gallery from './components/Gallery/Gallery';
 import EventsCategory from './components/EventsCategory/EventsCategory';
 import TeamConflu2 from './components/TeamConfluence/TeamConflu2';
+import Developer2 from './components/Developers/Developer2';
 
 
 import AddEvent from './components/Admin/Admin';
@@ -47,12 +48,12 @@ class App extends Component {
 							<Route exact path='/gallery' component={Gallery} />
 							<Route exact path='/sponsors' component={Sponsors} />
 							<Route exact path='/register' component={Register} />
-							<Route exact path='/' component={Home} />
+							<Route exact path='/' component={HomePage} />
 
 							<Route exact path='/team' component={TeamConflu2} />
 
 							<Route exact path='/admin' component={AddEvent} />
-							<Route exact path='/developers' component={Developers} />
+							<Route exact path='/developers' component={Developer2} />
 							<Route exact path='/events/:category' component={EventsCategory} />
 
 

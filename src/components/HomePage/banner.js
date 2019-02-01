@@ -4,6 +4,7 @@ import { Parallax } from 'react-scroll-parallax';
 import anime from 'animejs';
 
 import './static/banner.css';
+import './static/background.css';
 
 class Banner extends Component {
 
@@ -26,7 +27,7 @@ class Banner extends Component {
         begin: function () {
           anime({
             targets: rays[i],
-            translateX: [0, 15 + "px"],
+
             translateY: [0, 20 + 'px'],
             direction: "alternate",
             duration: duration * 0.1,
@@ -41,15 +42,25 @@ class Banner extends Component {
 
   componentDidMount() {
     this.animateRays();
+    const mask = document.getElementsByClassName('mask')[0].getElementsByTagName('img')[0];
+    anime({
+      targets: mask,
+      rotateZ: ['4deg', '-4deg'],
+      duration: 2000,
+      easing: 'linear',
+      elasticity: 500,
+      loop: true,
+      direction: 'alternate'
+    });
   }
 
   render() {
     return (
       <div className="banner">
-        <div className="main_heading">
+        {/*<div className="main_heading">
           <div className="confluence_text">confluence</div>
           <div className="confluence_year">2019</div>
-        </div>
+    </div>*/}
         <div className="ray_box">
           <div className="banner_sun"></div>
           <div className="second_sun"></div>
@@ -69,6 +80,25 @@ class Banner extends Component {
           <div className="mountain mahal">
             <img src={window.location.href + '/img/mahal.svg'} alt="mahal" />
     </div>*/}
+          <div className="mountain wave_1">
+            <img src={window.location.origin + '/img/pongo.svg'} alt="back_waves" />
+          </div>
+          <div className="mountain confluence_logo">
+            <img src={window.location.origin + '/img/logo_s_2.svg'} alt="waves" />
+          </div>
+          <div className="mountain mask">
+            <img src={window.location.origin + '/img/mask.svg'} alt="mask" />
+          </div>
+          <div className="mountain drum drum_left">
+            <Parallax offsetYMax={40} offsetYMin={-5} slowerScrollRate={true}>
+              <img src={window.location.origin + '/img/drum_r_s.svg'} alt="drum" />
+            </Parallax>
+          </div>
+          <div className="mountain drum drum_right">
+            <Parallax offsetYMax={40} offsetYMin={-5} slowerScrollRate={true}>
+              <img src={window.location.origin + '/img/drum_l_s.svg'} alt="drum" />
+            </Parallax>
+          </div>
           <div className="mountain mountain_3">
             <img src={window.location.origin + '/img/mountain3_3.svg'} alt="mountain3" />
             <div className="gallery_heading">Gallery</div>

@@ -2,7 +2,8 @@
   padding:0;
   height:auto;
   width:100%;
-  margin-bottom:30px;
+  
+  overflow: hidden;
 }
 .events{
   height:100%;
@@ -19,12 +20,12 @@
   top:0;
   font-size:40px;
   font-weight: 100;
-  border:10px double #903;
+  border-radius: 30px;
   padding:5px 30px;
   color:cornsilk;
   position: absolute;
   left:50%;
-  box-shadow:0 4px 20px rgba(0,0,0,0.3),0 -4px 10px rgba(0,0,0,0.3);
+  box-shadow:0 5px 20px rgba(0,0,0,0.6);
   background-color:#21132C;
   transform:translateX(-50%);
 }
@@ -85,6 +86,19 @@
   font-size:12px;
 }
 
+.big_wheel{
+  position: absolute;
+  bottom:-150px;
+  right:-80px;
+  width:500px;
+  height:500px;
+}
+.big_wheel > svg{
+  width:100%;
+  height:100%;
+  fill:#906 !important;
+}
+
 @media only screen and (max-width:990px){
   .event_card_box{
     width:770px;
@@ -139,6 +153,11 @@
   .event_card .card_icon{
     margin-bottom:8px;
     margin-top:10px;
+  }
+  .big_wheel{
+    width:400px;
+    height:400px;
+    right:-170px;
   }
 }
 @media only screen and (max-width:420px){

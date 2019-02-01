@@ -105,7 +105,7 @@ header.masthead {
 	text-align: center;
 	color: white;
 	/* comment background-image: url("../img/header-bg.png"); */
-	background: #333;
+	background: #1c1b30;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
@@ -118,7 +118,7 @@ header.masthead {
 header.masthead img {
 	width: 100%;
 	height: auto;
-	padding-bottom: 125px;
+	
 }
 
 header.masthead .intro-text {
