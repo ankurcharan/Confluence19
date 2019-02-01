@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import anime from 'animejs';
-
-import { Element as ScrollElement } from 'react-scroll';
-
 import { Link } from 'react-router-dom';
 
+import { Element as ScrollElement } from 'react-scroll';
 import './static/events.css'
 
 class Events_Page extends Component {
@@ -26,8 +24,7 @@ class Events_Page extends Component {
 
           <div className="event_heading">Events</div>
           <div className="event_card_box row">
-
-            <Link to='/events/music'>
+            <Link to="/events/music">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
@@ -40,7 +37,7 @@ class Events_Page extends Component {
               </div>
             </Link>
 
-            <Link to='/events/photography'>
+            <Link to="/events/photography">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
@@ -52,8 +49,7 @@ class Events_Page extends Component {
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/dance'>
+            <Link to="/events/dance">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
@@ -65,21 +61,19 @@ class Events_Page extends Component {
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/arts'>
+            <Link to="/events/painting">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
                     <svg className="card_icon">
                       <use xlinkHref={window.location.href + 'img/painting.svg#painting'} />
                     </svg>
-                    <div className="category_head">Arts</div>
+                    <div className="category_head">Painting</div>
                   </div>
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/literary'>
+            <Link to="/events/literary">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
@@ -91,98 +85,90 @@ class Events_Page extends Component {
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/informalz'>
+            <Link to="/events/informals">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
                     <svg className="card_icon">
                       <use xlinkHref={window.location.href + 'img/informals.svg#informals'} />
                     </svg>
-                    <div className="category_head">Informalz</div>
+                    <div className="category_head">Informals</div>
                   </div>
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/oratory'>
+            <Link to="/events/oratory">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
                     <svg className="card_icon">
-                      <use xlinkHref={window.location.href + 'img/oratory.svg#oratory'} />
+                      <use xlinkHref={window.location.href + 'img/music.svg#music'} />
                     </svg>
                     <div className="category_head">Oratory</div>
                   </div>
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/audio%20visual'>
+            <Link to="/events/audiovisual">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
                     <svg className="card_icon">
-                      <use xlinkHref={window.location.href + 'img/av.svg#av'} />
+                      <use xlinkHref={window.location.href + 'img/camera.svg#camera'} />
                     </svg>
                     <div className="category_head">Audio Visual</div>
                   </div>
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/quizzing'>
+            <Link to="/events/quizzing">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
                     <svg className="card_icon">
-                      <use xlinkHref={window.location.href + 'img/quiz.svg#quiz'} />
+                      <use xlinkHref={window.location.href + 'img/dance.svg#dance'} />
                     </svg>
                     <div className="category_head">Quizzing</div>
                   </div>
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/hiking%20and%20trekking'>
+            <Link to="/events/htc">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
                     <svg className="card_icon">
-                      <use xlinkHref={window.location.href + 'img/hiking.svg#hiking'} />
+                      <use xlinkHref={window.location.href + 'img/painting.svg#painting'} />
                     </svg>
-                    <div className="category_head">Hiking</div>
+                    <div className="category_head">Htc</div>
                   </div>
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/lifestyle'>
+            <Link to="/events/lifestyle">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
                     <svg className="card_icon">
-                      <use xlinkHref={window.location.href + 'img/fashion.svg#fashion'} />
+                      <use xlinkHref={window.location.href + 'img/literature.svg#literature'} />
                     </svg>
                     <div className="category_head">Lifestyle</div>
                   </div>
                 </div>
               </div>
             </Link>
-
-            <Link to='/events/dramatics'>
+            <Link to="/events/dramatics">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
                     <svg className="card_icon">
-                      <use xlinkHref={window.location.href + 'img/drama.svg#drama'} />
+                      <use xlinkHref={window.location.href + 'img/informals.svg#informals'} />
                     </svg>
                     <div className="category_head">Dramatics</div>
                   </div>
                 </div>
               </div>
             </Link>
-
           </div>
           {/*<div className="viewall_events">View all &rarr;</div>*/}
           <div className="big_wheel">
@@ -191,7 +177,7 @@ class Events_Page extends Component {
             </svg>
           </div>
         </div>
-      </ScrollElement>
+      </ScrollElement >
     );
   }
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
-import { Link as ScrollLink, Events as ScrollObj } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink, Events as ScrollObj } from 'react-scroll';
 import './static/navigation.css';
 
 class Navigation extends Component {
@@ -34,6 +33,7 @@ class Navigation extends Component {
             <Link to='/developers' className="nav_item">
               <li>Developers</li>
             </Link>
+
           </ul>
         </div>
         <div className="nav_social">

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, BrowserRouter, Route, Link } from 'react-router-dom';
-
 // import Nav from './components/Nav/Nav';
 // import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
+
+import Home from './components/Home/Home';
 
 import Register from './components/Home/Register/Register.js';
 import Sponsors from './components/Sponsors/Sponsors';
