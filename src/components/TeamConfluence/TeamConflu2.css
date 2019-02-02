@@ -6,7 +6,7 @@
   margin:0;
   align-items: center;
   
-  max-width:1500px;
+ /* max-width:1500px;*/
 }
 .team_heading{
   width:100%;
@@ -22,7 +22,7 @@
 }
 
 .team_wrapper{
-  width:1000px;
+  width:100%;
   background-color:white;
   padding:30px 20px;
 }
