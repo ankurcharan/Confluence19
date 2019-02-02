@@ -1,3 +1,9 @@
+.back{
+  left: 2%;
+  top:2%;
+  position: fixed;
+  background-color: #ef2270;
+}
 .team_confluence{
   width:100%;
   display:flex;

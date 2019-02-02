@@ -1,3 +1,9 @@
+.back{
+  left: 2%;
+  top:2%;
+  position: fixed;
+  background-color: #2e6990;
+}
 .dev_confluence{
   width:100%;
   display:flex;

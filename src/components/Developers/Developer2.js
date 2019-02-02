@@ -15,6 +15,7 @@ class TeamConflu extends Component {
     return (
       <div className="dev_confluence">
         <h2 className="dev_heading">
+        <a class="btn-floating btn-small waves-effect back" href="/"><i class="material-icons">arrow_back</i></a>
           <img src={window.location.origin + '/img/devlopers.svg'} alt="team_logo" />
         </h2>
         <div className="dev_wrapper">

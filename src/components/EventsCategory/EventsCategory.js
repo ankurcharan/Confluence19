@@ -5,6 +5,7 @@ import "./mobile.css";
 import Loader from "../loader/loader.js";
 import {findDOMNode} from 'react-dom';
 import $ from "jquery";
+import m from 'materialize-css'
 import "./eventlist.css";
 import Description from "./eventdescription.js";
 import './eventdescription.css';
@@ -68,6 +69,7 @@ class EventsCategory extends React.Component {
 		const list = events.map((eve,index)=>{
       return(
         <div>
+			<a class="btn-floating btn-small waves-effect backbutton" href="/"><i class="material-icons">arrow_back</i></a>
 	        <Button
 						key={index}
 						title={eve.eventName}
