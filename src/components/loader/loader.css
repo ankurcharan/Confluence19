@@ -93,14 +93,18 @@
 @media only screen and (max-width: 700xp)
 {
     .is-animate{
-        font-size: 10p  x;
+        font-size: 10px;
         padding: 4px;
         margin-left:0px;
     }
-    .is-animate >div{
+    .l{
         padding: 2px;
         margin-left: 1px;
         box-shadow: 2px 2px 2px 2px;
+    }
+    .loading
+    {
+      width: 80vh;
     }
   
 }

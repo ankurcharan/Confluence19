@@ -1,19 +1,15 @@
-.button{
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
 
-}
 .mobile_events{
-
+  margin-bottom: 5vh;
 }
 .mobile_list{
   width: 100vw;
   z-index: 100;
-  padding-top: 5vh;
+
   height: 100vh;
+  overflow-y:scroll;
   background-color:transparent;
-  padding-left: 30%;
+  padding-left: 25%;
 }
 .body{
   width: 100vw;
@@ -24,7 +20,9 @@
   z-index: 100;
 background-color: rgb(32, 35, 42);
 bottom: 44px;
-color: rgb(97, 218, 251);
+height: 8vh;
+width: 8vh;
+color: rgb(233, 168, 29);
 display: none;
 cursor: pointer;
 position: fixed;
@@ -33,7 +31,18 @@ right: 20px;
 z-index: 3;
 box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
 border-radius: 50%;
+align-content: center;
 }
+.icon1{
+  font-size: 5vh;
+  align-content: center;
+  padding-left:1.5vh;
+  padding-top: 1.5vh;
+  }
+.button-list:active{
+  outline: 0;
+  border: 0;
+}  
 .listitems{
 top: 0px;
 left: 0px;

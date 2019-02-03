@@ -19,8 +19,10 @@ border-radius:50px;
 border-color: #494949;
 transition: all 0.3s ease 0s;
 }
+.name:focus{
+  outline: 0;
+}
 .name:active{
-  border-radius: 50px;
-  background-color: white;
-  color: inherit;
+  border: 0;
+  outline: 0;
 }

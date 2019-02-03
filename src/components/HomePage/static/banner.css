@@ -1,11 +1,10 @@
 .banner{
-  height:150vh;
+  height:170vh;
   width:100%;
-<<<<<<< HEAD
-  background-image:linear-gradient(to top, rgb(241, 109, 33) 1%, rgb(252, 172, 23) 81%);
-=======
-  background-image:linear-gradient(322deg, rgba(196,1,80,1) 6%, rgba(237,65,65,1) 32%, rgba(252,197,53,1) 87%);
->>>>>>> 257e213b58f375e102203d08e1ee99a7f4dc629b
+
+  background: rgb(252,71,34);
+  background-image: linear-gradient(146deg, rgba(252,71,34,1) 6%, rgba(237,30,121,1) 38%, rgba(136,0,220,1) 100%);
+
   position: relative;
 }
 
@@ -42,8 +41,8 @@
   position:relative;
 }
 .ray_box .banner_sun{
-  height:200px;
-  width:200px;
+  height:170px;
+  width:170px;
   background-color:cornsilk;
   border-radius: 50%;
   box-shadow: 0 10px 10px 100px rgba(223, 4, 4, 0.1); 
@@ -78,20 +77,20 @@
   z-index:800;
   font-size:40px;
   font-weight: 100;
-  border:10px double #903;
+  border-radius: 30px;
   padding:5px 30px;
   color:cornsilk;
   position: absolute;
   bottom:190px;
   left:50%;
-  box-shadow:0 4px 20px rgba(0,0,0,0.3),0 -4px 10px rgba(0,0,0,0.3);
+  box-shadow:0 5px 20px rgba(0,0,0,0.6);
   background-color:#21132C;
   transform:translateX(-50%);
 }
 .mountain{
   position: absolute;
 }
-.mountain  img{
+.mountain > img{
   display:block;
   width:100%;
   height:100%;
@@ -124,6 +123,9 @@
 }
 
 @media only screen and (max-width:1200px){
+  .banner{
+    height:150vh;
+  }
   .main_heading{
     right:40px;
   }
@@ -135,9 +137,7 @@
 }
 
 @media only screen and (max-width:1000px){
-  .banner{
-    height:130vh;
-  }
+  
   .mountain_1{
     bottom:100px;
   }
@@ -159,7 +159,7 @@
 }
 @media only screen and (max-width:800px){
   .banner{
-    height:120vh;
+    height:135vh;
   }
   .main_heading{
     left:30px;
@@ -184,10 +184,15 @@
     right:-540px;
   }
   .mountain_3{
-    bottom:-200px;
+    bottom:-150px;
   }
   .gallery_heading{
     bottom:110px;
+  }
+  .ray_box{
+    left:50%;
+    transform:translateX(-50%);
+    top:-120px; 
   }
 }
 @media only screen and (max-width:650px){
@@ -212,7 +217,17 @@
 }
 @media only screen and (max-width:550px){
   .banner{
-    height:110vh;
+    height:125vh;
+  }
+  .ray_box{
+    left:50%;
+    transform:translateX(-50%);
+    top:-160px; 
+  }
+  .ray_box .banner_sun{
+    height:130px;
+    width:130px;
+    
   }
   .main_heading{
     left:50%;
@@ -244,7 +259,7 @@
     right:-400px;
   }
   .mountain_3{
-    bottom:-130px;
+    bottom:-100px;
   }
   .gallery_heading{
     bottom:90px;  
@@ -252,7 +267,7 @@
 }
 @media only screen and (max-width:420px){
   .banner{
-    height:110vh;
+    height:115vh;
   }
   .main_heading{
     top:70vh;
@@ -278,5 +293,10 @@
   .gallery_heading{
     bottom:70px;
     font-size:15px;
+  }
+}
+@media only screen and (max-width:390px){
+  .mountain_3{
+    bottom:-80px;
   }
 }

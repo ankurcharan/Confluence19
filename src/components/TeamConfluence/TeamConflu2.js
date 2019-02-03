@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './TeamConflu2.css';
 
 
@@ -7,7 +6,10 @@ class TeamConflu extends Component {
   render() {
     return (
       <div className="team_confluence">
-        <h2 className="team_heading"><div className="team_text">Team Confluence</div></h2>
+        <h2 className="team_heading">
+        <a class="btn-floating btn-small waves-effect backhome" href="/"><i class="material-icons">arrow_back</i></a>
+          <img src={window.location.origin + '/img/team_confluence.svg'} alt="team_logo" />
+        </h2>
         <div className="team_wrapper">
           <div className="team_card_plate row">
             {

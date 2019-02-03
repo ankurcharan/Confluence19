@@ -1,8 +1,9 @@
 .main-body{
-      padding-top: 10vh;
+      padding-top: 5vh;
       background: rgb(6,4,32);
       background: linear-gradient(61deg, rgba(6,4,32,1) 0%, rgba(45,4,47,1) 41%, rgba(47,7,49,1) 53%, rgba(33,2,33,1) 91%);
       height: 100vh;
+      padding-bottom: 5vh;
       position: relative;
       width: 100wh;
       overflow: hidden;
@@ -59,8 +60,10 @@
 
 .button-list
 {
-  display: block;
-}
+  padding: 5vh;
+  overflow-y:auto; 
+  z-index: 10;
+} 
 @media only screen and (max-width:749px) {
   .button-list{
     display: none;

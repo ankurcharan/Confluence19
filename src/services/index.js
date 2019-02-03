@@ -24,7 +24,6 @@ const galleryImages = () => {
 
 const getEventsByCategory = (category) => {
 
-    alert(`fetchign ${category}`);
 
     const reqOptions = {
         headers: {
@@ -37,7 +36,6 @@ const getEventsByCategory = (category) => {
     return fetch(`${url}/events?category=${category}`, reqOptions)
         .then(response => response.json())
         .then(response => {
-            console.log(response);
             return response;
         });
 }

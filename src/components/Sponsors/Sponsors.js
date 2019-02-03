@@ -14,149 +14,146 @@ import photo4 from './img/marketing/HDFC.jpg';
 import photo5 from './img/marketing/Copy of Snickers.jpg';
 
 class Sponsors extends React.Component {
-	
-	render () {
-		
+
+	render() {
+
 		return (
-			
+
 			<div id='festSponsors'>
-			
-			
+
+
 				<header class="masthead">
-					<div class="container">
-						<div class="padding-top-sponser" ></div>             
-						<div class="row block">
-							<img 
-								src={photo1}
-								alt='confluence logo'
-							/>
-						</div>
-					</div>
+					<img
+						//src={photo1}
+						src={window.location.origin + '/img/sponsor_header.svg'}
+						alt='confluence logo'
+					/>
+
 				</header>
-			
-			<section id='titleSponsors'>
-			
-				<div className='container'>
-					<h3 className='center sponsorSection'>
-						Title Sponsors
+
+				<section id='titleSponsors'>
+
+					<div className='container'>
+						<h3 className='center sponsorSection'>
+							Title Sponsors
 					</h3>
-					<div className='row'>
-				
-						<div className='col s12 m6 l4 portfolio-item'>
-							<a 
-								class="portfolio-link" 
-								href="https://www.nivea.in/" 
-								target="_blank"
-							>
-								<div class="helper"></div>
-								<img class="img-fluid" src={photo3} alt="Nivea" />
-							</a>
-							<div class="portfolio-caption">
-								<h4 className='sponsorName'>Nivea</h4>
-								{/* <p class="text-muted">Powered By</p> */}
-								<em className='sponTagline'>helo</em>
-							</div>
-						</div>
+						<div className='row'>
 
-						<div className='col s12 m6 l4 portfolio-item'>
-							<a 
-								class="portfolio-link" 
-								href="https://www.nivea.in/" 
-								target="_blank"
-							>
-								<div class="helper"></div>
-								<img class="img-fluid" src={photo3} alt="Nivea" />
-							</a>
-							<div class="portfolio-caption">
-								<h4 className='sponsorName'>Nivea</h4>
-								{/* <p class="text-muted">Powered By</p> */}
-								<em className='sponTagline'>helo</em>
+							<div className='col s12 m6 l4 portfolio-item'>
+								<a
+									class="portfolio-link"
+									href="https://www.nivea.in/"
+									target="_blank"
+								>
+									<div class="helper"></div>
+									<img class="img-fluid" src={photo3} alt="Nivea" />
+								</a>
+								<div class="portfolio-caption">
+									<h4 className='sponsorName'>Nivea</h4>
+									{/* <p class="text-muted">Powered By</p> */}
+									<em className='sponTagline'>helo</em>
+								</div>
 							</div>
-						</div>
-							
-						<div className='col s12 m6 l4 portfolio-item'>
-							<a 
-								class="portfolio-link" 
-								href="https://www.nivea.in/" 
-								target="_blank"
-							>
-								<div class="helper"></div>
-								<img class="img-fluid" src={photo3} alt="Nivea" />
-							</a>
-							<div class="portfolio-caption">
-								<h4>Nivea</h4>
-								<em className='sponTagline'>helo</em>
-							</div>
-						</div>
 
+							<div className='col s12 m6 l4 portfolio-item'>
+								<a
+									class="portfolio-link"
+									href="https://www.nivea.in/"
+									target="_blank"
+								>
+									<div class="helper"></div>
+									<img class="img-fluid" src={photo3} alt="Nivea" />
+								</a>
+								<div class="portfolio-caption">
+									<h4 className='sponsorName'>Nivea</h4>
+									{/* <p class="text-muted">Powered By</p> */}
+									<em className='sponTagline'>helo</em>
+								</div>
+							</div>
+
+							<div className='col s12 m6 l4 portfolio-item'>
+								<a
+									class="portfolio-link"
+									href="https://www.nivea.in/"
+									target="_blank"
+								>
+									<div class="helper"></div>
+									<img class="img-fluid" src={photo3} alt="Nivea" />
+								</a>
+								<div class="portfolio-caption">
+									<h4>Nivea</h4>
+									<em className='sponTagline'>helo</em>
+								</div>
+							</div>
+
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
 
 
 
-			<section id='titleSponsors'>
-			
-				<div className='container'>
-					<h3 className='center sponsorSection'>
-						Educational Partners
+				<section id='titleSponsors'>
+
+					<div className='container'>
+						<h3 className='center sponsorSection'>
+							Educational Partners
 					</h3>
-					<div className='row'>
-				
-						<div className='col s12 m6 l4 portfolio-item'>
-							<a 
-								class="portfolio-link" 
-								href="https://www.nivea.in/" 
-								target="_blank"
-							>
-								<div class="helper"></div>
-								<img class="img-fluid" src={photo3} alt="Nivea" />
-							</a>
-							<div class="portfolio-caption">
-								<h4 className='sponsorName'>Nivea</h4>
-								{/* <p class="text-muted">Powered By</p> */}
-								<em className='sponTagline'>helo</em>
-							</div>
-						</div>
+						<div className='row'>
 
-						<div className='col s12 m6 l4 portfolio-item'>
-							<a 
-								class="portfolio-link" 
-								href="https://www.nivea.in/" 
-								target="_blank"
-							>
-								<div class="helper"></div>
-								<img class="img-fluid" src={photo3} alt="Nivea" />
-							</a>
-							<div class="portfolio-caption">
-								<h4 className='sponsorName'>Nivea</h4>
-								{/* <p class="text-muted">Powered By</p> */}
-								<em className='sponTagline'>helo</em>
+							<div className='col s12 m6 l4 portfolio-item'>
+								<a
+									class="portfolio-link"
+									href="https://www.nivea.in/"
+									target="_blank"
+								>
+									<div class="helper"></div>
+									<img class="img-fluid" src={photo3} alt="Nivea" />
+								</a>
+								<div class="portfolio-caption">
+									<h4 className='sponsorName'>Nivea</h4>
+									{/* <p class="text-muted">Powered By</p> */}
+									<em className='sponTagline'>helo</em>
+								</div>
 							</div>
-						</div>
-							
-						<div className='col s12 m6 l4 portfolio-item'>
-							<a 
-								class="portfolio-link" 
-								href="https://www.nivea.in/" 
-								target="_blank"
-							>
-								<div class="helper"></div>
-								<img class="img-fluid" src={photo3} alt="Nivea" />
-							</a>
-							<div class="portfolio-caption">
-								<h4>Nivea</h4>
-								<em className='sponTagline'>helo</em>
+
+							<div className='col s12 m6 l4 portfolio-item'>
+								<a
+									class="portfolio-link"
+									href="https://www.nivea.in/"
+									target="_blank"
+								>
+									<div class="helper"></div>
+									<img class="img-fluid" src={photo3} alt="Nivea" />
+								</a>
+								<div class="portfolio-caption">
+									<h4 className='sponsorName'>Nivea</h4>
+									{/* <p class="text-muted">Powered By</p> */}
+									<em className='sponTagline'>helo</em>
+								</div>
 							</div>
+
+							<div className='col s12 m6 l4 portfolio-item'>
+								<a
+									class="portfolio-link"
+									href="https://www.nivea.in/"
+									target="_blank"
+								>
+									<div class="helper"></div>
+									<img class="img-fluid" src={photo3} alt="Nivea" />
+								</a>
+								<div class="portfolio-caption">
+									<h4>Nivea</h4>
+									<em className='sponTagline'>helo</em>
+								</div>
+							</div>
+
 						</div>
-						
 					</div>
-				</div>
-			</section>
+				</section>
 
-			
-			{/* <section id="partners">
+
+				{/* <section id="partners">
 			<div class="container">
 			<div class="row">
 			<div class="col-12 portfolio-item">
@@ -168,18 +165,18 @@ class Sponsors extends React.Component {
 			<p class="text-muted">Title Sponsor</p>
 			</div>
 		</div> */}
-		{/* <div class="col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.nivea.in/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/Nivea.png" alt="Nivea" /></a><div class="portfolio-caption"><h4>Nivea</h4><p class="text-muted">Powered By</p></div></div>
+				{/* <div class="col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.nivea.in/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/Nivea.png" alt="Nivea" /></a><div class="portfolio-caption"><h4>Nivea</h4><p class="text-muted">Powered By</p></div></div>
 		<div class="col-sm-6 portfolio-item"><a class="portfolio-link" href="http://www.ucweb.com/ucbrowser/download/android.html" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/UC%20Browser%20Logo.png" alt="UC Browser" /></a><div class="portfolio-caption"><h4>UC Browser</h4><p class="text-muted">Co-Sponsored By</p></div></div>
 		<div class="col-sm-6 portfolio-item"><a class="portfolio-link" href="https://hindustantimes.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/HT%20Scroll%20Logo-1.jpg" alt="Hindustan Times" /></a><div class="portfolio-caption"><h4>Hindustan Times</h4><p class="text-muted">in Association with</p></div></div>
 	<div class="col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.onlinesbi.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/SBI_logo2018.png" alt="SBI" style={{ height: 50% }} /></a><div class="portfolio-caption"><h4>SBI</h4><p class="text-muted">Banking Partner </p></div></div> */}
-	{/* </div> */}
-	
-	{/* <div class="row">
+				{/* </div> */}
+
+				{/* <div class="row">
 	<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="http://www.r-elan.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src={photo2} alt="R-Elan" /></a><div class="portfolio-caption"><h4>R-Elan</h4><p class="text-muted">Earth Style Partner</p></div></div>
 	<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.arcticfox.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src={photo3} alt="Arctic Fox" /></a><div class="portfolio-caption"><h4>Arctic Fox</h4><p class="text-muted">Backpack Partner</p></div></div>
 	<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.gshock.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src={photo4} alt="G-Shock" /></a><div class="portfolio-caption"><h4>G-Shock</h4><p class="text-muted">Time Partner</p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.bisleri.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src={photo5} alt="Bisleri" /></a><div class="portfolio-caption"><h4>Bisleri</h4><p class="text-muted">Beverage Partner</p></div></div> */}
-{/*
+				{/*
 	<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="http://www.mtvindia.com/colorsofyouth/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/Final%20Logo.png" alt="Colors Of Youth"></a><div class="portfolio-caption"><h4>Colors Of Youth</h4><p class="text-muted">Youth Partner</p></div></div>
 	<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.facebook.com/TooYumm/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/Copy%20of%20Too%20Yumm%20Logo%20-%20reverse.jpg" alt="Too Yumm!"></a><div class="portfolio-caption"><h4>Too Yumm!</h4><p class="text-muted">Health Snack Partner</p></div></div>          
 	<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://play.google.com/store/apps/details?id=com.aio.actitout&amp;hl=en_IN" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/Copy%20of%20LOGO.png" alt="Act It Out"></a><div class="portfolio-caption"><h4>Act It Out</h4><p class="text-muted">Online Auditions Partner Partner</p></div></div>          
@@ -224,12 +221,12 @@ class Sponsors extends React.Component {
 	<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="#" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/portronics.jpg" alt="Portronics Bank"></a><div class="portfolio-caption"><h4>Portronics Bank</h4><p class="text-muted">Portable Gadgets Partner</p></div></div>   
 	<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="#" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/growfitter.png" alt="Growfitter Bank"></a><div class="portfolio-caption"><h4>Growfitter Bank</h4><p class="text-muted"> Partner</p></div></div>
 	<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.pokersaint.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/poker.png" alt="Growfitter Bank"></a><div class="portfolio-caption"><h4>Poker Saint</h4><p class="text-muted">Poker Nite Partner</p></div></div> 
-*/}  
-{/* </div>
+*/}
+				{/* </div>
 	</div>
 </section> */}
 
-{/**
+				{/**
 	<section id="events">
 	<div class="container">
 	<div class="row">
@@ -247,8 +244,8 @@ class Sponsors extends React.Component {
 	</div>
 </section> */}
 
-{/* </section> */}
-{/* <section id="food">
+				{/* </section> */}
+				{/* <section id="food">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
@@ -284,7 +281,7 @@ FnB Head:
 <div class="row">
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.zomato.com/mumbai/the-stables-peninsula-redpine-marol" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/The%20Stables.png" alt="The Stables" /></a><div class="portfolio-caption"><h4>The Stables</h4><p class="text-muted">Music Venue Partner</p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="http://dinshaws.co.in/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/dinshaws-logo.png" alt="Dinshaw's" /></a><div class="portfolio-caption"><h4>Dinshaw's</h4><p class="text-muted">Ice Cream Partner</p></div></div> */}
-{/*<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="http://www.frozenbottle.in/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/frozen%20bottle%20logo.png" alt="Frozen Bottle"></a><div class="portfolio-caption"><h4>Frozen Bottle</h4><p class="text-muted">Thick Shake Partner</p></div></div>
+				{/*<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="http://www.frozenbottle.in/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/frozen%20bottle%20logo.png" alt="Frozen Bottle"></a><div class="portfolio-caption"><h4>Frozen Bottle</h4><p class="text-muted">Thick Shake Partner</p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.chilisindia.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/Chillis.png" alt="Chili's"></a><div class="portfolio-caption"><h4>Chili's</h4><p class="text-muted">American Grill Partner</p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.snackible.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/Dipsters.jpg" alt="Dipsters"></a><div class="portfolio-caption"><h4>Dipsters</h4><p class="text-muted">Dips Snack Partner</p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="http://popman.in/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/Popman.png" alt="Popman"></a><div class="portfolio-caption"><h4>Popman</h4><p class="text-muted">Savory Snack Partner</p></div></div>
@@ -313,11 +310,11 @@ FnB Head:
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="http://www.sunfeastyippee.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/Yippee.jpg" alt="Yippee Noodles"></a><div class="portfolio-caption"><h4>Yippee Noodles</h4><p class="text-muted">Noodle Partner</p></div></div>
 */}
 
-{/* </div>
+				{/* </div>
 	</div>
 </section> */}
 
-{/* <section id="food-insta">
+				{/* <section id="food-insta">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
@@ -327,7 +324,7 @@ FnB Head:
 <div class="row">
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.instagram.com/mumbaifoodie/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/mumbai_food.jpg" alt="Mumbai Foodie" /></a><div class="portfolio-caption"><h4>Mumbai Foodie</h4><p class="text-muted"></p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.instagram.com/munchymumbai/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/Munchy%20mumbai.jpg" alt="Dinshaw's" /></a><div class="portfolio-caption"><h4>Munchy Mumbai</h4><p class="text-muted"></p></div></div> */}
-{/*<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.instagram.com/thefoodpunch/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/the%20food%20punch.jpg" alt="The Food Punch"></a><div class="portfolio-caption"><h4>The Food Punch</h4><p class="text-muted"></p></div></div>
+				{/*<div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.instagram.com/thefoodpunch/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/the%20food%20punch.jpg" alt="The Food Punch"></a><div class="portfolio-caption"><h4>The Food Punch</h4><p class="text-muted"></p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.instagram.com/theglocaljournal/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/theglocaljournal.jpg" alt="The Glocal Journal"></a><div class="portfolio-caption"><h4>The Glocal Journal</h4><p class="text-muted"></p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.instagram.com/godbingeon/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/Godbingeon.jpg" alt="Godbingeon"></a><div class="portfolio-caption"><h4>Godbingeon</h4><p class="text-muted"></p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.instagram.com/eat_travel_click/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/eat%20travel%20click.jpg" alt="Eat Travel Click"></a><div class="portfolio-caption"><h4>Eat Travel Click</h4><p class="text-muted"></p></div></div>
@@ -335,12 +332,12 @@ FnB Head:
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.instagram.com/foodie_panda9792/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/foodie.jpg" alt="Foodie Panda"></a><div class="portfolio-caption"><h4>Foodie Panda</h4><p class="text-muted"></p></div></div>
 
 */}
-{/* </div>
+				{/* </div>
 	</div>
 </section> */}
 
 
-{/* <section id="media">
+				{/* <section id="media">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
@@ -452,8 +449,8 @@ Media Heads:
 </div>
 </section> */}
 
-{/* <Ambiance Partners> */}
-{/* <section id="amb">
+				{/* <Ambiance Partners> */}
+				{/* <section id="amb">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
@@ -577,7 +574,7 @@ Marketing Heads:
 </div>
 </footer> */}
 
-{/* <!-- Navigation -->
+				{/* <!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 	<div class="container">
 	<a class="navbar-brand js-scroll-trigger" href="#page-top">Previous </a>
@@ -621,7 +618,7 @@ Marketing Heads:
 	</div>
 </header> */}
 
-{/* <!-- Services -->
+				{/* <!-- Services -->
 	<section id="partners">
 	<div class="container">
 	<div class="row">
@@ -640,7 +637,7 @@ Marketing Heads:
 	<div class="col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.onlinesbi.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/SBI_logo2018.png" alt="SBI" style="height: 50%;"></a><div class="portfolio-caption"><h4>SBI</h4><p class="text-muted">Banking Partner </p></div></div>
 </div> */}
 
-{/* <div class="row">
+				{/* <div class="row">
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="http://www.r-elan.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/RELAN%20Logo.jpg" alt="R-Elan"></a><div class="portfolio-caption"><h4>R-Elan</h4><p class="text-muted">Earth Style Partner</p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.arcticfox.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/Arctic%20FOx%20Logo-01_Jpeg%20file.jpg" alt="Arctic Fox"></a><div class="portfolio-caption"><h4>Arctic Fox</h4><p class="text-muted">Backpack Partner</p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.gshock.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/marketing/G-Shock%20logo.png" alt="G-Shock"></a><div class="portfolio-caption"><h4>G-Shock</h4><p class="text-muted">Time Partner</p></div></div>
@@ -695,8 +692,8 @@ Marketing Heads:
 </div>
 </section> */}
 
-{/* <!-- Services --> */}
-{/* <section id="events">
+				{/* <!-- Services --> */}
+				{/* <section id="events">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
@@ -714,8 +711,8 @@ Marketing Heads:
 </section>
 
 </section> */}
-{/* <!-- Team --> */}
-{/* <section id="food">
+				{/* <!-- Team --> */}
+				{/* <section id="food">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
@@ -782,7 +779,7 @@ FnB Head:
 </div>
 </section> */}
 
-{/* <section id="food-insta">
+				{/* <section id="food-insta">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
@@ -804,7 +801,7 @@ blank"><div class="helper"></div><img class="img-fluid" src="img/fnb/eat%20trave
 </section> */}
 
 
-{/* <section id="media">
+				{/* <section id="media">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
@@ -881,8 +878,8 @@ Media Heads:
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="#" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/media/pune.jpg" alt="La Illusion"></a><div class="portfolio-caption"><h4>La Illusion</h4><p class="text-muted">Pune Coverage Partner</p></div></div>
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="#" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/media/index.html" alt="Galaxy Shooters"></a><div class="portfolio-caption"><h4>Galaxy Shooters</h4><p class="text-muted">Aaveg Coverage Partner</p></div></div> */}
 
-{/* <!--div class="col-md-4 col-sm-6 portfolio-item"> */}
-{/* <a class="portfolio-link" href="http://www.timesnownews.com/mirrornow/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/media/MirrorNow.png" alt="Mirror Now"></a><div class="portfolio-caption"><h4>Mirror Now</h4><p class="text-muted">News Channel Partner</p></div></div>                                        
+				{/* <!--div class="col-md-4 col-sm-6 portfolio-item"> */}
+				{/* <a class="portfolio-link" href="http://www.timesnownews.com/mirrornow/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/media/MirrorNow.png" alt="Mirror Now"></a><div class="portfolio-caption"><h4>Mirror Now</h4><p class="text-muted">News Channel Partner</p></div></div>                                        
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="http://rollingstoneindia.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/Media - rolling-stone-india-logo.png" alt="Rolling Stone India"></a><div class="portfolio-caption"><h4>Rolling Stone India</h4><p class="text-muted">Media Partner</p></div></div>                                       
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://maharashtratimes.indiatimes.com/" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/MaTa.png" alt="Maharashtra Times"></a><div class="portfolio-caption"><h4>Maharashtra Times</h4><p class="text-muted">Regional Media Partner</p></div></div>                                       
 <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" href="https://www.mumbailive.com/en" target="_blank"><div class="helper"></div><img class="img-fluid" src="img/MumbaiLive.png" alt="Mumbai Live"></a><div class="portfolio-caption"><h4>Mumbai Live</h4><p class="text-muted">Media Partner</p></div></div>                                       
@@ -918,8 +915,8 @@ Media Heads:
 </div>
 </section> */}
 
-{/* <Ambiance Partners> */}
-{/* <section id="amb">
+				{/* <Ambiance Partners> */}
+				{/* <section id="amb">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
@@ -1004,8 +1001,8 @@ Marketing Heads:
 </div>
 </div>
 </header> */}
-{/* <!-- Footer --> */}
-{/* <footer class="bg-light">
+				{/* <!-- Footer --> */}
+				{/* <footer class="bg-light">
 <div class="container">
 <div class="row">
 <div class="col-md-3">

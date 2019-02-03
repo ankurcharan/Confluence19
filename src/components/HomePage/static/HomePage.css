@@ -28,20 +28,26 @@
   position:fixed;
   z-index:1000;
   color:white;
-  width:90px;
-  height:40px;
+  height:50px;
+  width:50px;
+  padding:5px;
   background-color:#903;
   right:10px;
-  bottom:10px;
+  top:10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 50%;
   font-size:14px;
   font-weight: 100;
   box-shadow:0 5px 10px rgba(0,0,0,0.4);
   cursor: pointer;
   transition:all 0.2s;
+}
+.Register_button > svg{
+  width:80%;
+  height:80%;
+  fill:cornsilk;
 }
 .Register_button:hover{
   transform:translateY(-2px);

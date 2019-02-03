@@ -1,0 +1,82 @@
+.wave_1{
+  width:100%;
+  transform:scale(1.4);
+  bottom:-270px;
+  z-index:200;
+}
+.confluence_logo{
+  top:77vh;
+  left:40px;
+  z-index:400;
+  width:650px;
+}
+.mask{
+  width:1100px;
+  right:-350px;
+  top:-12vh;
+  z-index:500;
+}
+.drum{
+  display: none;
+}
+@media only screen and (max-width:1300px){
+  .wave_1{
+    bottom:-220px;
+    
+  }
+}
+@media only screen and (max-width:1000px){
+  .wave_1{
+    bottom:-130px;
+  }
+  .mask{
+    width:900px;
+    right:-280px;
+    top:-2vh;
+  }
+}
+
+@media only screen and (max-width:800px){
+  .wave_1{
+    bottom:-110px;
+  }
+  .confluence_logo{
+    left:50%;
+    transform:translateX(-50%);
+    width:400px;
+    top:85vh;
+  }
+}
+@media only screen and (max-width:690px){
+  .wave_1{
+    bottom:-40px;
+  }
+  .mask{
+    width:420px;
+    top:30vh;
+    left:50%;
+    transform:translateX(-50%);
+  }
+}
+@media only screen and (max-width:500px){
+  .wave_1{
+    bottom:-10px;
+  }
+  .drum{
+    display: block;
+    top:65vh;
+    z-index:390;
+    width:170px;
+  }
+  .drum_left{
+    left:-40px;
+  }
+  .drum_right{
+    right:-40px;
+  }
+
+  .confluence_logo{
+    top:88vh;
+    width:330px;
+  }
+}

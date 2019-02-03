@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Link as ScrollLink, Events as ScrollObj } from 'react-scroll';
 import './static/navigation.css';
 
@@ -13,11 +13,12 @@ class Navigation extends Component {
     return (
       <nav className={`Navigation ${(this.props.isActive) ? 'Navigation--active' : ''}`}>
         <button className="handle_button handle_button--active" onClick={() => this.props.toggleNavigation()}>
-          <svg>
+          {/*<svg>
             <use xlinkHref={window.location.href + 'img/arrow.svg#arrow'} />
-          </svg>
+          </svg>*/}
+          <div className="handle_bar"></div>
         </button>
-        <div className="nav_logo">Logo</div>
+        <div className="nav_logo"></div>
         <div className="nav_links">
           <ul className="nav_link_list">
             <ScrollLink to="Gallery_Section" className="nav_item" smooth={true} duration={500}><li>Gallery</li></ScrollLink>
