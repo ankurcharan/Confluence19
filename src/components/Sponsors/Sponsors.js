@@ -22,7 +22,7 @@ class Sponsors extends React.Component {
 			<div id='festSponsors'>
 
 
-				<header class="masthead">
+				<header className="masthead">
 					<img
 						//src={photo1}
 						src={window.location.origin + '/img/sponsor_header.svg'}
@@ -41,12 +41,12 @@ class Sponsors extends React.Component {
 
 							<div className='col s12 m6 l4 portfolio-item'>
 								<a
-									class="portfolio-link"
+									className="portfolio-link"
 									href="https://www.nivea.in/"
 									target="_blank"
 								>
-									<div class="helper"></div>
-									<img class="img-fluid" src={photo3} alt="Nivea" />
+									<div className="helper"></div>
+									<img className="img-fluid" src={photo3} alt="Nivea" />
 								</a>
 								<div class="portfolio-caption">
 									<h4 className='sponsorName'>Nivea</h4>

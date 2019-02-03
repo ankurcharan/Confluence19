@@ -58,11 +58,15 @@ class Gallery extends Component {
 
   }
 
+  delayResize = (e) => {
+    setTimeout(this.handleWindowResize, 300);
+  }
+
   componentDidMount() {
-    window.addEventListener('resize', (e) => { setTimeout(this.handleWindowResize, 300) });
+    window.addEventListener('resize', this.delayResize);
   }
   componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowResize);
+    window.removeEventListener('resize', this.delayResize);
   }
 
   render() {
