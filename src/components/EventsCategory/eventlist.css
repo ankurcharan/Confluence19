@@ -1,131 +1,131 @@
 .main-body{
-      padding-top: 5vh;
-      background: rgb(6,4,32);
-      background: linear-gradient(61deg, rgba(6,4,32,1) 0%, rgba(45,4,47,1) 41%, rgba(47,7,49,1) 53%, rgba(33,2,33,1) 91%);
-      height: 100vh;
-      padding-bottom: 5vh;
-      position: relative;
-      width: 100wh;
-      overflow: hidden;
+  padding-top: 5vh;
+  background: rgb(6,4,32);
+  background: linear-gradient(61deg, rgba(6,4,32,1) 0%, rgba(45,4,47,1) 41%, rgba(47,7,49,1) 53%, rgba(33,2,33,1) 91%);
+  height: 100vh;
+  padding-bottom: 3vh;
+  position: relative;
+  width: 100wh;
+  overflow: hidden;
 }
 .lantern1{
-  height:15vh;
-  background-position: center;
-  position: absolute;
-  background-repeat: no-repeat;
-  width:12vh;
-  background-image: url("lantern1.png");
-  animation: lantern1 50s linear infinite; 
+height:15vh;
+background-position: center;
+position: absolute;
+background-repeat: no-repeat;
+width:12vh;
+background-image: url("lantern1.png");
+animation: lantern1 50s linear infinite; 
 }
 .lantern2{
-  height:15vh;
-  margin-left: 15%;
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:12vh;
-  background-image: url("lantern1.png");
-  animation: lantern2 85s linear infinite; 
+height:15vh;
+margin-left: 15%;
+position: absolute;
+background-position: center;
+background-repeat: no-repeat;
+width:12vh;
+background-image: url("lantern1.png");
+animation: lantern2 85s linear infinite; 
 }
 .lantern3{
-  position: absolute;
-  margin-left: 40%;
-  height:15vh;
-  background-position: center;  
-  background-repeat: no-repeat;
-  width:12vh;
-  background-image: url("lantern1.png");
-  animation: lantern3 40s linear infinite; 
+position: absolute;
+margin-left: 40%;
+height:15vh;
+background-position: center;  
+background-repeat: no-repeat;
+width:12vh;
+background-image: url("lantern1.png");
+animation: lantern3 40s linear infinite; 
 }
 .lantern4{
-  position: absolute;
-  margin-left: 65%;
-  height:15vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:12vh;
-  background-image: url("lantern1.png");
-  animation: lantern4 70s linear infinite; 
+position: absolute;
+margin-left: 65%;
+height:15vh;
+background-position: center;
+background-repeat: no-repeat;
+width:12vh;
+background-image: url("lantern1.png");
+animation: lantern4 70s linear infinite; 
 }
 .lantern5{
-  position: absolute;
-  margin-left: 90%;
-  height:15vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:12vh;
-  background-image: url("lantern1.png");
-  animation: lantern5 30s linear infinite; 
+position: absolute;
+margin-left: 90%;
+height:15vh;
+background-position: center;
+background-repeat: no-repeat;
+width:12vh;
+background-image: url("lantern1.png");
+animation: lantern5 30s linear infinite; 
 }
 
 .button-list
 {
-  padding: 5vh;
-  overflow-y:auto; 
-  z-index: 10;
+padding: 5vh;
+overflow-y:scroll; 
+z-index: 10;
 } 
 @media only screen and (max-width:749px) {
-  .button-list{
-    display: none;
-  }
+.button-list{
+display: none;
+}
 
 }
 @keyframes lantern1{
-  0% {
-  bottom: -8vh;
-    opacity: 1;
-  }
-  100%{
-  bottom: 100vh;
-    opacity: 0.3;
-  }
+0% {
+bottom: -8vh;
+opacity: 1;
+}
+100%{
+bottom: 100vh;
+opacity: 0.3;
+}
 }
 @keyframes lantern2{
-  0% {
-  bottom: -15vh;
-    opacity: 1;
-  }
-  100%{
-  bottom: 110vh;
-    opacity: 0.3;
-  }
+0% {
+bottom: -15vh;
+opacity: 1;
+}
+100%{
+bottom: 110vh;
+opacity: 0.3;
+}
 }
 @keyframes lantern3{
-  0% {
-  bottom: -8vh;
-    opacity: 1;
-  }
-  100%{
-  bottom: 100vh;
-    opacity: 0.3;
-  }
+0% {
+bottom: -8vh;
+opacity: 1;
+}
+100%{
+bottom: 100vh;
+opacity: 0.3;
+}
 }
 @keyframes lantern4{
-  0% {
-  bottom: -20vh;
-    opacity: 1;
-  }
-  100%{
-  bottom: 110vh;
-    opacity: 0.3;
-  }
+0% {
+bottom: -20vh;
+opacity: 1;
+}
+100%{
+bottom: 110vh;
+opacity: 0.3;
+}
 }
 @keyframes lantern5{
-  0% {
-  bottom: -8vh;
-    opacity: 1;
-  }
-  100%{
-  bottom: 100vh;
-    opacity: 0.3;
-  }
+0% {
+bottom: -8vh;
+opacity: 1;
+}
+100%{
+bottom: 100vh;
+opacity: 0.3;
+}
 }
 @media only screen and (max-width:500px)
 {
-  .lantern2{
-    display: none;
-  }
-  .lantern5{
-    display: none;
-  }
+.lantern2{
+display: none;
+}
+.lantern5{
+display: none;
+}
 }

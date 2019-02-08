@@ -23,51 +23,51 @@ import Developers from './components/Developers/Developers';
 
 class Page404 extends React.Component {
 
-	render() {
+  render() {
 
-		return (
+    return (
 
-			<div className='center'>
+      <div className='center'>
 
-				<Link to='/'>Go Home</Link>
+        <Link to='/'>Go Home</Link>
 
-			</div>
+      </div>
 
-		);
-	}
+    );
+  }
 }
 
 
 class App extends Component {
-	render() {
-		return (
-			<BrowserRouter>
-				<div>
-					<React.Suspense fallback={<div>Loading...</div>}>
-						<Switch>
-							<Route exact path='/events' component={Events} />
-							<Route exact path='/gallery' component={Gallery} />
-							<Route exact path='/sponsors' component={Sponsors} />
-							<Route exact path='/register' component={Register} />
-							<Route exact path='/' component={HomePage} />
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <Switch>
+              <Route exact path='/events' component={Events} />
+              <Route exact path='/gallery' component={Gallery} />
+              <Route exact path='/sponsors' component={Sponsors} />
+              <Route exact path='/register' component={Register} />
+              <Route exact path='/' component={HomePage} />
 
-							<Route exact path='/team' component={TeamConflu2} />
+              <Route exact path='/team' component={TeamConflu2} />
 
-							<Route exact path='/admin' component={AddEvent} />
-							<Route exact path='/developers' component={Developer2} />
-							<Route exact path='/events/:category' component={EventsCategory} />
+              <Route exact path='/admin' component={AddEvent} />
+              <Route exact path='/developers' component={Developer2} />
+              <Route exact path='/events/:category' component={EventsCategory} />
 
 
-							<Route path='/*' component={Page404} />
+              <Route path='/*' component={Page404} />
 
-						</Switch>
-						{/* <Footer /> */}
+            </Switch>
+            {/* <Footer /> */}
 
-					</React.Suspense>
-				</div>
-			</BrowserRouter>
-		);
-	}
+          </React.Suspense>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

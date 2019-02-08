@@ -1,17 +1,7 @@
 import React from 'react';
-
-// import ht from './shtml.html';
+import { Link } from 'react-router-dom';
 import './scss.css';
-
-
-// import photo1 from './img/Logo_Unit.png';
-
-import photo1 from './confluence-logo-svg-vector.svg';
-
-import photo2 from './img/marketing/Nivea.png';
 import photo3 from './img/marketing/Arctic FOx Logo-01_Jpeg file.jpg';
-import photo4 from './img/marketing/HDFC.jpg';
-import photo5 from './img/marketing/Copy of Snickers.jpg';
 
 class Sponsors extends React.Component {
 
@@ -22,7 +12,10 @@ class Sponsors extends React.Component {
 			<div id='festSponsors'>
 
 
-				<header className="masthead">
+				<header class="masthead">
+				<Link to='/'>
+					<a class="btn-floating btn-small waves-effect backhome1" href="#!"><i class="material-icons">arrow_back</i></a>
+				</Link>
 					<img
 						//src={photo1}
 						src={window.location.origin + '/img/sponsor_header.svg'}
@@ -41,12 +34,13 @@ class Sponsors extends React.Component {
 
 							<div className='col s12 m6 l4 portfolio-item'>
 								<a
-									className="portfolio-link"
+									class="portfolio-link"
 									href="https://www.nivea.in/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
-									<div className="helper"></div>
-									<img className="img-fluid" src={photo3} alt="Nivea" />
+									<div class="helper"></div>
+									<img class="img-fluid" src={'data:image/png;base64,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'} alt="Nivea" />
 								</a>
 								<div class="portfolio-caption">
 									<h4 className='sponsorName'>Nivea</h4>
@@ -60,6 +54,7 @@ class Sponsors extends React.Component {
 									class="portfolio-link"
 									href="https://www.nivea.in/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<div class="helper"></div>
 									<img class="img-fluid" src={photo3} alt="Nivea" />
@@ -76,6 +71,7 @@ class Sponsors extends React.Component {
 									class="portfolio-link"
 									href="https://www.nivea.in/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<div class="helper"></div>
 									<img class="img-fluid" src={photo3} alt="Nivea" />
@@ -106,6 +102,7 @@ class Sponsors extends React.Component {
 									class="portfolio-link"
 									href="https://www.nivea.in/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<div class="helper"></div>
 									<img class="img-fluid" src={photo3} alt="Nivea" />
@@ -122,6 +119,7 @@ class Sponsors extends React.Component {
 									class="portfolio-link"
 									href="https://www.nivea.in/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<div class="helper"></div>
 									<img class="img-fluid" src={photo3} alt="Nivea" />
@@ -138,6 +136,7 @@ class Sponsors extends React.Component {
 									class="portfolio-link"
 									href="https://www.nivea.in/"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<div class="helper"></div>
 									<img class="img-fluid" src={photo3} alt="Nivea" />

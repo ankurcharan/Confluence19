@@ -122,6 +122,15 @@
   transform:scaleX(1.05) scaleY(1.08);
 }
 
+@media only screen and (min-width:1400px){
+  .banner{
+    height:150vh
+  }
+  .mountain_3{
+    bottom:-300px;
+  }
+}
+
 @media only screen and (max-width:1200px){
   .banner{
     height:150vh;

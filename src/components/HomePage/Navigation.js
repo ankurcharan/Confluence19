@@ -24,25 +24,32 @@ class Navigation extends Component {
             <ScrollLink to="Gallery_Section" className="nav_item" smooth={true} duration={500}><li>Gallery</li></ScrollLink>
             <ScrollLink to="About_Section" className="nav_item" smooth={true} duration={500}><li>About Us</li></ScrollLink>
             <ScrollLink to="Events_Section" className="nav_item" smooth={true} duration={500}><li>Events</li></ScrollLink>
-            <Link className="nav_item" to='/sponsors'><li>Sponsors</li></Link>
-            <Link className="nav_item" to="/team"><li>The Team</li></Link>
-            <Link className="nav_item" to="/developers"><li>Developers</li></Link>
+            <Link to='/sponsors' className="nav_item">
+              <li>Sponsors</li>
+            </Link>
+            <Link to='/team' className="nav_item">
+              <li>The Team</li>
+            </Link>
+            <Link to='/developers' className="nav_item">
+              <li>Developers</li>
+            </Link>
+
           </ul>
         </div>
         <div className="nav_social">
           <div className="icon icon_instagram">
             <svg>
-              <use xlinkHref={window.location.href + 'img/instagram.svg#instagram'} />
+              <a href="https://wwww.instagram.com/conflu.nitkkr"><use xlinkHref={window.location.href + 'img/instagram.svg#instagram'} /></a>
             </svg>
           </div>
           <div className="icon icon_facebook">
             <svg>
-              <use xlinkHref={window.location.href + 'img/facebook.svg#facebook'} />
+            <a href="https://www.facebook.com/Conflu/"><use xlinkHref={window.location.href + 'img/facebook.svg#facebook'} /></a>
             </svg>
           </div>
           <div className="icon icon_youtube">
             <svg>
-              <use xlinkHref={window.location.href + 'img/youtube.svg#youtube'} />
+            <a href="https://www.youtube.com/user/photonitk"><use xlinkHref={window.location.href + 'img/youtube.svg#youtube'} /></a>
             </svg>
           </div>
         </div>

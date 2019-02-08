@@ -57,7 +57,6 @@ class Gallery extends Component {
     })
 
   }
-
   delayResize = (e) => {
     setTimeout(this.handleWindowResize, 300);
   }
@@ -67,6 +66,7 @@ class Gallery extends Component {
   }
   componentWillUnmount() {
     window.removeEventListener('resize', this.delayResize);
+    console.log('hello');
   }
 
   render() {

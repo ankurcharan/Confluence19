@@ -11,8 +11,6 @@
 .is-animate {
         background:transparent;
     box-sizing: border-box;
-    margin-top: 40vh;
-    margin-left: 20vw;
     font-size: 50px;
     display: -webkit-inline-box;
     padding: 20px;
@@ -22,7 +20,7 @@
     animation-name: style;
     display: -webkit-inline-box;
     color: #fff;
-    padding: 15px;
+    padding: 10px;
     margin-left: 5px;
     background:transparent;
     font-family: 'Indie Flower', cursive;
@@ -90,21 +88,22 @@
         filter: blur(0rem);
   }
 }
-@media only screen and (max-width: 700xp)
+@media only screen and (max-width: 650px)
 {
     .is-animate{
-        font-size: 10px;
-        padding: 4px;
-        margin-left:0px;
+      background:transparent;
+      box-sizing: border-box;
+      margin-top: 40vh;
+      margin-left: 22vw;
+      font-size: 30px;
+      display: -webkit-inline-box;
+      padding: 20px;
+      border-radius: 1vh;
     }
-    .l{
+    .is-animate >div{
         padding: 2px;
         margin-left: 1px;
         box-shadow: 2px 2px 2px 2px;
-    }
-    .loading
-    {
-      width: 80vh;
     }
   
 }

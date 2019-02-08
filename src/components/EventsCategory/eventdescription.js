@@ -18,13 +18,12 @@ class description extends Component{
             <h1 className="titlename row center-align">
               {this.props.events.eventName}
             </h1>
-          <div className="row ">
-            <div className="card1">
+            <div className="card1 row">
             {
                     this.props.events.description?
                     (
                     <>
-                    <h2 className="heading1">Description</h2>  
+                    <h2 className="heading1 sectionHeading">Description</h2>  
                     <p className="heading2">{this.props.events.description}</p>
                     </>
                     ):null  
@@ -33,11 +32,11 @@ class description extends Component{
                     (this.props.events.rules.length > 0) ?
                     (
                       <>
-                      <h2 className="heading1">Rules</h2>  
+                      <h2 className="heading1 sectionHeading">Rules</h2>  
                     <ul>
                       {
                       this.props.events.rules.map((rule, i)=>{
-                        return(<li className="heading2 list1">{i+1}. {rule}</li>)
+                        return(<li className="heading2 list1"> {rule}</li>)
                       })
                       }
                     </ul>
@@ -48,14 +47,14 @@ class description extends Component{
                     this.props.events.prize?
                     (
                       <>
-                    <h2 className="heading1">Prize</h2>  
+                    <h2 className="heading1 sectionHeading">Prize</h2>  
                     <p className="heading2">{this.props.events.prize}</p>
                     </>
                     ):null  
                   }
-                  <h2 className="heading1">Venue</h2>
+                  <h2 className="heading1 sectionHeading">Venue</h2>
                   <p className="heading2">{this.props.events.venue}</p>
-                  <h2 className="heading1">Coordinators</h2>
+                  <h2 className="heading1 sectionHeading">Coordinators</h2>
                   {
                     this.props.events.coordinators.map(cor=>{
                       return(<p className="heading2">{cor}</p>)
@@ -63,7 +62,6 @@ class description extends Component{
                   }
 
             </div>
-          </div>
           </div>
         )
       }

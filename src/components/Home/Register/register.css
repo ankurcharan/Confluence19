@@ -4,8 +4,10 @@ html {
   box-sizing: border-box;
 }
 .registration{
-  background-image: url("https://images.unsplash.com/photo-1504804802530-f4fb2fe4eb82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-  height: 100vh;
+ /* background-image: url("https://images.unsplash.com/photo-1504804802530-f4fb2fe4eb82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+ */
+ background: linear-gradient(#c10a4e,#fab636); 
+ height: 100vh;
   width: 100vw;
   background-size: 120% 100%;
   background-position:center center;
@@ -34,7 +36,7 @@ html {
 
 
 .section {
-  background-color: #3D4067;
+  background-color: #c10a4e;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -205,7 +207,7 @@ small.errorOnce {
   padding: 8px 48px;
   margin-top: 10px;
   margin-bottom: 50px;
-  border: 2px solid #75759E;
+  border: 2px solid #fab636;
   border-radius: 20px;
   cursor: pointer;
   transition: all ease .2s;
@@ -223,7 +225,7 @@ small.errorOnce {
   height: 800px;
   margin-top: -600px;
   margin-left: -400px;
-  background: #252E45;
+  background: #fab636;
   border-radius: 40%;
   -webkit-animation: shift 20s infinite linear;
           animation: shift 20s infinite linear;

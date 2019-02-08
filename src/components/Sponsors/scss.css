@@ -10,6 +10,12 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700');
 
+.backhome1{
+	left: 2%;
+	top:2%;
+	position: fixed;
+	background-color: #ef2270;
+  }
 
 /* sponsor tagline **/
 .sponTagline {

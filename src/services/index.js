@@ -24,7 +24,6 @@ const galleryImages = () => {
 
 const getEventsByCategory = (category) => {
 
-
     const reqOptions = {
         headers: {
             Accept: 'application/json',
@@ -36,6 +35,7 @@ const getEventsByCategory = (category) => {
     return fetch(`${url}/events?category=${category}`, reqOptions)
         .then(response => response.json())
         .then(response => {
+            console.log(response);
             return response;
         });
 }

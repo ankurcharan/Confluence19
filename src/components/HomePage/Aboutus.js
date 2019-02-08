@@ -54,10 +54,12 @@ class Aboutus extends Component {
           <div className="about_us_data">
             <h3 className="about_header">About Us</h3>
             <section className="about_para">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut aliquid harum assumenda cum quisquam voluptas reprehenderit ipsum possimus vitae explicabo in distinctio rerum quibusdam laborum, facere voluptatibus pariatur accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis officia eaque deserunt excepturi omnis praesentium sapiente nostrum voluptas ut. Esse sapiente est omnis veniam cumque deleniti labore quos? Eos, suscipit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit, nisi vel rem quos error quia quam rerum nostrum soluta possimus modi, tenetur dolores quo assumenda molestiae, dolor officiis sit.lorem
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
+              <p>Confluence, the annual cultural Festival of NIT KURUKSHETRA is a cultural extravaganza beyond words, beyond description.<br></br>
+
+                Confluence is the coming together of free spirits, like-minded zealous youth and a celebration of culture of true artistic genius.<br />
+
+                Its urge to deliver the maximum is what makes it one of the most awaited cultural festival.<br />
+              </p>
             </section>
           </div>
         </div>

@@ -19,6 +19,11 @@
 .drum{
   display: none;
 }
+@media only screen and (min-width:1400px){
+  .mask{
+    top:0;
+  }
+}
 @media only screen and (max-width:1300px){
   .wave_1{
     bottom:-220px;
@@ -44,7 +49,7 @@
     left:50%;
     transform:translateX(-50%);
     width:400px;
-    top:85vh;
+    top:80vh;
   }
 }
 @media only screen and (max-width:690px){
@@ -76,7 +81,7 @@
   }
 
   .confluence_logo{
-    top:88vh;
+    top:78vh;
     width:330px;
   }
 }

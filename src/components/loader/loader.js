@@ -4,7 +4,7 @@ const loader=()=>{
     return(
         <div class="loading">
               
-    <div class='is-animate'>
+    <div class="is-animate center-align valign-wrapper">
         <div class="l">c</div>
         <div class="l">o</div>
         <div class="l">n</div>

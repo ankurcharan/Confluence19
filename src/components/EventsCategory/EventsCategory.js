@@ -69,12 +69,14 @@ class EventsCategory extends React.Component {
 		const list = events.map((eve,index)=>{
       return(
         <div>
-			<a class="btn-floating btn-small waves-effect backbutton" href="/"><i class="material-icons">arrow_back</i></a>
+			<Link to='/'>
+				<a class="btn-floating btn-small waves-effect backbutton" href="#!"><i class="material-icons">arrow_back</i></a>
+			</Link>
 	        <Button
-						key={index}
-						title={eve.eventName}
+				key={index}
+				title={eve.eventName}
 	        	click={()=>this.eventhandler(index)}
-					/>
+			/>
         </div>
       )});
 
@@ -99,14 +101,15 @@ class EventsCategory extends React.Component {
 				<Loader/>
 			) : (
 				<div className="main-body">
+				<a class="btn-floating btn-small waves-effect backbutton" href="/"><i class="material-icons">arrow_back</i></a>
 				<div className="mobile_events">
 				{list_view}
 				<div className="right-align buttonbody">
 				<div onClick={this.changehandler} >
 			{
 				(this.state.status)?
-					(<i class="large material-icons icon1">unfold_more</i>)
-					:(<i class="large material-icons icon1">unfold_less</i>)
+					(<i class="material-icons icon1">unfold_more</i>)
+					:(<i class="material-icons icon1">unfold_less</i>)
 			}
 			</div>
 				</div>

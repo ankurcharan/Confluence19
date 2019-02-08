@@ -1,34 +1,3 @@
-## Status and Bugs
-
-*TODO*
-4. margin-top theme div in phone 
-5. carousel not working for attractions
-6. events div not mobile responsive
-7. landing page from the start
-8. sponsorSection on sponsor page is on the left side (should be at the center of the page)
-9. sponsor on mobile have a box for the name (wasnt there originally, someone must have messed up with the css)
-10. team confluence done, try smaller photos for phone
-11. add loader everywhere
-12. in events description all of the event details are not visible
-13. do something for '/events' route (optional)
-14. use fixed background slide show and parallax scroll
-15. gallery component jumbotron styling and responsiveness (everything else fine)
-16. someone made the backgrund transparent and put a three strip image in the background that is messing up with lot of thinngs
-17. create navbar
-18. add fixed socialLink, navbar, logo at their respective positions on each page
-19. scroll not working on any page 
-20. create a simple form for getting events data
-
-someone find something new
-or resolve anything
-feel free to edit!
-
-
----
----
----
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -73,3 +42,27 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

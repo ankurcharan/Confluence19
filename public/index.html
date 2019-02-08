@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <script src="./js/anime.min.js"></script>
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="shortcut icon" href="data:image/jpeg;base64,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">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <link rel="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,7 +30,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Confluence19 | Annual Cultural Fest of NIT Kurukshetra</title>
 
 
     <!-- CSS -->
@@ -43,12 +43,32 @@
 	<script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
+
+  <!-- loading.io -->
+  <link rel="stylesheet" type="text/css" href="loading.css"/>
+
+  <style>
+    #loader {
+      background-color: #333;
+      height: 100%;
+      height: 100vh;
+    }
+    #loader > img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
+
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+    <div id="loader" class="center">
+        <img class="" src="./img/confluAnimated.svg" alt="loader">
+    </div>
+    <div id="root" class="hide"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

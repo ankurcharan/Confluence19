@@ -1,7 +1,5 @@
 
-.mobile_events{
-  margin-bottom: 5vh;
-}
+
 .mobile_list{
   width: 100vw;
   z-index: 100;
@@ -20,24 +18,23 @@
   z-index: 100;
 background-color: rgb(32, 35, 42);
 bottom: 44px;
-height: 8vh;
-width: 8vh;
+height: 6vh;
+width: 6vh;
 color: rgb(233, 168, 29);
 display: none;
 cursor: pointer;
 position: fixed;
 display: inline-block;
 right: 20px;
-z-index: 3;
 box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
 border-radius: 50%;
 align-content: center;
 }
 .icon1{
-  font-size: 5vh;
   align-content: center;
-  padding-left:1.5vh;
-  padding-top: 1.5vh;
+  padding-left:1vh;
+  padding-top: 0.8vh;
+  font-size: 4vh;
   }
 .button-list:active{
   outline: 0;
