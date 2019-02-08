@@ -61,6 +61,14 @@ class EventsCategory extends React.Component {
 		console.log(this.state.category);
 	}
 
+	componentDidMount() {
+		let x = document.getElementById('loader'); 
+		if(x) {
+			x.remove();
+		}      
+		document.getElementById('root').classList.remove('hide');
+	}
+
 	render() {
 
 		let isFetchingEvents = this.props.isFetchingEvents;

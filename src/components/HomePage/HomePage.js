@@ -26,7 +26,10 @@ class HomePage extends Component {
 
   componentDidMount() {
     setTimeout(function () {
-      document.getElementById('loader').classList.add('hide');
+      let x = document.getElementById('loader'); 
+      if(x) {
+        x.remove();
+      }      
       document.getElementById('root').classList.remove('hide');
     }, 1000);
   }

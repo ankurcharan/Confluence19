@@ -112,7 +112,7 @@
 
 .person_facebook {
   background-color: #3b5998;
-  text-emphasis-color: white;
+  color: white !important;
 }
 @media only screen and (max-width:1000px){
   .team_wrapper{

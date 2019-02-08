@@ -5,6 +5,16 @@ import photo3 from './img/marketing/Arctic FOx Logo-01_Jpeg file.jpg';
 
 class Sponsors extends React.Component {
 
+	componentDidMount() {
+		setTimeout(function () {
+		  let x = document.getElementById('loader'); 
+		  if(x) {
+			x.remove();
+		  }      
+		  document.getElementById('root').classList.remove('hide');
+		}, 1000);
+	}
+
 	render() {
 
 		return (

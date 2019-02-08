@@ -4,11 +4,19 @@ import { Link } from 'react-router-dom';
 import './Developer2.css';
 
 let members = [
+  {
+    name: "Neha Singla",
+    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FNehaSingla.jpeg?alt=media&token=54659231-a753-4c1f-baee-c244207ff973",
+    ph_no: 7404221321,
+    fb: "https://www.facebook.com/neha.singla.315213",
+    year: 4
+  },
   { 
     name: "Ankur", 
     imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FAnkur%20Charan.png?alt=media&token=c1513246-65b1-4681-82de-ea751ce1823d", 
     ph_no: 9468184831, 
     github: "https://www.github.com/ankurcharan",
+    fb: "https://www.facebook.com/ankurcharan06",
     year: 3
   },
   {
@@ -16,6 +24,7 @@ let members = [
     imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FMuditJain.jpg?alt=media&token=baa7590f-1b3f-49a0-8458-e5ab91de16eb",
     ph_no: 7206307664,
     github: "https://www.github.com/ciphereck",
+    fb: "https://www.facebook.com/ciphereck",
     year: 3
   },
   {
@@ -52,6 +61,20 @@ let members = [
     ph_no: 9729720989, 
     github: "https://www.github.com/nick-infinity",
     year: 2
+  },
+  {
+    name: "Bharat Ranjan",
+    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FBharatranjan.jpg?alt=media&token=626ee6ee-44f0-4d79-8211-9b3226520c1b",
+    fb: "https://www.facebook.com/branjan121",
+    ph_no: "",
+    year: 2
+  },
+  {
+    name: "Vinay Kumar",
+    fb: "https://www.facebook.com/vinay.dhankhar.3133",
+    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FVinayKumar.jpg?alt=media&token=a3d5dfd7-ef79-4f75-b7fb-963b9d3a2f50",
+    ph_no: "",
+    year: 2
   }
 ]
 
@@ -59,7 +82,10 @@ class TeamConflu extends Component {
 
   componentDidMount() {
     setTimeout(function () {
-      document.getElementById('loader').classList.add('hide');
+      let x = document.getElementById('loader'); 
+      if(x) {
+        x.remove();
+      }      
       document.getElementById('root').classList.remove('hide');
     }, 1000);
   }
@@ -77,24 +103,6 @@ class TeamConflu extends Component {
         <div className="dev_wrapper">
           <div className="dev_card_plate row">
             
-
-            <div className="col l3 m4 s6 person_card">
-              <div className="back_plate">
-                <div className="person_img">
-                  <img 
-                    src='https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FNehaSingla.jpeg?alt=media&token=54659231-a753-4c1f-baee-c244207ff973' 
-                    alt="profile" />
-                </div>
-              </div>
-              <div className="person_info">
-                <div className="person_name">Neha Singla</div>
-                <div className="person_contact">98989898989</div>
-              </div>
-              <div className="person_social">
-                <a href='https://www.facebook.com/neha.singla.315213' className="person_btn person_facebook" target='_blank'  rel="noopener noreferrer">facebook</a>
-              </div>
-            </div>
-            
             {
               members.map((el, i) => {
                 return (
@@ -109,12 +117,31 @@ class TeamConflu extends Component {
                       <div className="person_contact">{el.ph_no}</div>
                     </div>
                     <div className="person_social">
-                      <a href={el.github} className="person_btn person_github" target='_blank'  rel="noopener noreferrer">github</a>
+
+
+                    {
+                        (el.fb && el.fb.length > 0) ?  
+                        (
+                          <a href={el.fb} className="person_btn person_facebook" target='_blank'  rel="noopener noreferrer">facebook</a>
+                        ) : (
+                          ''
+                        )
+                      }
+
+                      {
+                        (el.github && el.github.length > 0) ?
+                        (
+                          <a href={el.github} className="person_btn person_github" target='_blank'  rel="noopener noreferrer">github</a>
+                        ) : (
+                          ''
+                        )
+                      }  
                     </div>
                   </div>
                 )
               })
             }
+            
           </div>
         </div>
       </div>
