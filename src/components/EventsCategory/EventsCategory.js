@@ -5,7 +5,6 @@ import "./mobile.css";
 import Loader from "../loader/loader.js";
 import {findDOMNode} from 'react-dom';
 import $ from "jquery";
-import m from 'materialize-css'
 import "./eventlist.css";
 import Description from "./eventdescription.js";
 import './eventdescription.css';
