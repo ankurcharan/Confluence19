@@ -6,13 +6,6 @@ import { Link } from 'react-router-dom';
 const convener = [
          
 	{
-		name: "Manish Kumar",
-		fb: "https://m.facebook.com/manishyadav2904",
-		email: "yadavmanish2904@gmail.com",
-		contact: "9050282706",
-		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BManish%20Kumar%7D.jpg?alt=media&token=0506786d-bf57-48a0-8f93-df324a02efcb"	
-	},
-	{
 		name: "Saurabh Jain",
 		fb: "https://www.facebook.com/profile.php?id=100001281323244",
 		email: "saurabhjain.nitkkr@gmail.com",
@@ -30,7 +23,7 @@ const convener = [
 		name: "Sourav Aggarwal",
 		fb: "https://www.facebook.com/sourav.aggarwal.965",
 		email: "souravaggarwal351@yahoo.com",
-		contact: "",
+		contact: "9034792651",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BSourav%20Aggarwal%7D.jpg?alt=media&token=4885e8d7-3dc4-4637-9da0-e1d02fec40aa"	
 	},
 	{
@@ -39,6 +32,13 @@ const convener = [
 		email: "yadav2104rao@gmail.com",
 		contact: "9729199884",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BShubham%20Yadav%7D.jpg?alt=media&token=8b359399-3b17-4a19-bf01-7d16fb657520"	
+	},
+	{
+		name: "Manish Kumar",
+		fb: "https://m.facebook.com/manishyadav2904",
+		email: "yadavmanish2904@gmail.com",
+		contact: "9050282706",
+		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BManish%20Kumar%7D.jpg?alt=media&token=0506786d-bf57-48a0-8f93-df324a02efcb"	
 	},
 	{
 		name: "Saloni Tapan",
@@ -78,7 +78,7 @@ const convener = [
 	{
 		name: "Prince Chandel",
 		fb: "https://www.facebook.com/prince.chandel.56808",
-		email: "",
+		email: "princechandel23@gmail.com",
 		contact: "8053059292",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BPrince%20Chandel%7D%20(2).jpg?alt=media&token=d79e796d-fb46-4351-b48a-0503c64484aa"	
 	},
@@ -90,8 +90,8 @@ const convener = [
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BUdashey%20Goyal%7D.jpg?alt=media&token=5afeb5b1-3bbd-4b3d-a68c-887254bdd749"	
 	},
 	{
-		name: "Harjot Parmar",
-		fb: "",
+		name: "Harjot Kaur",
+		fb: "harjotparmar0922@gmail.com",
 		email: "harjotparmar0922@gmail.com",
 		contact: "7206036309",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BHarjot%20Parmar%7D.jpg?alt=media&token=ca286d9f-2402-4367-9629-f2249721bb2d"	
@@ -112,9 +112,9 @@ const convener = [
 	},
 	{
 		name: "Puneet Jain",
-		fb: "",
-		email: "",
-		contact: "",
+		fb: "https://www.facebook.com/profile.php?id=100010064103652",
+		email: "puneetj987@gmail.com",
+		contact: "8689067918",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BPuneet%20Jain%7D.jpg?alt=media&token=e1b92052-0523-4ee4-8785-39802d2bf119"	
 	},
 	{
@@ -210,9 +210,9 @@ const convener = [
 	},
 	{
 		name: "Simran Mehta",
-		fb: "",
-		email: "",
-		contact: "",
+		fb: "https://www.facebook.com/profile.php?id=100011500995584",
+		email: "simranmehta171195@gmail.com",
+		contact: "9911181352",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BSimran%20Mehta%7D.jpg?alt=media&token=226a0cf8-aaa1-4182-b80e-819a63a0322d"	
 	},
 
@@ -235,7 +235,7 @@ class TeamConflu extends Component {
       <div className="team_confluence">
         <h2 className="team_heading">
 				<Link to='/'>
-					<a class="btn-floating btn-small waves-effect backhome" href="#"><i class="material-icons">arrow_back</i></a>
+					<a class="btn-floating btn-small waves-effect backhome" href="#!"><i class="material-icons">arrow_back</i></a>
         </Link>  
 					<img src={window.location.origin + '/img/team_confluence.svg'} alt="team_logo" />
         </h2>

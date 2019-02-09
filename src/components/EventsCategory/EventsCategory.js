@@ -8,7 +8,6 @@ import $ from "jquery";
 import "./eventlist.css";
 import Description from "./eventdescription.js";
 import './eventdescription.css';
-import { getEventsCategory } from '../../selectors';
 import { connect } from "react-redux";
 import { getEventsByCategory } from '../../actions/action';
 
@@ -147,10 +146,6 @@ class EventsCategory extends React.Component {
 const mapStateToProps = (state, ownProps) => {
 
 	const { events, isFetchingEvents } = state;
-	// const eventsCat = getEventsCategory(events, ownProps.match.params.category);
-	// return {
-		// events: eventsCat
-	// };
 
 	return {
 		events,

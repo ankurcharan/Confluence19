@@ -1,25 +1,15 @@
 import React, { Component } from 'react';
 import { Switch, BrowserRouter, Route, Link } from 'react-router-dom';
-// import Nav from './components/Nav/Nav';
-// import Footer from './components/Footer/Footer';
 import Events from './components/Events/Events';
-
-import Home from './components/Home/Home';
-
-import Register from './components/Home/Register/Register.js';
+import Register from './components/HomePage/Register/Register';
 import Sponsors from './components/Sponsors/Sponsors';
-import Team from './components/TeamConfluence/TeamConfluence';
 import Gallery from './components/Gallery/Gallery';
 import EventsCategory from './components/EventsCategory/EventsCategory';
 import TeamConflu2 from './components/TeamConfluence/TeamConflu2';
 import Developer2 from './components/Developers/Developer2';
 
-
 import AddEvent from './components/Admin/Admin';
 import HomePage from './components/HomePage/HomePage';
-
-import Developers from './components/Developers/Developers';
-
 
 class Page404 extends React.Component {
 
@@ -71,7 +61,6 @@ class App extends Component {
               <Route path='/*' component={Page404} />
 
             </Switch>
-            {/* <Footer /> */}
 
           </React.Suspense>
         </div>

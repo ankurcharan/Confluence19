@@ -1,34 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 import M from 'materialize-css';
-
-{/** 
-// {
-//     "eventName": "EventName2",
-//     "startTime": "1545522259731",
-//     "endTime": "1545522259731",
-//     "category": "Music",
-//     "rules": [
-//     	"This is a rule.",
-//     	"This is another rule"
-//     ],
-//     "venue": "EventVenue",
-//     "coordinators": [
-//     	{
-// 	    	"name": "Coordinator1",
-// 	    	"contact": "9878987678"
-//     	},
-//     	{
-//     		"name": "Coordinator2",
-//     		"contact": "9878976789"
-//     	}
-//     ],
-//     "prize": "10,000",
-//     "imageUrl": "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/EventPosters%2FFake%20Poster.png?alt=media&token=ded9da16-3753-455a-8cc7-448cc5ef196b"
-// }
-*/}
 
 class AddEvent extends React.Component {
 

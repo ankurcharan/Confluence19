@@ -1,19 +1,11 @@
 import React from 'react';
-// import { MediaBox } from 'react-materialize';
-
 import './Gallery.css';
 
 import PhotoGallery from 'react-photo-gallery';
 import LightBox from 'react-images';
 
-
-// import Jumbotron from '../Jumbotron/Jumbotron';
-
 import { connect } from 'react-redux';
 import { getImages } from '../../actions/action';
-
-
-import M from 'materialize-css';
 
 import camera from './cam.jpeg';
 
@@ -65,11 +57,6 @@ class Gallery extends React.Component {
 		})
 	}
 
-	// componentDidMount() {
-	// 	let boxes = document.querySelectorAll('.materialboxed');
-	// 	M.Materialbox.init(boxes, {});
-	// }
-
 	render() {
 
 		let imgs = this.props.images;
@@ -88,18 +75,6 @@ class Gallery extends React.Component {
 
 		return (
 			<div id='images'>
-				{/* <h1 className='center'>#weDealInMemories</h1> */}
-
-				{/**Jumbotron */}
-				{/* <div class="parallax-container">
-					<div class="parallax">
-						<img 
-							src={camera} 
-							alt='memories'
-						/>
-					</div>
-				</div> */}
-
 
 			<div id="index-banner" class="parallax-container">
                 <div class="section no-pad-bot">
@@ -114,11 +89,6 @@ class Gallery extends React.Component {
                                 {this.props.text}
                             </h5>
                         </div>
-                        {/*<div class="row center">*/}
-                            {/*<a href="https://www.instagram.com/ankurcharan/" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">*/}
-                                {/*Get to know me :)*/}
-                            {/*</a>*/}
-                        {/*</div>*/}
                         <br />
                         <br />
                     </div>

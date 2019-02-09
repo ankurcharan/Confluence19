@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import { Link } from 'react-router-dom';
 import Navigation from './Navigation';
 import Banner from './banner';
 import Gallery from './Gallery';
 import Aboutus from './Aboutus';
-import Events_Page from './Events_Page';
+import EventsPage from './Events_Page';
 import Footer from './Footer';
 import './static/superapp.css';
 import './static/HomePage.css';
@@ -43,7 +42,7 @@ class HomePage extends Component {
             <Banner />
             <Gallery />
             <Aboutus />
-            <Events_Page />
+            <EventsPage />
             <Footer />
           </div>
         </ParallaxProvider>

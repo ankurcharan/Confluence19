@@ -6,7 +6,7 @@ import './Developer2.css';
 let members = [
   {
     name: "Neha Singla",
-    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FNehaSingla.jpeg?alt=media&token=54659231-a753-4c1f-baee-c244207ff973",
+    imgLink: "https://i.ibb.co/KDjXwjk/Neha-Singla.jpg",
     ph_no: 7404221321,
     fb: "https://www.facebook.com/neha.singla.315213",
     year: 4
@@ -20,7 +20,7 @@ let members = [
   },
   { 
     name: "Ankur Charan", 
-    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FAnkurCharan.jpg?alt=media&token=f867f1b9-86a7-4ad4-be10-bab6b99e9f8c", 
+    imgLink: "https://i.ibb.co/CnMQqf7/Ankur-Charan.jpg", 
     ph_no: 9468184831, 
     github: "https://www.github.com/ankurcharan",
     fb: "https://www.facebook.com/ankurcharan06",
