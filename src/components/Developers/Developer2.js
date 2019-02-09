@@ -11,6 +11,13 @@ let members = [
     fb: "https://www.facebook.com/neha.singla.315213",
     year: 4
   },
+  {
+    name: "Utkarsh Saxena",
+    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FUtkarshSaxena.jpg?alt=media&token=dbdedaf4-e2c6-4f96-8f45-93dc07613f22",
+    ph_no: 8171447973,
+    fb: "https://www.facebook.com/utkarsh.saxena.773",
+    year: 4
+  },
   { 
     name: "Ankur", 
     imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FAnkur%20Charan.png?alt=media&token=c1513246-65b1-4681-82de-ea751ce1823d", 
@@ -32,6 +39,7 @@ let members = [
     imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FYash%20Shukla.jpg?alt=media&token=d38ff104-e5a5-4c5d-b1c7-cd128990753c",
     ph_no: 7206268094,
     github: "https://github.com/shuklayash",
+    fb: "https://www.facebook.com/profile.php?id=100013850499403",
     year: 3
   },
   { 
@@ -61,23 +69,8 @@ let members = [
     ph_no: 9729720989, 
     github: "https://www.github.com/nick-infinity",
     year: 2
-  },
-  {
-    name: "Bharat Ranjan",
-    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FBharatranjan.jpg?alt=media&token=626ee6ee-44f0-4d79-8211-9b3226520c1b",
-    fb: "https://www.facebook.com/branjan121",
-    ph_no: "",
-    year: 2
-  },
-  {
-    name: "Vinay Kumar",
-    fb: "https://www.facebook.com/vinay.dhankhar.3133",
-    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FVinayKumar.jpg?alt=media&token=a3d5dfd7-ef79-4f75-b7fb-963b9d3a2f50",
-    ph_no: "",
-    year: 2
   }
 ]
-
 class TeamConflu extends Component {
 
   componentDidMount() {
