@@ -210,6 +210,9 @@ header.masthead .intro-text .intro-heading {
 	opacity: 0;
 	background: rgba(254, 209, 54, 0.9); 
 }
+.ts{
+	align-content: center;
+}
 .portfolio-item .portfolio-link .portfolio-hover:hover {
 	opacity: 1; }
 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -235,7 +238,8 @@ header.masthead .intro-text .intro-heading {
 .portfolio-item .portfolio-caption h4 {
 	font-size: 22px;
 	margin: 0;
-	text-transform: none; }
+	text-transform: none;
+	color: black; }
 .portfolio-item .portfolio-caption p {
 	font-size: 10px;
 	font-style: italic;
