@@ -28,10 +28,17 @@ const convener = [
 	},
 	{
 		name: "Sourav Aggarwal",
-		fb: "",
-		email: "",
+		fb: "https://www.facebook.com/sourav.aggarwal.965",
+		email: "souravaggarwal351@yahoo.com",
 		contact: "",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BSourav%20Aggarwal%7D.jpg?alt=media&token=4885e8d7-3dc4-4637-9da0-e1d02fec40aa"	
+	},
+	{
+		name: "Shubham Yadav",
+		fb: "https://www.facebook.com/profile.php?id=100002514258917",
+		email: "yadav2104rao@gmail.com",
+		contact: "9729199884",
+		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BShubham%20Yadav%7D.jpg?alt=media&token=8b359399-3b17-4a19-bf01-7d16fb657520"	
 	},
 	{
 		name: "Saloni Tapan",
@@ -39,6 +46,13 @@ const convener = [
 		email: "tapansaloni@gmail.com",
 		contact: "9521429296",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BSaloni%20Tapan%7D.jpg?alt=media&token=600cde46-502f-4543-ba1d-96326600ba14"	
+	},
+	{
+		name: "Shubham Gupta",
+		fb: "https://www.facebook.com/profile.php?id=100002514258917",
+		email: "yadav2104rao@gmail.com",
+		contact: "9729199884",
+		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BShubham%20Gupta%7D.jpg?alt=media&token=02707e00-99cd-4734-befc-d78b6abe29e5"	
 	},
 	{
 		name: "Anmol D Gupta",
@@ -49,9 +63,9 @@ const convener = [
 	},
 	{
 		name: "Kareenah Singh",
-		fb: "",
-		email: "",
-		contact: "",
+		fb: "https://www.facebook.com/kareenah.singh",
+		email: "kareenahsingh.21@gmail.com",
+		contact: "8684967903",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BKareenah%20Singh%7D.jpg?alt=media&token=7cd746ae-f7a9-42d5-912b-6f8f9ee010bc"	
 	},
 	{
@@ -181,13 +195,6 @@ const convener = [
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BSanket%20Duhoon%7D.jpg?alt=media&token=39ff332e-c629-4234-993c-ce171b5765bc"	
 	},
 	{
-		name: "Shubham Yadav",
-		fb: "https://www.facebook.com/profile.php?id=100002514258917",
-		email: "yadav2104rao@gmail.com",
-		contact: "9729199884",
-		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BShubham%20Yadav%7D.jpg?alt=media&token=8b359399-3b17-4a19-bf01-7d16fb657520"	
-	},
-	{
 		name: "Ekta Dogra",
 		fb: "https://m.facebook.com/ekta.dogra.773?ref=bookmarks",
 		email: "ektadogra04@gmail.com",
@@ -200,13 +207,6 @@ const convener = [
 		email: "mprateekyadav24@gmail.com",
 		contact: "7340320360",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BPrateek%20Yadav%7D.jpg?alt=media&token=b3888ad5-3dd8-4567-a18a-4f58878f24cd"	
-	},
-	{
-		name: "Shubham Gupta",
-		fb: "https://www.facebook.com/profile.php?id=100002514258917",
-		email: "yadav2104rao@gmail.com",
-		contact: "9729199884",
-		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BShubham%20Gupta%7D.jpg?alt=media&token=02707e00-99cd-4734-befc-d78b6abe29e5"	
 	},
 	{
 		name: "Simran Mehta",
