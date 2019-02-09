@@ -8,7 +8,7 @@ class Gallery extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imgArr: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+      imgArr: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg"],
       activeImg: 2,
       midImg: 2,
     }
@@ -28,7 +28,7 @@ class Gallery extends Component {
       anime({
         targets: imgGal,
         left: `-=${imgBox.getBoundingClientRect().width}px`,
-        duration: 400,
+        duration: 300,
         easing: "easeInOutExpo"
       })
     }
@@ -63,6 +63,8 @@ class Gallery extends Component {
 
   componentDidMount() {
     window.addEventListener('resize', this.delayResize);
+    this.setState({ activeImg: parseInt(this.state.imgArr.length / 2) })
+    this.setState({ midImg: parseInt(this.state.imgArr.length / 2) })
   }
   componentWillUnmount() {
     window.removeEventListener('resize', this.delayResize);
@@ -102,6 +104,9 @@ class Gallery extends Component {
                       </div>
                     )
                   })
+                }
+                {
+                  (this.state.imgArr.length % 2 === 0) ? (<div className="image_box dummy"></div>) : null
                 }
               </div>
             </div>

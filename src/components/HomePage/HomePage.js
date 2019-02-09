@@ -10,6 +10,7 @@ import Footer from './Footer';
 import './static/superapp.css';
 import './static/HomePage.css';
 
+
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -24,15 +25,7 @@ class HomePage extends Component {
     })
   }
 
-  componentDidMount() {
-    setTimeout(function () {
-      let x = document.getElementById('loader'); 
-      if(x) {
-        x.remove();
-      }      
-      document.getElementById('root').classList.remove('hide');
-    }, 1000);
-  }
+
 
   render() {
     return (

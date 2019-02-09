@@ -61,6 +61,7 @@ class Aboutus extends Component {
                 Its urge to deliver the maximum is what makes it one of the most awaited cultural festival.<br />
               </p>
             </section>
+            <a href="" className="about_aftermovie">watch aftermovie &rarr;</a>
           </div>
         </div>
       </ScrollElement>

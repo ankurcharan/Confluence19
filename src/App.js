@@ -38,7 +38,17 @@ class Page404 extends React.Component {
 }
 
 
+
 class App extends Component {
+  componentDidMount() {
+    setTimeout(function () {
+      let x = document.getElementById('loader');
+      if (x) {
+        x.remove();
+      }
+      document.getElementById('root').classList.remove('noshow');
+    }, 1000);
+  }
   render() {
     return (
       <BrowserRouter>

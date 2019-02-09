@@ -20,7 +20,7 @@ class Banner extends Component {
       }
     })
     for (let i = 0; i < raysLength; i++) {
-      const radius = (2000 / raysLength) * (i * i * 0.05);
+      const radius = (2000 / raysLength) * (i * i * 0.1) + 50;
       rays[i].style.width = radius + 'px';
       rays[i].style.height = radius + 'px';
       timeLine.add({
@@ -28,11 +28,11 @@ class Banner extends Component {
           anime({
             targets: rays[i],
 
-            translateY: [0, 15 + 'px'],
+            translateY: [0, 25 + 'px'],
             direction: "alternate",
             duration: duration * 0.1,
             easing: "easeInOutSine",
-            loop: 6,
+            loop: 4,
             delay: "200",
           })
         }
@@ -64,7 +64,7 @@ class Banner extends Component {
         <div className="ray_box">
           <div className="banner_sun"></div>
           <div className="second_sun"></div>
-          {Array(30).fill(0).map((el, index) => <div key={index} className={`ray_circle ray_circle_${index}`}></div>)}
+          {Array(20).fill(0).map((el, index) => <div key={index} className={`ray_circle ray_circle_${index}`}></div>)}
         </div>
         <div className="mountain_box">
           {/*<div className="mountain mountain_2">

@@ -43,6 +43,7 @@
 .ray_box .banner_sun{
   height:170px;
   width:170px;
+  
   background-color:cornsilk;
   border-radius: 50%;
   box-shadow: 0 10px 10px 100px rgba(223, 4, 4, 0.1); 
