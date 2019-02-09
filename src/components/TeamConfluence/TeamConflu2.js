@@ -56,8 +56,8 @@ const convener = [
 	},
 	{
 		name: "Shivangi Kapur",
-		fb: "",
-		email: "",
+		fb: "https://www.facebook.com/shivangi.kapur.7",
+		email: "shivangikapur1997@gmail.com",
 		contact: "",
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BShivangi%20Kapur%7D.png?alt=media&token=5655efd1-9b57-4501-b2f3-9c92149dcf99"	
 	},
@@ -213,7 +213,7 @@ const convener = [
 		fb: "",
 		email: "",
 		contact: "",
-		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BSimran%20Mehta%7D.jpg?alt=media&token=226a0cf8-aaa1-4182-b80e-819a63a0322dhttps://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BSimran%20Mehta%7D.jpg?alt=media&token=226a0cf8-aaa1-4182-b80e-819a63a0322d"	
+		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BSimran%20Mehta%7D.jpg?alt=media&token=226a0cf8-aaa1-4182-b80e-819a63a0322d"	
 	},
 
 ]
@@ -255,8 +255,24 @@ class TeamConflu extends Component {
                       <div className="person_contact">{el.contact}</div>
                     </div>
                     <div className="person_social">
-                      <a href={el.fb} className="person_btn person_facebook" target='_blank' rel="noopener noreferrer">facebook</a>
-                      <a href={`mailto:{el.email}`} className="person_btn person_gmail" target='_blank' rel="noopener noreferrer">gmail</a>
+											
+											{
+												(el.fb && el.fb.length > 0) ?
+												(
+													<a href={el.fb} className="person_btn person_facebook" target='_blank' rel="noopener noreferrer">facebook</a>
+												) : (
+													null
+												)
+											}
+                      {
+												(el.email && el.email.length > 0) ? 
+												(
+													<a href={`mailto:${el.email}`} className="person_btn person_gmail" target='_blank' rel="noopener noreferrer">gmail</a>
+												) : (
+													null
+												)
+											}
+
                     </div>
                   </div>
                 )

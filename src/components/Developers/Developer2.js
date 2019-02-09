@@ -19,8 +19,8 @@ let members = [
     year: 4
   },
   { 
-    name: "Ankur", 
-    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FAnkur%20Charan.png?alt=media&token=c1513246-65b1-4681-82de-ea751ce1823d", 
+    name: "Ankur Charan", 
+    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FAnkurCharan.jpg?alt=media&token=f867f1b9-86a7-4ad4-be10-bab6b99e9f8c", 
     ph_no: 9468184831, 
     github: "https://www.github.com/ankurcharan",
     fb: "https://www.facebook.com/ankurcharan06",
@@ -64,8 +64,8 @@ let members = [
     year: 2
   },
   { 
-    name: "Nikhil", 
-    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FNikhil%20Gupta.jpeg?alt=media&token=17870fc3-0a41-47f8-9ba8-b88b2dfed033", 
+    name: "Nikhil Gupta", 
+    imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FNikhilGupta.jpg?alt=media&token=4b49052e-ac2e-44d4-999f-a22631b25dd0", 
     ph_no: 9729720989, 
     github: "https://www.github.com/nick-infinity",
     year: 2
