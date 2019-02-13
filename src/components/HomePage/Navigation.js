@@ -27,6 +27,14 @@ class Navigation extends Component {
             <Link to='/sponsors' className="nav_item">
               <li>Sponsors</li>
             </Link>
+            <a 
+              href='https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/final%20schedule.pdf?alt=media&token=7e8bc3f0-ecd7-4bb9-8423-9ee236fa66de' 
+              className="nav_item"
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <li>Schedule</li>
+            </a>
             <Link to='/team' className="nav_item">
               <li>The Team</li>
             </Link>

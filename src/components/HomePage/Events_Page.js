@@ -61,14 +61,14 @@ class Events_Page extends Component {
                 </div>
               </div>
             </Link>
-            <Link to="/events/painting">
+            <Link to="/events/arts">
               <div className="col m4 s6 pad-fix">
                 <div className="event_card">
                   <div className="card_frame">
                     <svg className="card_icon">
                       <use xlinkHref={window.location.href + 'img/painting.svg#painting'} />
                     </svg>
-                    <div className="category_head">Painting</div>
+                    <div className="category_head">Arts</div>
                   </div>
                 </div>
               </div>

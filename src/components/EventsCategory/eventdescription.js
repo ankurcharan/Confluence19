@@ -32,7 +32,7 @@ class description extends Component{
 								(
 									<>
 										<h2 className="heading1 sectionHeading">Rules</h2>  
-										<ul>
+										<ul type="disc">
 										{
 											this.props.events.rules.map((rule, i) => {
 												return (

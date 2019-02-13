@@ -27,8 +27,6 @@ class Page404 extends React.Component {
   }
 }
 
-
-
 class App extends Component {
   componentDidMount() {
     setTimeout(function () {
@@ -56,7 +54,6 @@ class App extends Component {
               <Route exact path='/admin' component={AddEvent} />
               <Route exact path='/developers' component={Developer2} />
               <Route exact path='/events/:category' component={EventsCategory} />
-
 
               <Route path='/*' component={Page404} />
 

@@ -16,6 +16,14 @@ let members = [
     imgLink: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Developers%2FUtkarshSaxena.jpg?alt=media&token=dbdedaf4-e2c6-4f96-8f45-93dc07613f22",
     ph_no: 8171447973,
     fb: "https://www.facebook.com/utkarsh.saxena.773",
+    github: "https://github.com/utknit05",
+    year: 4
+  },
+  {
+    name: "Unsorted Array",
+    imgLink: "https://i.ibb.co/n6TpFz7/Unsorted-Array.jpg",
+    ph_no: 9871737891,
+    github: "https://github.com/unsortedArray",
     year: 4
   },
   { 
@@ -24,6 +32,14 @@ let members = [
     ph_no: 9468184831, 
     github: "https://www.github.com/ankurcharan",
     fb: "https://www.facebook.com/ankurcharan06",
+    year: 3
+  },
+  {
+    name: "Gaurav Rattan",
+    imgLink: "https://i.ibb.co/09HBvJ4/DSC-0278-1.jpg",
+    ph_no: 9464648606,
+    github: "https://github.com/gogarattan",
+    fb: "https://www.facebook.com/gaurav.rattan.goga",
     year: 3
   },
   {

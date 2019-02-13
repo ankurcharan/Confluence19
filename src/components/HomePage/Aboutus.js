@@ -62,6 +62,7 @@ class Aboutus extends Component {
               </p>
             </section>
             <a href="https://www.youtube.com/watch?v=k02GCuw3xOE" className="about_aftermovie" target='_blank' rel='noreferrer noopener'>watch aftermovie &rarr;</a>
+            <a href="https://www.youtube.com/watch?v=ZCyrjfdDy8k" className="about_aftermovie" target='_blank' rel='noreferrer noopener'>confluence'19 teaser &rarr;</a>
           </div>
         </div>
       </ScrollElement>

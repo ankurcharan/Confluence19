@@ -202,13 +202,6 @@ const convener = [
 		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BEkta%20Dogra%7D.jpg?alt=media&token=03296905-7570-4009-bb47-ba0527e8d018"	
 	},
 	{
-		name: "Prateek Yadav",
-		fb: "https://www.facebook.com/prateek.yadav.564",
-		email: "mprateekyadav24@gmail.com",
-		contact: "7340320360",
-		imageUrl: "https://firebasestorage.googleapis.com/v0/b/confluence19.appspot.com/o/Convener%2F%7BPrateek%20Yadav%7D.jpg?alt=media&token=b3888ad5-3dd8-4567-a18a-4f58878f24cd"	
-	},
-	{
 		name: "Simran Mehta",
 		fb: "https://www.facebook.com/profile.php?id=100011500995584",
 		email: "simranmehta171195@gmail.com",
