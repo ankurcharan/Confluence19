@@ -197,8 +197,6 @@ const sponsors = [
 	}
 ]
 
-
-
 class Sponsors extends React.Component {
 
 	componentDidMount() {
