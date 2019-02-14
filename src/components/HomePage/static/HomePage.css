@@ -53,3 +53,35 @@
   transform:translateY(-2px);
   box-shadow:0 8px 10px rgba(0,0,0,0.3);
 }
+
+.starNight_button {
+  position:fixed;
+  z-index:1000;
+  color:white;
+  height:60px;
+  width:60px;
+  padding:5px;
+  background-color: red;
+  right:10px;
+  top:70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size:14px;
+  font-weight: 100;
+  box-shadow:0 5px 10px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition:all 0.2s;
+}
+
+
+.starNight_button > img{
+  width: inherit;
+  height: inherit;
+  fill:cornsilk;
+}
+.starNight_button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 10px rgba(0,0,0,0.3);
+}

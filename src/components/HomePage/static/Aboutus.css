@@ -4,6 +4,10 @@
   padding:0;
   margin:0;
 }
+.extraa{
+  float: top;
+  position: absolute;
+}
 .about_us{
   height:100%;
   width:100%;
@@ -295,5 +299,56 @@
     width:360px;
     font-size:16px;
     top:8px;
+  }
+}
+
+
+.pronite_data {
+  position: absolute;
+  height:80%;
+  width:400px;
+  left:80px;
+  top:80px;
+  color:white;
+  border-radius: 30px;
+  font-size:20px;
+  overflow: hidden;
+  padding:8px 20px;
+  background-color:rgba(204, 121, 121, 0.9);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.pronite_header {
+  text-align: center;
+}
+
+.pronite_data > .pronite_para {
+  font-weight: 100;
+  background-color:transparent;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pronite_para > img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 420px) {
+  .pronite_data {
+    position: absolute;
+    height:80%;
+    width:400px;
+    left:80px;
+    top:80px;
+    color:white;
+    border-radius: 30px;
+    font-size:20px;
+    overflow: hidden;
+    padding:8px 20px;
+    background-color:rgba(204, 121, 121, 0.9);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
   }
 }

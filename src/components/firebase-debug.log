@@ -1,0 +1,145 @@
+[debug] [2019-02-14T08:13:06.068Z] ----------------------------------------------------------------------
+[debug] [2019-02-14T08:13:06.071Z] Command:       /usr/bin/node /usr/bin/firebase deploy --except functions --debug
+[debug] [2019-02-14T08:13:06.071Z] CLI Version:   6.3.1
+[debug] [2019-02-14T08:13:06.071Z] Platform:      linux
+[debug] [2019-02-14T08:13:06.071Z] Node Version:  v8.15.0
+[debug] [2019-02-14T08:13:06.071Z] Time:          Thu Feb 14 2019 13:43:06 GMT+0530 (IST)
+[debug] [2019-02-14T08:13:06.071Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-14T08:13:06.080Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-14T08:13:06.080Z] > authorizing via signed-in user
+[debug] [2019-02-14T08:13:06.080Z] [iam] checking project confluence19 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-02-14T08:13:06.082Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-02-14T08:13:06.082Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-02-14T08:13:06.682Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:06.693Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/confluence19:testIamPermissions  
+
+[debug] [2019-02-14T08:13:08.797Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:08.801Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/confluence19  
+ 
+[debug] [2019-02-14T08:13:09.625Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'confluence19'...
+[info] 
+[info] i  deploying database, storage, firestore, hosting
+[info] i  database: checking rules syntax...
+[debug] [2019-02-14T08:13:25.926Z] >>> HTTP REQUEST PUT https://confluence19.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2019-02-14T08:13:27.902Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database confluence19 is valid
+[debug] [2019-02-14T08:13:27.905Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/confluence19  
+ 
+[debug] [2019-02-14T08:13:30.329Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2019-02-14T08:13:30.332Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/confluence19:test  
+
+[debug] [2019-02-14T08:13:32.225Z] <<< HTTP RESPONSE 200
+[info] ✔  storage: rules file storage.rules compiled successfully
+[info] i  firestore: checking firestore.rules for compilation errors...
+[info] i  firestore: reading indexes from firestore.indexes.json...
+[debug] [2019-02-14T08:13:32.231Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/confluence19:test  
+
+[debug] [2019-02-14T08:13:32.817Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[debug] [2019-02-14T08:13:32.822Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/confluence19/versions  
+
+[debug] [2019-02-14T08:13:35.494Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2019-02-14T08:13:35.498Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/confluence19/rulesets  
+
+[debug] [2019-02-14T08:13:37.549Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:37.551Z] [rules] created ruleset projects/confluence19/rulesets/ad0051e6-2a73-4563-8db4-6de2cf3e5a52
+[info] i  firestore: uploading rules firestore.rules...
+[debug] [2019-02-14T08:13:37.555Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/confluence19/rulesets  
+
+[debug] [2019-02-14T08:13:37.555Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/confluence19/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2019-02-14T08:13:39.293Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:39.296Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/confluence19/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2019-02-14T08:13:39.299Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:39.299Z] [rules] created ruleset projects/confluence19/rulesets/82af8d8f-3690-450d-848d-d59bcb175d86
+[debug] [2019-02-14T08:13:40.917Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: deployed indexes in firestore.indexes.json successfully
+[info] i  hosting[confluence19]: beginning deploy...
+[info] i  hosting[confluence19]: found 75 files in build
+[debug] [2019-02-14T08:13:40.969Z] [hosting] hash cache [YnVpbGQ] load error: lines is not defined
+[debug] [2019-02-14T08:13:41.484Z] [hosting] hash cache [YnVpbGQ] stored for 75 files
+[debug] [2019-02-14T08:13:41.484Z] [hosting][hash queue][FINAL]
+[debug] [2019-02-14T08:13:41.484Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/confluence19/versions/ba60a6c962eb6810:populateFiles  
+ <request body omitted>
+[info] i  hosting: adding files to version [0/75] (0%)
+[debug] [2019-02-14T08:13:44.429Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:44.437Z] [hosting][populate queue][FINAL]
+[debug] [2019-02-14T08:13:44.437Z] [hosting] uploads queued: 6
+[info] i  hosting: uploading new files [0/6] (0%)
+[info] i  hosting: uploading new files [4/6] (66%)
+[debug] [2019-02-14T08:13:47.776Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[confluence19]: file upload complete
+[debug] [2019-02-14T08:13:47.778Z] [hosting] deploy completed after 6856ms
+[info] i  database: releasing rules...
+[debug] [2019-02-14T08:13:48.288Z] >>> HTTP REQUEST PUT https://confluence19.firebaseio.com/.settings/rules.json  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2019-02-14T08:13:50.054Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules for database confluence19 released successfully
+[debug] [2019-02-14T08:13:50.056Z] [rules] releasing firebase.storage/confluence19.appspot.com with ruleset projects/confluence19/rulesets/ad0051e6-2a73-4563-8db4-6de2cf3e5a52
+[debug] [2019-02-14T08:13:50.057Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/confluence19/releases/firebase.storage/confluence19.appspot.com  
+
+[debug] [2019-02-14T08:13:51.849Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:51.851Z] [rules] updated release projects/confluence19/releases/firebase.storage/confluence19.appspot.com
+[info] ✔  storage: released rules storage.rules to firebase.storage/confluence19.appspot.com
+[debug] [2019-02-14T08:13:51.853Z] [rules] releasing cloud.firestore with ruleset projects/confluence19/rulesets/82af8d8f-3690-450d-848d-d59bcb175d86
+[debug] [2019-02-14T08:13:51.854Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/confluence19/releases/cloud.firestore  
+
+[debug] [2019-02-14T08:13:53.591Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:53.592Z] [rules] updated release projects/confluence19/releases/cloud.firestore
+[info] ✔  firestore: released rules firestore.rules to cloud.firestore
+[debug] [2019-02-14T08:13:53.594Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "confluence19"
+    },
+    "site": "confluence19",
+    "version": "sites/confluence19/versions/ba60a6c962eb6810"
+  }
+]
+[info] i  hosting[confluence19]: finalizing version...
+[debug] [2019-02-14T08:13:53.595Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/confluence19/versions/ba60a6c962eb6810?updateMask=status  
+
+[debug] [2019-02-14T08:13:55.790Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:55.791Z] [hosting] finalized version for confluence19:
+[info] ✔  hosting[confluence19]: version finalized
+[info] i  hosting[confluence19]: releasing new version...
+[debug] [2019-02-14T08:13:55.793Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/confluence19/releases?version_name=sites/confluence19/versions/ba60a6c962eb6810  
+
+[debug] [2019-02-14T08:13:58.021Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-14T08:13:58.022Z] [hosting] release:
+[info] ✔  hosting[confluence19]: release complete
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/confluence19/overview
+[info] Hosting URL: https://confluence19.firebaseapp.com

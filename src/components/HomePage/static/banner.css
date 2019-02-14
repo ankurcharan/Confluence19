@@ -310,3 +310,18 @@
     bottom:-80px;
   }
 }
+
+.banner_sun > img {
+  width: inherit;  
+}
+
+/* .banner_sun > p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  word-wrap: normal;
+  font-size: 20px;
+  text-align: center center;
+} */
