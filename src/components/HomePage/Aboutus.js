@@ -61,7 +61,7 @@ class Aboutus extends Component {
                 Its urge to deliver the maximum is what makes it one of the most awaited cultural festival.<br />
               </p>
             </section>
-            <a href="https://www.youtube.com/watch?v=k02GCuw3xOE" className="about_aftermovie" target='_blank' rel='noreferrer noopener'>watch aftermovie &rarr;</a>
+            <a href="https://www.townscript.com/e/confluence19-313424" className="about_aftermovie" target='_blank' rel='noreferrer noopener'>Book Star Night tickets &rarr;</a>
             <a href="https://www.youtube.com/watch?v=ZCyrjfdDy8k" className="about_aftermovie" target='_blank' rel='noreferrer noopener'>confluence'19 teaser &rarr;</a>
           </div>
         </div>
