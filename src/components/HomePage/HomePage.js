@@ -26,6 +26,7 @@ class HomePage extends Component {
 
 
 
+
   render() {
     return (
       <div className="Super_App">
@@ -39,22 +40,7 @@ class HomePage extends Component {
                 </svg>
               </div>
             </a>
-            <a 
-              href='https://www.townscript.com/e/confluence19-313424' 
-              target='_blank' 
-              rel="noopener noreferrer"
-            >
-              <div className="starNight_button">
-                {/* <svg>
-                  <use xlinkHref={window.location.href + '/img/register.svg#register'}></use>
-                </svg> */}
-                <img
-                  className='circle'
-                  src='https://i.ibb.co/VpyZhss/aditi.jpg'
-                  alt='Star Night'
-                />
-              </div>
-            </a>
+
             <Banner />
             <Gallery />
             <Aboutus />

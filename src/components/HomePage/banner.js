@@ -52,6 +52,15 @@ class Banner extends Component {
       loop: true,
       direction: 'alternate'
     });
+
+    const badge = document.getElementById('starNight_badges');
+    anime({
+      targets: badge,
+      rotateZ: '360deg',
+      duration: 60000,
+      loop: true,
+      easing: 'linear'
+    })
   }
 
   render() {
@@ -63,17 +72,21 @@ class Banner extends Component {
     </div>*/}
         <div className="ray_box">
           <div className="banner_sun">
-            {/* <a 
+            <a
               href='https://www.townscript.com/e/confluence19-313424'
               target='_blank'
-              rel='noopener noreferrer'
+              rel="noopener noreferrer"
+              className="starNight_link_button"
             >
-              <img
-                className='circle'
-                src='https://i.ibb.co/VpyZhss/aditi.jpg'
-                alt='star night tickets'
-              />
-            </a> */}
+              <div className="starNight">
+                <svg id="starNight_badges">
+                  <use xlinkHref={window.location.href + '/img/star_badge.svg#star'}></use>
+                </svg>
+                <div className="star_img_box">
+                  <img src='https://i.ibb.co/VpyZhss/aditi.jpg' alt='Star Night' />
+                </div>
+              </div>
+            </a>
           </div>
           <div className="second_sun"></div>
           {Array(20).fill(0).map((el, index) => <div key={index} className={`ray_circle ray_circle_${index}`}></div>)}

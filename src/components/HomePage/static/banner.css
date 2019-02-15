@@ -48,6 +48,9 @@
   border-radius: 50%;
   box-shadow: 0 10px 10px 100px rgba(223, 4, 4, 0.1); 
   z-index:300;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .ray_box .second_sun{
   position: absolute;
@@ -121,6 +124,35 @@
 }
 .mountain_3 img{
   transform:scaleX(1.05) scaleY(1.08);
+}
+
+
+.starNight{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.starNight > svg{
+
+  width:160px;
+  height:160px;
+}
+.starNight > .star_img_box{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  overflow:hidden;
+  width:90px;
+  height:90px;
+}
+.star_img_box > img{
+  display:block;
+  object-fit: cover;
+  width:100%;
+  height:100%;
 }
 
 @media only screen and (min-width:1400px){
@@ -235,9 +267,18 @@
     top:-160px; 
   }
   .ray_box .banner_sun{
-    height:130px;
-    width:130px;
+    height:150px;
+    width:150px;
     
+  }
+  .starNight > svg{
+
+    width:145px;
+    height:145px;
+  }
+  .starNight > .star_img_box{
+    width:85px;
+    height:85px;
   }
   .main_heading{
     left:50%;
